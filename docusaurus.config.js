@@ -39,7 +39,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Slim SEO',
+        title: 'Slim SEO Documentation',
         logo: {
           alt: 'Slim SEO Logo',
           src: 'img/logo.svg',
@@ -47,11 +47,16 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'slim-seo/installation',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Slim SEO',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'doc',
+            docId: 'slim-seo-schema/installation',
+            position: 'left',
+            label: 'Slim SEO Schema',
+          },
           {
             href: 'https://www.facebook.com/groups/slimseo',
             label: 'Community',
