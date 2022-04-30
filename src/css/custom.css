@@ -6,14 +6,27 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: hsl(22, 85%, 58%);
+  --ifm-color-primary-dark: hsl(22, 88%, 53%);
+  --ifm-color-primary-darker: hsl(22, 91%, 48%);
+  --ifm-color-primary-darkest: hsl(22, 94%, 43%);
+  --ifm-color-primary-light: hsl(22, 85%, 73%);
+  --ifm-color-primary-lighter: hsl(22, 82%, 78%);
+  --ifm-color-primary-lightest: hsl(22, 79%, 83%);
+
+  --ifm-h6-font-size: .75rem;
+
+  /* Button */
+  --ifm-button-color: #fff;
+  --ifm-button-padding-vertical: .5rem;
+
+  --ifm-toc-border-color: transparent;
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-breadcrumb-color-active: inherit;
+  --ifm-breadcrumb-padding-horizontal: 0;
+
+  /* Code */
+  --ifm-code-font-size: 87.5%;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -36,4 +49,240 @@
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  font-size: var(--ifm-h5-font-size);
+}
+.navbar__link--active {
+  color: var(--ifm-navbar-link-color);
+}
+
+/* Menu */
+.menu {
+  --ifm-menu-color-background-active: transparent;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-color-background-hover: transparent;
+  font-weight: 400;
+}
+.menu__link,
+.menu__caret,
+.menu__list-item-collapsible {
+  outline: none;
+}
+.menu__caret:before,
+.menu__link--sublist:after {
+  background-size: 1.25rem 1.25rem;
+}
+.menu__caret {
+  margin: 0;
+}
+.menu__caret:hover {
+  background: none;
+}
+.menu__link {
+  font-size: var(--ifm-h5-font-size);
+  border-radius: 0;
+}
+.menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+.menu__list-item.theme-doc-sidebar-item-category {
+  margin-top: .5rem;
+}
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
+  text-transform: uppercase;
+  font-size: var(--ifm-h6-font-size);
+  letter-spacing: .05em;
+}
+.menu__list ul.menu__list {
+  padding-left: 0;
+  margin-left: var(--ifm-menu-link-padding-horizontal);
+  border-left: 1px solid var(--ifm-color-emphasis-100);
+}
+.menu__list ul a {
+  border-left: 1px solid transparent;
+  margin-left: -1px;
+}
+/* Hover & active */
+.menu__link:hover,
+.menu__link--active,
+.menu__list-item-collapsible > .menu__link:hover,
+.menu__list-item-collapsible > .menu__link--active {
+  color: var(--ifm-menu-color-active);
+  border-left-color: var(--ifm-menu-color-active);
+}
+
+
+/* Content */
+.markdown h1:first-child,
+h1.title_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocCategoryGeneratedIndexPage-styles-module {
+  --ifm-h1-font-size: 2rem;
+}
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+.markdown > h3 {
+  --ifm-h3-font-size: 1.25rem;
+}
+.markdown img {
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  border-radius: var(--ifm-global-radius);
+}
+.markdown img {
+  max-height: 400px;
+  width: auto;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: var(--ifm-leading);
+}
+.markdown > p > img,
+figure > img {
+  cursor: zoom-in;
+}
+code {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #e3116c;
+}
+html[data-theme='dark'] code {
+  color: #c3e88d;
+}
+.yt-lite {
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+
+/* Field screenshots and settings in a gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width:  767px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+figure {
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+figcaption {
+  font-size: var(--ifm-h5-font-size);
+  text-align: center;
+}
+.gallery img {
+  margin-bottom: .5rem;
+}
+
+/* Table of contents */
+.table-of-contents {
+  --ifm-code-font-size: 100%;
+}
+
+/* Table */
+table {
+  display: table;
+  width: 100%;
+  font-size: var(--ifm-h5-font-size);
+  --ifm-table-cell-padding: 6px 12px;
+  --ifm-code-font-size: 100%;
+}
+table th,
+table td {
+  border: none;
+}
+table tr {
+  border-top: none;
+  border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+}
+table th {
+  text-align: left;
+}
+
+/* Tabs */
+.tabs-container {
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+.tabs {
+  gap: .25rem;
+  z-index: 2;
+  margin-bottom: -3px;
+}
+.tabs__item {
+  --ifm-tabs-padding-vertical: 8px;
+  --ifm-tabs-color-active: #fff;
+
+  border-radius: var(--ifm-global-radius) var(--ifm-global-radius) 0 0;
+  border-bottom: none;
+  background: var(--ifm-hover-overlay);
+}
+.tabs__item--active,
+.tabs__item--active:hover {
+  background: var(--ifm-tabs-color-active-border);
+}
+.tabs-container > div {
+  margin: 0 !important;
+  padding: 1rem;
+  border: 3px solid var(--ifm-hover-overlay);
+  z-index: 1;
+}
+
+/* FAQ */
+.faqLink {
+  color: var(--ifm-color-secondary-darkest);
+  font-size: var(--ifm-h5-font-size);
+  text-decoration: none;
+}
+.faqLink:hover {
+  text-decoration: none;
+}
+summary {
+  font-weight: 700;
+}
+
+/* Card */
+.card.card,
+.card.card:hover {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+  padding: 1rem 0 !important;
+}
+.card.card h2 {
+  transition: all var(--ifm-transition-fast) ease;
+}
+.card.card:hover h2 {
+  color: var(--ifm-color-primary);
+}
+
+/* Alert */
+.admonition {
+  --ifm-color-info-dark: var(--color-blue);
+  --ifm-color-warning-dark: var(--color-amber);
+  --ifm-color-success-dark: var(--color-green);
+
+  --ifm-alert-background-color: var(--ifm-alert-border-color);
+  --ifm-alert-foreground-color: #fff;
+}
+
+.admonition a {
+  --ifm-alert-border-color: #fff;
+  font-weight: 700;
+  font-style: italic;
+}
+.admonition code {
+  color: inherit;
+}
+
+/* Pagination */
+.pagination-nav {
+  border-top: 1px solid var(--ifm-color-emphasis-100);
+  padding-top: var(--ifm-global-spacing);
+}
+.pagination-nav__link {
+  border: none;
+  padding: 0;
 }
