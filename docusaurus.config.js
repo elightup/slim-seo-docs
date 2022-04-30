@@ -2,19 +2,21 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/palenight');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Slim SEO Documentation',
+  tagline: 'Optimize your website for the best ranking on Google',
+  url: 'https://docs.wpslimseo.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  trailingSlash: true,
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'elightup', // Usually your GitHub org/user name.
+  projectName: 'slim-seo-docs', // Usually your repo name.
+  titleDelimiter: '-',
 
   presets: [
     [
@@ -22,15 +24,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/elightup/slim-seo-docs/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,9 +39,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Slim SEO',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Slim SEO Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -57,8 +53,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://www.facebook.com/groups/slimseo',
+            label: 'Community',
             position: 'right',
           },
         ],
@@ -101,16 +97,28 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/elightup/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://wpslimseo.com">Slim SEO</a>, a brand of <a href="https://elightup.com">eLightUp</a>.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: {
+          ...lightCodeTheme,
+          plain: {
+            backgroundColor: '#f2f5f8'
+          }
+        },
+        darkTheme: {
+          ...darkCodeTheme,
+          plain: {
+            backgroundColor: '#2c3e50'
+          }
+        },
+        additionalLanguages: [ 'php' ],
+        defaultLanguage: 'php',
       },
     }),
 };
