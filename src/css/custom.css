@@ -323,3 +323,8 @@ summary {
 .hero_cta {
   margin-bottom: 4rem;
 }
+
+/* Footer */
+.footer__item {
+  font-size: var(--ifm-h5-font-size);
+}

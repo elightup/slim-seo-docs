@@ -92,20 +92,7 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'Account',
-            items: [
-              {
-                label: 'My Account',
-                href: 'https://wpslimseo.com/my-account/',
-              },
-              {
-                label: 'Open a Support Ticket',
-                href: 'https://wpslimseo.com/my-account/support/',
-              },
-            ],
-          },
-          {
-            title: 'Company',
+            title: 'Slim SEO',
             items: [
               {
                 label: 'About',
@@ -118,6 +105,19 @@ const config = {
               {
                 label: 'Terms & Conditions',
                 href: 'https://wpslimseo.com/terms/',
+              },
+            ],
+          },
+          {
+            title: 'Account',
+            items: [
+              {
+                label: 'My Account',
+                href: 'https://wpslimseo.com/my-account/',
+              },
+              {
+                label: 'Open a Support Ticket',
+                href: 'https://wpslimseo.com/my-account/support/',
               },
             ],
           },
