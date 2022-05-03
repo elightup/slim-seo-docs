@@ -39,9 +39,25 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: "/",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    ( {
+      autoCollapseSidebarCategories: true,
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         logo: {
           alt: 'Slim SEO Logo',
