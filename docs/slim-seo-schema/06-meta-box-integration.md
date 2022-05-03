@@ -58,7 +58,7 @@ Then when parsing these fields for the Review schema, you'll have 3 reviews:
 
 ## Field values
 
-- The plugin don't parse values for 'background', 'fieldset\_text', 'text\_list', 'map', 'osm', 'sidebar' because their values are not suitable for a schema property.
+- The plugin don't parse values for 'background', 'fieldset_text', 'text_list', 'map', 'osm', 'sidebar' because their values are not suitable for a schema property.
 - For choice fields (radio, select, button group), the plugin uses the selected label, not value.
 - For image and file field types, the plugin uses the URL.
 - For post, taxonomy, taxonomy advanced, the plugin uses the title.

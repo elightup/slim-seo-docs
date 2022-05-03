@@ -12,7 +12,9 @@ The root cause might be that Slim SEO already parses the shortcodes when it trie
 
 To fix this problem, you can put the following snippet in your theme's `functions.php` file:
 
-add\_filter( 'slim\_seo\_skipped\_shortcodes', function( $shortcodes ) {
-    $shortcodes\[\] = 'your\_shortcode';
+```php
+add_filter( 'slim_seo_skipped_shortcodes', function( $shortcodes ) {
+    $shortcodes\[\] = 'your_shortcode';
     return $shortcodes;
 } );
+```

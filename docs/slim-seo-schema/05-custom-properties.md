@@ -20,7 +20,7 @@ Pairs of key-value for custom properties
 
 Each key-value pair represents a custom property, where key is the property name and value is the property value.
 
-For example: if you enter property "street\_address" with value "35 Nguyen Co Thach, Nam Tu Liem", then in your schema JSON-LD (the output of the schema), you'll see a pair like this:
+For example: if you enter property "street_address" with value "35 Nguyen Co Thach, Nam Tu Liem", then in your schema JSON-LD (the output of the schema), you'll see a pair like this:
 
 ```
 "street_address": "35 Nguyen Co Thach, Nam Tu Liem"
