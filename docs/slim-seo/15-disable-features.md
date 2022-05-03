@@ -2,7 +2,7 @@
 title: Disable Features
 ---
 
-Some features in Slim SEO like [auto redirection](https://wpslimseo.com/docs/auto-redirection/) are opinionated. We tried to automate all the SEO works without your touch, but sometimes it's too much. So, you might want to disable some features that you don't like.
+Some features in Slim SEO like [auto redirection](/slim-seo/auto-redirection/) are opinionated. We tried to automate all the SEO works without your touch, but sometimes it's too much. So, you might want to disable some features that you don't like.
 
 To disable features, please go to **Settings > Slim SEO**, select tab **General** and you can deselect the features you don't want:
 

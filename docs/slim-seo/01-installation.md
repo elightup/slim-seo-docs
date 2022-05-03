@@ -23,6 +23,6 @@ Or you can manually download and install Slim SEO if you can't install it with t
 
 After installing, Slim SEO works automatically even without any configuration.
 
-The plugin also adds a settings page under _Settings > SEO_ just in case you want to insert some scripts from Google Analytics or alike. See the documentation for [Header / Footer Code](https://wpslimseo.com/docs/header-footer-code/) for details.
+The plugin also adds a settings page under _Settings > SEO_ just in case you want to insert some scripts from Google Analytics or alike. See the documentation for [Header / Footer Code](/slim-seo/header-footer-code/) for details.
 
 Now your website is auto optimized by Slim SEO. To understand what the plugin does, check out the feature list of Slim SEO on the left menu.

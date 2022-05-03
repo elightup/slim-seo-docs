@@ -8,7 +8,7 @@ Slim SEO provides quite a lot of hooks for developers to extend the functionalit
 
 ### `slim_seo_init`
 
-Fires after all plugin features are registered and before they run. Use this action to register or disable a feature. For example, please see [Disable Features](https://wpslimseo.com/docs/disable-features/) docs.
+Fires after all plugin features are registered and before they run. Use this action to register or disable a feature. For example, please see [Disable Features](/slim-seo/disable-features/) docs.
 
 ### `slim_seo_sitemap_post` and `slim_seo_sitemap_term`
 
@@ -47,7 +47,7 @@ Changes the auto generated meta description. The meta description is auto genera
 
 ### `slim_seo_skipped_shortcodes`
 
-Filters the list of shortcodes that will be skipped when parse the content for meta title and meta description. It's helpful when you use a plugin that has a shortcode to do some logic (such as WooCommerce). Accepts one parameter - an array of shortcodes. See more at [Troubleshooting](https://wpslimseo.com/docs/troubleshooting/).
+Filters the list of shortcodes that will be skipped when parse the content for meta title and meta description. It's helpful when you use a plugin that has a shortcode to do some logic (such as WooCommerce). Accepts one parameter - an array of shortcodes. See more at [Troubleshooting](/slim-seo/troubleshooting/).
 
 ### `slim_seo_open_graph_tags`
 
@@ -92,7 +92,7 @@ Changes the list of taxonomies that show the Search Engine Optimization meta box
 
 ### `slim_seo_schema_entities`
 
-Filters the list of schema entities, accepts one parameter - an array of schema entities. For usage, please see [Schema](https://wpslimseo.com/docs/schema/).
+Filters the list of schema entities, accepts one parameter - an array of schema entities. For usage, please see [Schema](/slim-seo/schema/).
 
 ### `slim_seo_schema_graph`
 
@@ -100,24 +100,24 @@ Changes the array of schema graph, accepts one parameter - the array of schema g
 
 ### `slim_seo_schema_{$context}_enable`
 
-Whether to enable a specific schema, the value must be a boolean. For usage, please see [Schema](https://wpslimseo.com/docs/schema/).
+Whether to enable a specific schema, the value must be a boolean. For usage, please see [Schema](/slim-seo/schema/).
 
 ### `slim_seo_schema_{$context}`
 
-Changes the array of properties for a specific schema, accepts one parameter - the array of schema properties. For usage, please see [Schema](https://wpslimseo.com/docs/schema/).
+Changes the array of properties for a specific schema, accepts one parameter - the array of schema properties. For usage, please see [Schema](/slim-seo/schema/).
 
 ### `slim_seo_sitemap_post_types`
 
-Filters the array of post types in the sitemap, accepts one parameter - an array of post types. By default, the plugin creates sitemap for all public post types. For usage, please see [XML Sitemap](https://wpslimseo.com/docs/xml-sitemap/).
+Filters the array of post types in the sitemap, accepts one parameter - an array of post types. By default, the plugin creates sitemap for all public post types. For usage, please see [XML Sitemap](/slim-seo/xml-sitemap/).
 
 ### `slim_seo_sitemap_taxonomies`
 
-Filters the array of taxonomies in the sitemap, accepts one parameter - an array of taxonomies. By default, the plugin creates sitemap for all public taxonomies. For usage, please see [XML Sitemap](https://wpslimseo.com/docs/xml-sitemap/).
+Filters the array of taxonomies in the sitemap, accepts one parameter - an array of taxonomies. By default, the plugin creates sitemap for all public taxonomies. For usage, please see [XML Sitemap](/slim-seo/xml-sitemap/).
 
 ### `slim_seo_sitemap_post_type_query_args`
 
-Changes the query arguments of post types in the sitemap, accepts one parameter - an array of query arguments. For usage, please see [XML Sitemap](https://wpslimseo.com/docs/xml-sitemap/).
+Changes the query arguments of post types in the sitemap, accepts one parameter - an array of query arguments. For usage, please see [XML Sitemap](/slim-seo/xml-sitemap/).
 
 ### `slim_seo_taxonomy_query_args`
 
-Changes the query arguments of taxonomies in the sitemap, accepts one parameter - an array of query arguments. For usage, please see [XML Sitemap](https://wpslimseo.com/docs/xml-sitemap/).
+Changes the query arguments of taxonomies in the sitemap, accepts one parameter - an array of query arguments. For usage, please see [XML Sitemap](/slim-seo/xml-sitemap/).

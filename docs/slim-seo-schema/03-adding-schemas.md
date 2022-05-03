@@ -56,7 +56,7 @@ Insert dynamic data for properties
 
 When clicking the **Insert** button, you'll see a popup with a list of supported dynamic variables for properties. You can search for them (by title) or simply click any of them to insert into the property value input box.
 
-Learn more about [dynamic variables](/docs/dynamic-variables/).
+Learn more about [dynamic variables](/slim-seo-schema/dynamic-variables/).
 
 ## Location
 

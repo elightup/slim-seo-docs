@@ -2,7 +2,7 @@
 title: Twitter Card Tags
 ---
 
-Like [Facebook Open Graph Tags](https://wpslimseo.com/docs/facebook-open-graph-tags/), Twitter uses a set of meta tags called Twitter Card to provide the Twitter crawler information about a page.
+Like [Facebook Open Graph Tags](/slim-seo/facebook-open-graph-tags/), Twitter uses a set of meta tags called Twitter Card to provide the Twitter crawler information about a page.
 
 Similar to Facebook Open Graph tags, Twitter Card tags are auto generated. Slim SEO uses [Summary Card with Large Image](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image.html), so the posts appear beautifully and more attractive on Twitter.
 

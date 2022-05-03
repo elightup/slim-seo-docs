@@ -13,7 +13,7 @@ To optimize the performance when generating sitemaps, the plugin splits the main
 
 The maximum number of links in a sitemap is 2000. You can use filters to change this number (see below).
 
-The posts and terms which are [manually set as `noindexed`](https://wpslimseo.com/docs/meta-robots-tag/) will be excluded in the sitemap.
+The posts and terms which are [manually set as `noindexed`](/slim-seo/meta-robots-tag/) will be excluded in the sitemap.
 
 ## Image Sitemap
 
@@ -48,7 +48,7 @@ add_filter( 'slim_seo_sitemap_post_types', function( $post_types ) {
 
 Excluding CPT from sitemap does **not** tell search engines to not index them. It’s simply doesn't send the post type's URLs to search engines. If search engines can discover posts in another way (by crawling your site), then they still can index them.
 
-To tell search engines to not index these posts, it’s better to use [the robots tag](https://wpslimseo.com/docs/meta-robots-tag/).
+To tell search engines to not index these posts, it’s better to use [the robots tag](/slim-seo/meta-robots-tag/).
 
 ## How to exclude a taxonomy from the sitemap?
 

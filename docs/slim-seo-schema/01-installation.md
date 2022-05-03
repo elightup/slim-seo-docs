@@ -4,7 +4,7 @@ title: Installation
 
 Slim SEO Schema is a WordPress plugin. Installing it is similar to installing any other WordPress plugin:
 
-- Go to [My Account](/my-account/) page and download the plugin's `.zip` file.
+- Go to [My Account](https://wpslimseo.com/my-account/) page and download the plugin's `.zip` file.
 - In your WordPress dashboard, go to **Plugins > Add New** and click the **Upload Plugin** button.
 - Select the downloaded `.zip` file to upload and click **Install Now** button.
 - Activate the plugin.
@@ -27,4 +27,4 @@ If you have Slim SEO activated, then you'll find Slim SEO Schema under the same 
 
 Slim SEO Schema with Slim SEO activated
 
-Now you need to [add license key](/docs/add-license-key/) to use the plugin.
+Now you need to [add license key](/slim-seo-schema/license/) to use the plugin.

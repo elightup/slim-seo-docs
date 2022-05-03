@@ -6,7 +6,7 @@ Slim SEO Schema has a deep integration with [Meta Box](https://metabox.io). The 
 
 ## Inserting Meta Box fields
 
-Click the three-dots button for a property to insert [dynamic variables](https://wpslimseo.com/docs/dynamic-variables/), all field groups registered in Meta Box will display:
+Click the three-dots button for a property to insert [dynamic variables](/slim-seo-schema/dynamic-variables/), all field groups registered in Meta Box will display:
 
 ![inserting meta box fields](https://i.imgur.com/i6NepXU.png)
 

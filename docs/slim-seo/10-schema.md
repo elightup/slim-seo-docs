@@ -31,7 +31,7 @@ These are global schemas that are outputted for every page:
     - Date modified (for singular pages)
     - Primary image of page (for singular pages)
     - Image (for singular pages)
-- [Breadcrumbs](https://wpslimseo.com/docs/breadcrumbs/)
+- [Breadcrumbs](/slim-seo/breadcrumbs/)
 
 For specific page types, the following schemas are outputted:
 
@@ -97,7 +97,7 @@ To disable the schema feature, please use the following code:
 ```
 add_action( 'slim_seo_init', function( $plugin ) {
      $plugin->disable( 'schema' );
-} ); 
+} );
 ```
 
 ### How to disable a specific schema?

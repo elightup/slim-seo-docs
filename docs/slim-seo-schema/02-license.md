@@ -8,4 +8,4 @@ Before using Slim SEO Schema plugin, you need to add your license key in the plu
 
 Add license key in Slim SEO Schema
 
-Then click **Save Changes** to validate the license key. If your license key is valid and your license is active, you can start [adding schemas](/docs/add-schemas/). Otherwise, you'll see a notification in the admin area to update the license key.
+Then click **Save Changes** to validate the license key. If your license key is valid and your license is active, you can start [adding schemas](/slim-seo-schema/adding-schemas/). Otherwise, you'll see a notification in the admin area to update the license key.
