@@ -18,6 +18,10 @@ const config = {
   projectName: 'slim-seo-docs', // Usually your repo name.
   titleDelimiter: '-',
 
+  plugins: [
+    './lightbox',
+  ],
+
   presets: [
     [
       'classic',
