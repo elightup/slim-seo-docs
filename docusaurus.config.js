@@ -39,10 +39,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Slim SEO Documentation',
         logo: {
           alt: 'Slim SEO Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-white.svg',
         },
         items: [
           {
@@ -65,44 +65,56 @@ const config = {
         ],
       },
       footer: {
+        logo: {
+          src: 'img/logo.svg',
+          srcDark: 'img/logo-white.svg',
+        },
         style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Account',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'My Account',
+                href: 'https://wpslimseo.com/my-account/',
+              },
+              {
+                label: 'Open a Support Ticket',
+                href: 'https://wpslimseo.com/my-account/support/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Company',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'About',
+                href: 'https://wpslimseo.com/about/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Privacy Policy',
+                href: 'https://wpslimseo.com/privacy-policy/',
+              },
+              {
+                label: 'Terms & Conditions',
+                href: 'https://wpslimseo.com/terms/',
+              },
+            ],
+          },
+          {
+            title: 'Connect With Us',
+            items: [
+              {
+                label: 'Facebook Group',
+                href: 'https://www.facebook.com/groups/slimseo',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                href: 'https://twitter.com/wpslimseo',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/elightup/docusaurus',
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UCDh7n12cD-ZILPHvKx9dOnw',
               },
             ],
           },
