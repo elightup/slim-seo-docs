@@ -37,7 +37,6 @@ These are the list of features that you can disable:
 | `sitemaps` | Sitemap |
 | `images_alt` | Image alt text |
 | `breadcrumbs` | Breadcrumbs |
-| `settings` | Plugin settings page |
 | `notification` | Plugin notification |
 | `auto_redirection` | Auto redirection |
 | `feed` | RSS Feed |
