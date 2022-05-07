@@ -2,9 +2,9 @@
 title: XML Sitemap
 ---
 
-Sitemap is always should be enabled. Slim SEO automatically generates XML sitemap (at `domain.com/sitemap.xml`) to submit to search engines. With XML sitemaps, your website is indexed fast and completely.
+The sitemap is always should be enabled. Slim SEO automatically generates an XML sitemap (at `domain.com/sitemap.xml`) to submit to search engines. With XML sitemaps, your website is indexed fast and completely.
 
-Slim SEO provides a styling for sitemap, which makes it look beautifully. See [demo here](/sitemap.xml).
+Slim SEO provides a styling for sitemap, which makes it look beautiful. See [demo here](https://wpslimseo.com/sitemap.xml).
 
 To optimize the performance when generating sitemaps, the plugin splits the main sitemap (sitemap index) into a list of smaller sitemaps:
 
@@ -19,9 +19,9 @@ The posts and terms which are [manually set as `noindexed`](/slim-seo/meta-robot
 
 Slim SEO also includes the image sitemap by default to make sure your images are discoverable by search engines.
 
-All the images that you insert in the post content are added in the image sitemap. So, when someone search for your images, they'll go to your posts to see the images.
+All the images that you insert in the post content are added in the image sitemap. So, when someone searches for your images, they'll go to your posts to see the images.
 
-The sitemap includes both self-hosted images and external images. Images in galleries or shortcodes are also parsed and included, too. For that reason, Slim SEO works with default WordPress gallery shortcode and other WordPress gallery plugins.
+The sitemap includes both self-hosted images and external images. Images in galleries or shortcodes are also parsed and included, too. For that reason, Slim SEO works with the default WordPress gallery shortcode and other WordPress gallery plugins.
 
 Please note that the image URLs are not visible to humans when you view the sitemap link. But they're there if you view the sitemap source code as they're made for search engines only.
 
@@ -33,7 +33,7 @@ The sitemap URL is automatically included in the `robots.txt` on your website if
 
 Slim SEO integrates well with multilingual plugins like **WPML** and **Polylang**.
 
-Instead of providing separated sitemap for different languages, the plugin adds `rel="alternate"` for each post or term in the sitemap. So, the sitemap becomes a **global sitemap for all languages**. When the search engines view the sitemap, it see multiple links for all languages for each post. These links are not visible to human, but you can see them when viewing the sitemap source.
+Instead of providing separated sitemaps for different languages, the plugin adds `rel="alternate"` for each post or term in the sitemap. So, the sitemap becomes a **global sitemap for all languages**. When the search engines view the sitemap, they see multiple links for all languages for each post. These links are not visible to humans, but you can see them when viewing the sitemap source.
 
 ## How to exclude a post type from the sitemap?
 
@@ -46,13 +46,13 @@ add_filter( 'slim_seo_sitemap_post_types', function( $post_types ) {
 } );
 ```
 
-Excluding CPT from sitemap does **not** tell search engines to not index them. It’s simply doesn't send the post type's URLs to search engines. If search engines can discover posts in another way (by crawling your site), then they still can index them.
+Excluding CPT from sitemap does **not** tell search engines to not index them. It simply doesn't send the post type's URLs to search engines. If search engines can discover posts in another way (by crawling your site), then they still can index them.
 
 To tell search engines to not index these posts, it’s better to use [the robots tag](/slim-seo/meta-robots-tag/).
 
 ## How to exclude a taxonomy from the sitemap?
 
-Similar to above, please use the following code:
+Similar to the above, please use the following code:
 
 ```
 add_filter( 'slim_seo_sitemap_taxonomies', function( $taxonomies ) {
@@ -83,7 +83,7 @@ The parameters are the same as in the `[WP_Query](https://developer.wordpress.or
 
 ## How to change the query for taxonomies in the sitemap?
 
-Similar to above, please use this snippet:
+Similar to the above, please use this snippet:
 
 ```
 add_filter( 'slim_seo_taxonomy_query_args', function( $query_args ) {
