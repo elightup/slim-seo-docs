@@ -78,17 +78,49 @@ Changes the value of robots index, accepts one parameter - a boolean value indic
 
 Changes the context of the Search Engine Optimization meta box, which can be `advanced`, `normal` (below post content) or `side` (on the sidebar). Accepts one parameter - the context value. Note that if your post type is using Gutenberg, then `advanced` and `normal` works exactly the same.
 
+Example: move the meta box to the sidebar:
+
+```php
+add_filter( 'slim_seo_meta_box_context', function() {
+	return 'side';
+} );
+```
+
 ### `slim_seo_meta_box_priority`
 
-Changes the priority of the Search Engine Optimization meta box, which can be `high`, `low`. The higher priority, the higher position of the meta box. Accepts one parameter - the priority value.
+Changes the priority of the Search Engine Optimization meta box, which can be "high", "low". The higher priority, the higher position of the meta box. Accepts one parameter - the priority value.
+
+Example: move the meta box to the bottom, i.e. set the priority to "low".
+
+```php
+add_filter( 'slim_seo_meta_box_priority', function() {
+	return 'low';
+} );
+```
 
 ### `slim_seo_meta_box_post_types`
 
 Changes the list of post types that show the Search Engine Optimization meta box. By default, the plugin shows the meta box for all public post types. Accepts one parameter - an array of post types.
 
+Example: don't show the meta box for "event" and "page"s post types.
+
+```php
+add_filter( 'slim_seo_meta_box_post_types', function( $post_types ) {
+	return array_diff( $post_types, ['event', 'page'] );
+} );
+```
+
 ### `slim_seo_meta_box_taxonomies`
 
 Changes the list of taxonomies that show the Search Engine Optimization meta box. By default, the plugin shows the meta box for all public taxonomies. Accepts one parameter - an array of taxonomies.
+
+Example: don't show the meta box for "post_tag".
+
+```php
+add_filter( 'slim_seo_meta_box_taxonomies', function( $taxonomies ) {
+	return array_diff( $taxonomies, ['post_tag'] );
+} );
+```
 
 ### `slim_seo_schema_entities`
 
