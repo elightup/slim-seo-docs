@@ -8,7 +8,7 @@ Sometimes, you want to set specific meta title and meta description for the home
 
 If you set your homepage a static page, then go to edit that static page, and you'll see the **Search Engine Optimization** meta box below the content, like other pages:
 
-![](https://i.imgur.com/D0DdbxS.png)
+![Manually set meta title and meta description for the homepage](https://i.imgur.com/D0DdbxS.png)
 
 And you can enter your meta title or meta description here.
 
@@ -20,4 +20,4 @@ In this case, by default, the plugin sets the site title for meta title and site
 
 If you want to change these values, please go to **Settings > SEO**, and you'll see a tab for **Homepage**, where you can enter the manual value for meta title and meta description:
 
-![](https://imgur.com/XSQpWKS.png)
+![Manually set meta title and meta description for the homepage](https://imgur.com/XSQpWKS.png)

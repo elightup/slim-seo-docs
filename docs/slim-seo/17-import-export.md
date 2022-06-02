@@ -10,9 +10,7 @@ We recommend using the plugin [WP All Export](https://wordpress.org/plugins/wp-a
 
 To start exporting the SEO data, go to **All Export > New Export**, select a post type, and click **Customize Export File**.
 
-![](https://i.imgur.com/s2bOGrM.png)
-
-Select a post type to export SEO data
+![Select a post type to export SEO data](https://i.imgur.com/s2bOGrM.png)
 
 ### Adding SEO fields
 
@@ -61,23 +59,19 @@ function ss_get_noindex( $value ) {
 
 Make sure you set it to run everywhere.
 
-![](https://i.imgur.com/c8ofRqf.png)
-
-Create helper export functions via Code Snippets plugin
+![Create helper export functions via Code Snippets plugin](https://i.imgur.com/c8ofRqf.png)
 
 ### Modifying exported fields
 
 Now go back to the export. Click the **slim_seo** field in the added area to edit it. Change the column name to **Meta Title** and click the checkbox **Export the value returned by a PHP function**, and then enter the function name **ss_get_title**.
 
-![](https://i.imgur.com/MZtEUjV.png)
+![Enter function name](https://i.imgur.com/MZtEUjV.png)
 
 Repeat the process for the other 4 fields: meta description, Facebook image, Twitter image, and noindex. Make sure you use the corresponding functions added in the previous step.
 
 After that, click the **Continue** button to start exporting. You'll get a CSV file like this:
 
-![](https://i.imgur.com/FbSeyeP.png)
-
-Export SEO data
+![Export SEO data](https://i.imgur.com/FbSeyeP.png)
 
 ## Importing SEO data
 
@@ -85,9 +79,7 @@ Similar to exporting SEO data, we recommend using [WP All Import](https://www.wp
 
 To importing data to Slim SEO, create a new import and configure other fields (title, content, etc.) as usual. In the **Custom Fields** panel, add a new field **slim_seo**. In the **Field options**, select **Serialized**. And then click the button **Click to specify** and set fields like this:
 
-![](https://i.imgur.com/FbGlbys.png?1)
-
-Specify Slim SEO fields in WP All Import
+![Specify Slim SEO fields in WP All Import](https://i.imgur.com/FbGlbys.png)
 
 This will import all 5 fields into a serialized field **slim_seo**, which is used by the plugin.
 

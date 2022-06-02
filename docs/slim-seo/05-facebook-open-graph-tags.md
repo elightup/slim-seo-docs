@@ -76,9 +76,7 @@ By default, Slim SEO uses the featured image as the thumbnail when sharing a sin
 
 However, if the featured image is not optimized for Facebook (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in tab **Social Settings** of the **Search Engine Optimization** meta box, below the content:
 
-![](https://i.imgur.com/FvOjc2X.png)
-
-Setting image when sharing on Facebook
+![Setting image when sharing on Facebook](https://i.imgur.com/FvOjc2X.png)
 
 The recommended size for image when sharing on Facebook is **1200x628** pixels (1.91:1 ratio).
 
@@ -94,6 +92,4 @@ Also please note that Facebook only supports images with format jpeg, gif, or pn
 
 When there's no image is specified in the **Search Engine Optimization** meta box above, and the post doesn't have a featured image, then the plugin will use the default sharing image, which is set in the **Settings > Slim SEO > Social**.
 
-![](https://i.imgur.com/WFeoHyi.png)
-
-Default social sharing image
+![Default social sharing image](https://i.imgur.com/WFeoHyi.png)

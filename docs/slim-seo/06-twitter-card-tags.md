@@ -26,8 +26,6 @@ However, if the featured image is not optimized for Twitter (for example, the si
 
 ![Select an image when sharing on Twitter](https://i.imgur.com/u8brOtt.png)
 
-Select an image when sharing on Twitter
-
 The recommended size for image when sharing on Twitter is **800x418** pixels.
 
 _Please note that if you set your homepage as a static page, then the plugin treats it like a normal page._

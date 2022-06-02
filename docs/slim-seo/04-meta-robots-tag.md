@@ -18,8 +18,6 @@ If you don't want a post or a term to be shown on search results page, simply se
 
 ![Don't show a page from search results](https://i.imgur.com/D0DdbxS.png)
 
-Search Engine Optimization meta box
-
 ## How to disable a post type from being indexed?
 
 If you want to block all posts of a post type from being indexed, use the following snippet:

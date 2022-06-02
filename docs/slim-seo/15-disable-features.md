@@ -6,9 +6,7 @@ Some features in Slim SEO like [auto redirection](/slim-seo/auto-redirection/) a
 
 To disable features, please go to **Settings > Slim SEO**, select tab **General** and you can deselect the features you don't want:
 
-![](https://i.imgur.com/qWrjGJS.png)
-
-Select the SEO features you want to enable/disable
+![Select the SEO features you want to enable/disable](https://i.imgur.com/qWrjGJS.png)
 
 Alternatively, you can disable the features by adding the following code into your theme's `functions.php` file:
 

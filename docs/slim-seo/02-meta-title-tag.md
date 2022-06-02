@@ -22,7 +22,7 @@ The title tag will have the following format:
 
 If you want to set custom meta title for a specific post or term, simply enter the text in the **Search Engine Optimization** meta box below the content area:
 
-![](https://i.imgur.com/D0DdbxS.png)
+![Edit meta title and meta description](https://i.imgur.com/D0DdbxS.png)
 
 You'll see the status icon showing if the description has a good length. The meta title should not be longer than **60 characters**.
 
@@ -125,7 +125,7 @@ By default, the plugin shows custom meta title and meta description in the admin
 
 Click the **Screen Options** button at the top right corner of the screen and toggle the checkboxes for Meta title and Meta description:
 
-![](https://i.imgur.com/N9oTreN.png)
+![Toggle columns via screen options](https://i.imgur.com/N9oTreN.png)
 
 This way, you show or hide the columns for the current user only. It's not applied to all users.
 

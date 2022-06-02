@@ -19,12 +19,8 @@ After installing, go to **Settings > Slim SEO** to access the plugin's settings 
 
 ![Slim SEO Schema settings page](https://i.imgur.com/NxHLY8J.png)
 
-Slim SEO Schema settings page
-
 If you have Slim SEO activated, then you'll find Slim SEO Schema under the same menu, but in a different tab:
 
 ![Slim SEO Schema with Slim SEO activated](https://i.imgur.com/YSD4s57.png)
-
-Slim SEO Schema with Slim SEO activated
 
 Now you need to [add license key](/slim-seo-schema/license/) to use the plugin.

@@ -21,8 +21,6 @@ If you want to set custom meta description for a specific post or term, simply e
 
 ![Edit meta description manually in Slim SEO](https://i.imgur.com/D0DdbxS.png)
 
-Search Engine Optimization meta box
-
 You'll see the status icon showing if the description has a good length. Note that, the manual meta description is not truncated. It's always shown as it is.
 
 _As the plugin supports shortcodes, you can simply add your own shortcodes here to output your custom dynamic content._
@@ -70,7 +68,7 @@ By default, the plugin shows custom meta title and meta description in the admin
 
 Click the **Screen Options** button at the top right corner of the screen and toggle the checkboxes for Meta title and Meta description:
 
-![](https://i.imgur.com/N9oTreN.png)
+![Toggle columns via screen options](https://i.imgur.com/N9oTreN.png)
 
 This way, you show or hide the columns for the current user only. It's not applied to all users.
 

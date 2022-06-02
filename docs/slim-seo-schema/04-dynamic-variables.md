@@ -6,8 +6,6 @@ Most properties are auto-filled with default values to save you time to enter or
 
 ![Insert dynamic data for properties](https://i.imgur.com/AjPAPBc.png)
 
-Insert dynamic data for properties
-
 When clicking the **Insert** button, you'll see a popup with a list of supported **dynamic variables** for properties. You can search for them (by title) or simply click any of them to insert into the property value input box.
 
 Dynamic variables have the format `{{ name }}`, where `name` is the variable name. You can insert multiple dynamic variables and/or custom text in the text box for the property value.
