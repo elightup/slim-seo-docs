@@ -99,6 +99,12 @@ The query parameters are the same as in the `[get_terms()](https://developer.wor
 
 The problem is that WordPress hasn't updated the permalink structure to recognize the sitemap URL. Please go to **Settings > Permalinks** and re-save the settings. Then check the sitemap URL again.
 
-## Core sitemaps in WordPress 5.5
+## Core sitemaps in WordPress
 
-Since version 5.5, WordPress includes sitemap functionality in the Core. Currently, the core sitemaps lack some features that Slim SEO provides such as image sitemaps. So we disable the core sitemaps feature in WordPress to avoid any conflict.
+Since version 5.5, WordPress includes sitemap functionality in the Core. However, the core sitemaps lack some features that Slim SEO provides:
+
+- Last modified date: it's very important to let search engines know whether to crawl your sites. It helps reduce the crawl rate, which then improves the server performance.
+- Image sitemap: if you want your site appears when people search for images. Images are included in the XML sitemap.
+- Multilingual sitemap: each entry in the sitemap has its versions in other languages, which lets search engines know to index multilingual URLs, and your site might appear when people search in another language.
+
+Because of these reasons, we disable the core sitemaps to avoid any conflict.
