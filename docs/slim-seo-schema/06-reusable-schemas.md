@@ -1,5 +1,5 @@
 ---
-title: Reusable schemas
+title: Connecting schemas
 ---
 
 While creating schemas, you might use the same data such as images or reviews. These repeated data can be separated into individual schemas and reused in other schemas.

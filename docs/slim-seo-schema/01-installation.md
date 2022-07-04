@@ -1,5 +1,6 @@
 ---
 title: Installation
+hide_table_of_contents: true
 ---
 
 Slim SEO Schema is a WordPress plugin. Installing it is similar to installing any other WordPress plugin:
