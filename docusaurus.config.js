@@ -55,7 +55,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ( {
       image: 'https://i0.wp.com/wpslimseo.com/wp-content/uploads/2020/07/slim-seo.png',
-      autoCollapseSidebarCategories: true,
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        }
+      },
       colorMode: {
         respectPrefersColorScheme: true,
       },
