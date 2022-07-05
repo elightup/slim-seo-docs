@@ -19,6 +19,12 @@ You can still insert the [dynamic variables](/slim-seo-schema/dynamic-variables/
 
 And the plugin will render the variables on the front end.
 
+:::tip
+
+Your custom JSON-LD code may contains `<script>` tag or only the JSON code. The plugin automatically detects that and works well in both cases.
+
+:::
+
 Using custom JSON-LD code with dynamic variables is a great and flexible way to control your schema output.
 
 After finish adding or editing JSON-LD code, don't forget to set the [location](/slim-seo-schema/adding-schemas/#location) for the schema.
