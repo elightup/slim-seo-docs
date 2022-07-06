@@ -2,7 +2,24 @@
 title: Import Export
 ---
 
-## Exporting SEO data
+## Migrating data from other SEO plugins
+
+Slim SEO allows you to migrate SEO data like meta title and meta description from other SEO plugins like Yoast SEO, AIO SEO, Rank Math or SEOPress. This helps you own the same data and be confident switching to Slim SEO.
+
+To migrate data, go to **Slim SEO > Tools**, select the SEO plugin you want to migrate from, and click the **Migrate** button:
+
+![Migrate data from other SEO plugins](https://i.imgur.com/27Hm0Dw.png)
+
+Slim SEO will do the migration and show you the progress. Don't leave the page until it's done or you'll have to start again.
+
+:::caution
+
+1. Before migrating data, make sure you have a backup of your website.
+1. You need to keep the original SEO plugin active to perform the migration, because we need to use some API/function from it.
+
+:::
+
+## Exporting SEO data to CSV/Excel
 
 We recommend using the plugin [WP All Export](https://wordpress.org/plugins/wp-all-export/) (the free version is enough) to export the SEO data from Slim SEO. Please follow these steps to do that:
 
@@ -73,7 +90,7 @@ After that, click the **Continue** button to start exporting. You'll get a CSV f
 
 ![Export SEO data](https://i.imgur.com/FbSeyeP.png)
 
-## Importing SEO data
+## Importing SEO data from CSV/Excel
 
 Similar to exporting SEO data, we recommend using [WP All Import](https://www.wpallimport.com/) plugin to do the job. However, to import custom fields data, you need to purchase the Pro version of the plugin. Note that to _export_ Slim SEO data, the free version of the WP All Export is enough.
 
