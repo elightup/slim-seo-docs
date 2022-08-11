@@ -35,7 +35,7 @@ add_filter( 'slim_seo_robots_index', function( $value ) {
 
 To disable some archive pages from being indexed, please use the following snippet (remember to update the conditions to match your need):
 
-```
+```php
 add_filter( 'slim_seo_robots_index', function( $value ) {
     // Disable for author archive page.
     if ( is_author() ) {
@@ -53,6 +53,19 @@ add_filter( 'slim_seo_robots_index', function( $value ) {
     }
 
     return $value;
+} );
+```
+
+## How to modify content of the robots meta tag
+
+If you're using WordPress 5.7 or below, use the following snippet to modify the content of the robots meta tag:
+
+```php
+add_filter( 'wp_robots', function( $robots ) {
+    $robots['noodp']  = true;
+	$robots['noydir'] = true;
+    
+    return $robots;
 } );
 ```
 
