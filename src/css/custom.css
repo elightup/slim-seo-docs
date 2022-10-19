@@ -27,6 +27,8 @@
 
   /* Code */
   --ifm-code-font-size: 87.5%;
+
+  --ifm-footer-logo-max-width: 10rem;
 }
 
 .docusaurus-highlight-code-line {
