@@ -1,6 +1,5 @@
 ---
 title: License
-hide_table_of_contents: true
 ---
 
 ## Adding a license key
