@@ -4,7 +4,7 @@ title: License
 
 ## Adding a license key
 
-Before using Slim SEO Link Manager, you need to add your license key in the plugin settings. Go to **Settings > Slim SEO** and click the **License** tab, then enter the license key in the input box:
+Before using Slim SEO Link Manager, you need to add your license key. Go to **Settings > Slim SEO** and click the **License** tab, then enter the license key in the input box:
 
 ![Add license key in Slim SEO Link Manager](https://i.imgur.com/OoBXzYV.png)
 

@@ -12,13 +12,13 @@ After that, the plugin will refresh and show you the current status of link scan
 
 ![Link scanning process status](https://i.imgur.com/MladUdi.png)
 
-In case you already ran the link scanning, and you want to scan again, go to **Tools** tab and you'll find the **Scan links** button there:
+In case you already ran the link scanning, and you want to scan again, go to the **Tools** tab and you'll find the **Scan links** button there:
 
 ![Run the scan links tool again](https://i.imgur.com/mbEry3A.png)
 
 :::caution
 
-The link scanning action will removes all existing link data and scans from the beginning.
+The link scanning action will remove all existing link data and scans from the beginning.
 
 :::
 

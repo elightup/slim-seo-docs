@@ -2,7 +2,7 @@
 title: Post links
 ---
 
-Besides the [reports](/slim-seo-link-manager/reports/), you can also see links of a specific post when editing it.
+Besides the [reports](/slim-seo-link-manager/reports/), you can also see links from/to a specific post when editing it.
 
 When editing a post, you'll see a meta box **Link Manager** below the post content as follows:
 
@@ -20,8 +20,8 @@ Each link has the following details:
 
 Name|Description
 ---|---
-Source|The source post/page that have the link
-Target|The target post/page. When hover the row, you'll see **Edit** and **View** link for the post/page.
+Source|The source post/page that has the link
+Target|The target post/page. When hovering the row, you'll see the **Edit** and **View** links for the post/page.
 Anchor text|The anchor text of the link. If it's an image, the image alt will be used.
 Follow|Whether the link is dofollow or nofollow.
 Status|The link HTTP status code.
@@ -38,9 +38,9 @@ To get link suggestions, click the **Link Suggestions** tab in the **Link Manage
 
 The plugin has 2 modes for link suggestions:
 
-- **Automatic**: automatic suggests other posts to link to **based on the keywords in the post title**. The plugin will find all posts that have the keywords in the post title and show it to you so you can link to them.
+- **Automatic**: automatically suggests other posts to link to **based on the keywords in the post title**. The plugin will find all posts that have the keywords in the post title and show them to you so you can link to them.
 - **Manual**: allows you to search for posts by keywords to link to. The plugin shows **most used words from the post content** that you can search faster by clicking on them.
 
-For each found post, the plugin will **suggest the paragraph that have the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
+For each found post, the plugin will **suggest the paragraph that has the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
 
 With this feature, you can **find related posts and link to them quickly**. When you add a link to another post, the link will be updated in the reports immediately (see the **Link reports** section above). It's a great way to build internal links and improve your website SEO!
