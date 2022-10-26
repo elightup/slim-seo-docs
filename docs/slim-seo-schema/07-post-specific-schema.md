@@ -1,6 +1,5 @@
 ---
 title: Post-specific schema
-hide_table_of_contents: true
 ---
 
 Besides setting up schemas in the Settings page, you can also set up schemas for individual posts and pages.

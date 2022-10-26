@@ -1,6 +1,5 @@
 ---
 title: Installation
-hide_table_of_contents: true
 ---
 
 Slim SEO Link Manager is a WordPress plugin. Installing it is similar to installing any other WordPress plugin:

@@ -1,6 +1,5 @@
 ---
 title: Scanning Links
-hide_table_of_contents: true
 ---
 
 After installing the plugin, you need to scan all posts to find links and their details. It's required to create reports in the plugin dashboard.
