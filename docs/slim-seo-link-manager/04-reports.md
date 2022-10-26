@@ -20,9 +20,7 @@ To see more links in the report, click **Load more**. Click **View all** to see 
 
 ![View more links in the report](https://i.imgur.com/jf8Ry53.png)
 
-### Viewing links to a page
-
-In this report, you can also see **which pages link to a specific page**. To do that, **click the corresponding row** in the report.
+To **view pages link to a specific page**. To do that, **click the corresponding row** in the report.
 
 ![Viewing links to a page](https://i.imgur.com/CsXrLMC.png)
 
@@ -34,6 +32,8 @@ Source|The source post/page that have the link to the current page.
 Anchor text|The anchor text of the link. If it's an image, the image alt will be used.
 Follow|Whether the link is dofollow or nofollow.
 Status|The link HTTP status code.
+
+When hover the row, you'll see **View** and **Edit** post links, where you can click to view and update the post.
 
 ## Link statuses
 
@@ -52,9 +52,7 @@ To see more links in the report, click **Load more**. Click **View all** to see 
 
 ![View more statuses in the report](https://i.imgur.com/7BAVutu.png)
 
-### Viewing links with a specific status
-
-To view all links that have a specific status, **click the corresponding row** in the report.
+To **view all links that have a specific status**, **click the corresponding row** in the report.
 
 ![Viewing links with a status](https://i.imgur.com/0M3gBfu.png)
 
@@ -68,4 +66,58 @@ Anchor text|The anchor text of the link. If it's an image, the image alt will be
 Follow|Whether the link is dofollow or nofollow.
 Status|The link HTTP status code.
 
-When hover the row, you'll see
+When hover the row, you'll see **View** and **Edit** post links, where you can click to view and update the post.
+
+## Top External Links
+
+This report shows you the **external URLs that are linked to the most**.
+
+![Top external links report](https://i.imgur.com/80NxrwW.png)
+
+Each line in this report shows you the external URL and the number of links to it.
+
+It's very helpful to know which sites you link to, which status of the links (dofollow or nofollow), so you can control the page rank passing.
+
+To see more links in the report, click **Load more**. Click **View all** to see the full report, which list all URLs with the number of links for each of them.
+
+![View more external URLs](https://i.imgur.com/XXSq65s.png)
+
+To **view all pages that have a specific external link**, **click the corresponding row** in the report.
+
+![Viewing pages with an external link](https://i.imgur.com/Mvx3j71.png)
+
+On the new screen, you'll see the following details of each link:
+
+Name|Description
+---|---
+Source|The source post/page that have the link.
+Anchor text|The anchor text of the link. If it's an image, the image alt will be used.
+Follow|Whether the link is dofollow or nofollow.
+Status|The link HTTP status code.
+
+## Top keywords
+
+This report shows you the **keywords that are used the most as anchor text**. It counts keywords for both internal and external links.
+
+![Top keywords report](https://i.imgur.com/8MReza8.png)
+
+Each line in the report shows you the keyword and the number of links that use this keyword as the anchor text.
+
+Anchor text is very important because it gives the search engines the context and the meaning of the link. Based on that, search engines will understand the content of the target URL to see if it's relevant to the current page or not. With this report, you'll see all the anchor text you're using, and fix them if needed.
+
+To see more keywords in the report, click **Load more**. Click **View all** to see the full report, which list all keywords with the number of links that use the keywords as the anchor text.
+
+![Viewing more keywords in the report](https://i.imgur.com/ARSJxmb.png)
+
+To **view all links (and the corresponding pages) that use a specific keyword as the anchor text**, **click the corresponding row** in the report.
+
+![Viewing links with a keyword](https://i.imgur.com/qbDoKik.png)
+
+On the new screen, you'll see the following details of each link:
+
+Name|Description
+---|---
+Source|The source post/page that have the link.
+Target|The target URL, which can be internal or external. If it's an internal link, the page title will be displayed. Otherwise, the external URL will be displayed.
+Follow|Whether the link is dofollow or nofollow.
+Status|The link HTTP status code.
