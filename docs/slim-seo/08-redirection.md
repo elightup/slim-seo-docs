@@ -8,11 +8,11 @@ Redirection is an important feature, which helps you to redirect broken pages, u
 
 Go to **Settings > Slim SEO** and select the **Redirection** tab, then click **Add Redirect** button:
 
-![add a new redirect](https://i.imgur.com/cge2Rk3.png)
+![add a new redirect](https://i.imgur.com/3Ma54kd.png)
 
 A new popup will appear that lets you enter the redirect details:
 
-![redirect settings](https://i.imgur.com/FnJ9Rm1.png)
+![redirect settings](https://i.imgur.com/UmRg1Ue.png)
 
 After entering the redirect details, click the **Add Redirect** button to finish. After that, the redirect will appear in the redirect table.
 
@@ -25,6 +25,7 @@ From URL|The URL you want to redirect. You can set a rule for an exact URL, or i
 To URL|The destination URL that you want to redirect to.
 Note|Something that reminds you about this redirection rule.
 Enable|Whether this redirect is active or not. If not active, no redirections will perform.
+Ignore parameters|Turn ON if you don't need the requested URL has to be matched querystring parameters with From URL.
 
 ### Redirect type
 
@@ -49,7 +50,7 @@ path/to/url
 path/to/url/
 ```
 
-All these formats will be converted to a standard format of `/path/to/url`. The process of converting URL to a standard format is called **normalization** and it is used to compare/match the from URL and the requested URL.
+All these formats will be converted to a standard format of `path/to/url`. The process of converting URL to a standard format is called **normalization** and it is used to compare/match the from URL and the requested URL.
 
 Besides, you can select how the plugin matches the URL:
 
@@ -65,13 +66,13 @@ A wonderful feature of Slim SEO is that the plugin helps you **monitor 404 pages
 
 ### Enabling 404 logs
 
-To enable 404 logging, go to tab **Settings** and select **Enable 404 log**:
+To enable 404 logging, go to tab **Settings** and select **Enable 404 logs**:
 
-![enable to log 404 pages](https://i.imgur.com/qKl9OWC.png)
+![enable to log 404 pages](https://i.imgur.com/s1sjmOf.png)
 
 After clicking the **Save Changes** button, you'll see the **404 Logs** tab, where you can see all 404 pages.
 
-![list of 404 pages](https://i.imgur.com/xpIYnDv.png)
+![list of 404 pages](https://i.imgur.com/xaZatgU.png)
 
 Each 404 page has the following details:
 
@@ -81,19 +82,19 @@ URL|The 404 URL that users visit.
 Hit|The number of visits that URL has.
 Created at|The first time the URL is visited.
 Updated at|The last time the URL is visited.
-Actions|Actions you can do for this URL. Here you can add a redirect for it.
+Actions|Actions you can do for this URL. Here you can add a redirect for it or delete it.
 
 The plugin allows you to **sort the table** by "hit", "created at" and "updated at" columns.
 
 ### Creating redirects for 404 pages
 
-When an URL is visited many times, it's best to create a redirect for it. To do that, click the **Add Redirect** link in the **Actions** column.
+When an URL is visited many times, it's best to create a redirect for it. To do that, click the **Add Redirect icon** in the **Actions** column.
 
-![add a redirect for a 404 link](https://i.imgur.com/mcaA92j.png)
+![add a redirect for a 404 link](https://i.imgur.com/PRu4tcZ.png)
 
 A popup will appear that helps you to create a redirect. It's similar to add a redirect manually, except that the **From URL** is **auto filled by the 404 URL**.
 
-![enter redirect details for a 404 link](https://i.imgur.com/DfmWKHJ.png)
+![enter redirect details for a 404 link](https://i.imgur.com/kywAzvB.png)
 
 Enter the **To URL** and click **Add Redirect** button to finish.
 
@@ -101,7 +102,7 @@ Enter the **To URL** and click **Add Redirect** button to finish.
 
 When enabling 404 logs, the plugin will create a table in the database to store the 404 URL details. If you don't want to log 404, then you might want to delete this table to keep your database clean. To do that, click the **Delete 404 logs table**:
 
-![delete 404 log table](https://i.imgur.com/qkmM0zX.png)
+![delete 404 log table](https://i.imgur.com/9GUH8G7.png)
 
 :::info
 
@@ -129,10 +130,11 @@ Another case is if **authors have no posts**, their page will be empty. Thus, in
 
 Besides manual and auto redirections, the plugin provides some settings for other usual redirections. You can find these settings under the **Settings** tab.
 
-![other redirection settings](https://i.imgur.com/ERJaS2M.png)
+![other redirection settings](https://i.imgur.com/eMl4gpJ.png)
 
 Setting|Description
 ---|---
 Force trailing slash|Ensures all URLs on your site have the same format - with or without trailing slash (`/`), and redirect the other format to the correct one.
 Redirect www|Helps you to redirect non-www to www or vice-versa.
+Auto delete 404 logs|Automatically delete old logs after a specific time (a week, a month).
 Redirect all 404 URLs|Redirects all 404 URLs to your homepage or a specific URL. Note that if you already have a redirect for a 404 URL, then that redirect will take a higher priority and will be used.
