@@ -12,7 +12,7 @@ Go to **Settings > Slim SEO** and select the **Redirection** tab, then click **A
 
 A new popup will appear that lets you enter the redirect details:
 
-![redirect settings](https://i.imgur.com/UmRg1Ue.png)
+![redirect settings](https://i.imgur.com/E6laZ26.png)
 
 After entering the redirect details, click the **Add Redirect** button to finish. After that, the redirect will appear in the redirect table.
 
