@@ -8,7 +8,11 @@ Slim SEO outputs schema data via JSON-LD in a single `<script>` tag in the foote
 
 For example, if you're on a single post, the plugin can tell search engines about the main entity of the page is an article, which has an author and belongs to a webpage of an organization. The webpage has a breadcrumb list, and belongs to a website, which has a search box. This way, search engines not only understand about the content of article, but also author, organization and the website structure.
 
-**Note:** the free version of Slim SEO has supports for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/).
+:::tip Advanced Schema
+
+The free version of Slim SEO has supports for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/).
+
+:::
 
 ## Supported Schema Types
 
