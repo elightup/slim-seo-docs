@@ -330,3 +330,12 @@ summary {
 .footer__item {
   font-size: var(--ifm-h5-font-size);
 }
+
+/* Announcement bar */
+#__docusaurus [class*="announcementBar"] {
+  padding: 5px 0;
+  height: auto;
+}
+[class*="announcementBar"] > div {
+  font-size: var(--ifm-h5-font-size);
+}
