@@ -26,9 +26,23 @@ If you want to set custom meta title for a specific post or term, simply enter t
 
 You'll see the status icon showing if the description has a good length. The meta title should not be longer than **60 characters**.
 
-Note that, the manual meta title is not truncated. It's always shown as it is.
+:::tip Shortcodes are allowed
 
-_As the plugin supports shortcodes, you can simply add your own shortcodes here to output your custom dynamic content._
+Slim SEO supports shortcodes in the meta title and meta description, you can add your own shortcodes here to output your custom dynamic content.
+
+:::
+
+:::caution Manual meta title
+
+When you enter the manual meta title, they'll be used as they are. They won't be appended with the site title.
+
+:::
+
+:::caution Homepage settings
+
+If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage won't be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
+
+:::
 
 ## How to change the meta title with code?
 
@@ -49,21 +63,19 @@ Note that using filter will have the highest priority, e.g. it will overwrite th
 
 ```
 add_filter( 'slim_seo_meta_title', function( $title ) {
-    // Detect if a single post has manual meta title.
-    if ( is_singular() ) {
+    if ( is_single( 24 ) ) {
+		// Detect if a single post has manual meta title.
         $slim_meta = get_post_meta( get_the_ID(), 'slim_seo', true );
         if ( ! empty( $slim_meta['title'] ) ) {
             return $slim_meta['title'];
         }
-    }
 
-    // Change the meta title in other cases;
+		$title = get_post_meta( get_the_ID(), 'field_id', true );
+    }
 
     return $title;
 } );
 ```
-
-_Please note that if you set your homepage as a static page, then the plugin treats it like a normal page._
 
 ## How to auto append site title to the manual meta title
 

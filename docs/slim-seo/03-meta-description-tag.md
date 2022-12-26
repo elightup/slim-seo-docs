@@ -21,9 +21,25 @@ If you want to set custom meta description for a specific post or term, simply e
 
 ![Edit meta description manually in Slim SEO](https://i.imgur.com/D0DdbxS.png)
 
-You'll see the status icon showing if the description has a good length. Note that, the manual meta description is not truncated. It's always shown as it is.
+You'll see the status icon showing if the description has a good length.
 
-_As the plugin supports shortcodes, you can simply add your own shortcodes here to output your custom dynamic content._
+:::tip Shortcodes are allowed
+
+Slim SEO supports shortcodes in the meta title and meta description, you can add your own shortcodes here to output your custom dynamic content.
+
+:::
+
+:::caution Manual meta description
+
+When you enter the manual meta description, they'll be used as they are. They won't be truncated.
+
+:::
+
+:::caution Homepage settings
+
+If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage won't be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
+
+:::
 
 ## How to change the meta description?
 
@@ -44,21 +60,19 @@ Note that using filter will have the highest priority, e.g. it will overwrite th
 
 ```
 add_filter( 'slim_seo_meta_description', function( $description ) {
-    // Detect if a single post has manual meta description.
-    if ( is_singular() ) {
+    if ( is_single( 24 ) ) {
+		// Detect if a single post has manual meta description.
         $slim_meta = get_post_meta( get_the_ID(), 'slim_seo', true );
         if ( ! empty( $slim_meta['description'] ) ) {
             return $slim_meta['description'];
         }
-    }
 
-    // Change the meta description in other cases;
+        $description = get_post_meta( get_the_ID(), 'field_id', true );
+    }
 
     return $description;
 } );
 ```
-
-_Please note that if you set your homepage as a static page, then the plugin treats it like a normal page._
 
 ## How to hide SEO columns
 
