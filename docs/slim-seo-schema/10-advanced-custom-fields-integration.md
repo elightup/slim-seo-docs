@@ -69,6 +69,7 @@ The format of dynamic variables for sub-fields in flexible content is:
 ```
 {{ acf.flexible_content_name.layout_name.group_name.field_name }}
 {{ acf.flexible_content_name.layout_name.field_name }}
+```
 
 ## Field values
 
