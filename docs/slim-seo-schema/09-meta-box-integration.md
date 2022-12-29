@@ -22,7 +22,7 @@ Dynamic variables for Meta Box fields have the following format:
 
 Inserting sub-group fields has no difference from inserting normal fields. Simply select it from the list. Slim SEO Schema already formats sub-fields indented for you to easily know which fields are group and which fields are sub-fields.
 
-In the screenshot above, Price, Currency, and Valid until are sub-fields of the group Offers.
+In the screenshot below, Price, Currency, and Valid until are sub-fields of the group Offers.
 
 ![Inserting sub-group fields](https://i.imgur.com/0dVI84m.png)
 
