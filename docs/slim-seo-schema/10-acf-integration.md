@@ -1,8 +1,8 @@
 ---
-title: Advanced Custom Fields Integration
+title: ACF Integration
 ---
 
-Slim SEO Schema has a deep integration with [Advanced Custom Fields (ACF)](https://www.advancedcustomfields.com/). The integration allows you to insert ACF fields into schema properties easily. It works with normal fields, groups, repeaters and flexible content.
+Slim SEO Schema has a deep integration with [Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF). The integration allows you to insert ACF fields into schema properties easily. It works with normal fields, groups, repeaters and flexible content.
 
 ## Inserting ACF fields
 
@@ -58,7 +58,7 @@ Then when parsing these fields for the Review schema, you'll have 3 reviews:
 
 ## Inserting fields in a flexible content
 
-Inserting fields in a flexible content field type has no difference from inserting fields in a group. 
+Inserting fields in a flexible content field type has no difference from inserting fields in a group.
 
 In the screenshot below, country is a sub-field of the flexible content Stores.
 
