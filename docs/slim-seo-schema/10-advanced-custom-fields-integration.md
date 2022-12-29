@@ -47,7 +47,7 @@ When you insert sub-fields from a repeater (like inserting Name and Value from t
 
 For example, if you enter the value for Reviews for a post like this:
 
-![Enter value for posts](https://i.imgur.com/pIrrMAG.png)
+![Enter value for posts](https://i.imgur.com/17aToKZ.png)
 
 Enter values for ACF fields for a post
 
