@@ -4,7 +4,7 @@ title: Meta Title Tag
 
 You don't need to configure meta title tag. WordPress already has this featured! All we need to do is add theme support for `title-tag`.
 
-```
+```php
 add_theme_support( 'title-tag' );
 ```
 
@@ -50,7 +50,7 @@ If you want to change the title, please use the `slim_seo_meta_title` filter.
 
 The following code changes the meta title for a single post with ID = 24. The title is get via a custom field:
 
-```
+```php
 add_filter( 'slim_seo_meta_title', function( $title ) {
     if ( is_single( 24 ) ) {
         $title = get_post_meta( get_the_ID(), 'field_id', true );
@@ -61,13 +61,13 @@ add_filter( 'slim_seo_meta_title', function( $title ) {
 
 Note that using filter will have the highest priority, e.g. it will overwrite the meta title you enter manually. To avoid that, you can check if the post has manual meta title and change the title only when it doesn't:
 
-```
+```php
 add_filter( 'slim_seo_meta_title', function( $title ) {
     if ( is_single( 24 ) ) {
 		// Detect if a single post has manual meta title.
-        $slim_meta = get_post_meta( get_the_ID(), 'slim_seo', true );
-        if ( ! empty( $slim_meta['title'] ) ) {
-            return $slim_meta['title'];
+        $meta = get_post_meta( get_the_ID(), 'slim_seo', true );
+        if ( ! empty( $meta['title'] ) ) {
+            return $meta['title'];
         }
 
 		$title = get_post_meta( get_the_ID(), 'field_id', true );
@@ -81,16 +81,13 @@ add_filter( 'slim_seo_meta_title', function( $title ) {
 
 When entering meta title, the plugin uses that meta title "as it is". It doesn't append the " - Site title" part at the end, so you might need to enter that manually to keep the format "Page title - Site title". In case you want to do that automatically, please use this code snippet:
 
-```
+```php
 add_filter( 'slim_seo_meta_title', function( $title ) {
     if ( ! is_singular() ) {
         return $title;
     }
-    $slim_seo = get_post_meta( get_the_ID(), 'slim_seo', true );
-    if ( empty( $slim_seo['title'] ) ) {
-        return $title;
-    }
-    return $slim_seo['title'] . ' - ' . get_bloginfo( 'name' );
+    $meta = get_post_meta( get_the_ID(), 'slim_seo', true );
+    return empty( $meta['title'] ) ? $title : $meta['title'] . ' - ' . get_bloginfo( 'name' );
 } );
 ```
 
@@ -98,7 +95,7 @@ add_filter( 'slim_seo_meta_title', function( $title ) {
 
 By default, WordPress uses a dash (-) as the separator in the meta title. To change that, please use this snippet:
 
-```
+```php
 add_filter( 'document_title_separator', function() {
     return '|'; // Replace with your custom separator.
 } );
@@ -108,25 +105,19 @@ add_filter( 'document_title_separator', function() {
 
 By default, WordPress and Slim SEO shows the "Page title - Site title" for all pages except the front page. If you want to reverse this order to put the site title first, please use this snippet:
 
-```
+```php
 add_filter( 'document_title_parts', function( $parts ) {
-	if ( is_front_page() ) {
-		return $parts;
-	}
-
-	$parts = array_merge( [
-		'tagline' => '',
-		'page'    => '',
-		'site'    => '',
-	], $parts );
-
-	return array_filter( [
-		'site'    => $parts['site'],
-		'tagline' => $parts['tagline'],
-		'title'   => $parts['title'],
-		'page'    => $parts['page'],
+	return is_front_page() ? $parts : array_filter( [
+		'site'  => $parts['site'],
+		'title' => $parts['title'],
+		'page'  => $parts['page'] ?? '',
 	] );
 } );
+
+// For preview in the admin.
+add_filter( 'slim_seo_title_parts', function( $parts, $type ) {
+	return $type === 'home' ? $parts : [ 'site', 'title' ];
+}, 10, 2 );
 ```
 
 ## How to hide SEO columns
@@ -141,11 +132,11 @@ Click the **Screen Options** button at the top right corner of the screen and to
 
 This way, you show or hide the columns for the current user only. It's not applied to all users.
 
-### Hide the columns completely with code
+### Hide the columns with code
 
 To hide the columns completely for all users, please use this snippet:
 
-```
+```php
 // Hide for 'post'
 add_filter( 'manage_post_posts_columns', 'prefix_hide_seo_columns', 20 );
 // Hide for a post type 'movie'
@@ -167,7 +158,7 @@ function prefix_hide_seo_columns( $columns ) {
 
 In some cases, where you want only admins can change the meta title, meta description or other SEO settings, then use this snippet to hide the SEO settings meta box from other user roles:
 
-```
+```php
 // Hide SEO settings meta box for posts.
 add_action( 'add_meta_boxes', function() {
 	if ( current_user_can( 'manage_options' ) ) {
