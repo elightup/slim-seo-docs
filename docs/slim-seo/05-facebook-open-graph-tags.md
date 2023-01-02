@@ -27,60 +27,24 @@ Slim SEO supports the following Open Graph tags:
 | `og:updated_time` | Article updated time: same as article modified time. |
 | `article:section` | Article section: post category (the first one). |
 | `article:tag` | Article tags: post tags. |
-| `article:author` | Article author name |
 
 See [list of all available Open Graph tags supported by Facebook](https://developers.facebook.com/docs/sharing/webmasters).
-
-## How to add/remove an Open Graph tag
-
-If you want to remove an Open Graph tag from the list, please use the following snippet:
-
-```
-add_filter( 'slim_seo_open_graph_tags', function( $tags ) {
-    return array_diff( $tags, ['article:published_time', 'article:modified_time'] );
-} );
-```
-
-The snippet above removes the `article:publish_time` and `article:modified_time` tags. You can add it to your theme's `functions.php` or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin to run it.
-
-## How to change value of an Open Graph tag
-
-To change the value of an open graph tag (for example `og:type`) for a specific post, use the following snippet:
-
-```
-add_filter( 'slim_seo_open_graph_type', function( $value, $tag ) {
-    if ( is_post( 123 ) ) {
-        $value = 'product';
-    }
-    return $value;
-}, 10, 2 );
-```
-
-The filter name is `slim_seo_open_graph_{$tag_short_name}`, where the tag short name strips `og:` and replaces `:` with `_` in the tag. For example: `title` for `og:title` and `article_author` for `article:author`.
-
-## How to add custom Open Graph tag
-
-Please use the following snippet:
-
-```
-add_action( 'wp_head', function() {
-    if ( is_post( 123 ) ) {
-         echo '<meta property="tag_name" content="tag_value">';
-    }
-} );
-```
 
 ## How to change the image when sharing on Facebook?
 
 By default, Slim SEO uses the featured image as the thumbnail when sharing a single post/page/term on Facebook.
 
-However, if the featured image is not optimized for Facebook (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in tab **Social Settings** of the **Search Engine Optimization** meta box, below the content:
+However, if the featured image is not optimized for Facebook (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in the **Search Engine Optimization** meta box, below the content:
 
-![Setting image when sharing on Facebook](https://i.imgur.com/FvOjc2X.png)
+![Change the image when sharing on Facebook](https://i.imgur.com/judjFm9.png)
 
-The recommended size for image when sharing on Facebook is **1200x628** pixels (1.91:1 ratio).
+The recommended size for image when sharing on Facebook is **1200x630** pixels (1.91:1 ratio).
 
-_Please note that if you set your homepage as a static page, then the plugin treats it like a normal page._
+:::caution Homepage settings
+
+If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage won't be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
+
+:::
 
 ## My image doesn't appear on Facebook
 
@@ -92,4 +56,43 @@ Also please note that Facebook only supports images with format jpeg, gif, or pn
 
 When there's no image is specified in the **Search Engine Optimization** meta box above, and the post doesn't have a featured image, then the plugin will use the default sharing image, which is set in the **Settings > Slim SEO > Social**.
 
-![Default social sharing image](https://i.imgur.com/WFeoHyi.png)
+![Default social sharing image](https://i.imgur.com/H1VmiH9.png)
+
+## How to add/remove an Open Graph tag
+
+If you want to remove an Open Graph tag from the list, please use the following snippet:
+
+```php
+add_filter( 'slim_seo_open_graph_tags', function( $tags ) {
+    return array_diff( $tags, ['article:published_time', 'article:modified_time'] );
+} );
+```
+
+The snippet above removes the `article:publish_time` and `article:modified_time` tags. You can add it to your theme's `functions.php` or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin to run it.
+
+## How to change value of an Open Graph tag
+
+To change the value of an open graph tag (for example `og:type`) for a specific post, use the following snippet:
+
+```php
+add_filter( 'slim_seo_open_graph_type', function( $value, $tag ) {
+    if ( is_post( 123 ) ) {
+        $value = 'product';
+    }
+    return $value;
+}, 10, 2 );
+```
+
+The filter name is `slim_seo_open_graph_{$tag_name}`, where the tag name strips `og:` and replaces `:` with `_` in the tag. For example: `title` for `og:title` and `article_section` for `article:section`.
+
+## How to add custom Open Graph tag
+
+Please use the following snippet:
+
+```php
+add_action( 'wp_head', function() {
+    if ( is_post( 123 ) ) {
+         echo '<meta property="tag_name" content="tag_value">';
+    }
+} );
+```

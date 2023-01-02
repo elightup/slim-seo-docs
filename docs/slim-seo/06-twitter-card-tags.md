@@ -22,10 +22,24 @@ Instead, Slim SEO only output needed tags. Here is the reference:
 
 By default, Slim SEO uses the featured image as the thumbnail when sharing a single post/page/term on Twitter.
 
-However, if the featured image is not optimized for Twitter (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in tab **Social Settings** of the **Search Engine Optimization** meta box, below the content:
+However, if the featured image is not optimized for Twitter (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in the **Search Engine Optimization** meta box, below the content:
 
-![Select an image when sharing on Twitter](https://i.imgur.com/u8brOtt.png)
+![Change the image when sharing on Twitter](https://i.imgur.com/UnSVyqL.png)
 
-The recommended size for image when sharing on Twitter is **800x418** pixels.
+The recommended size for image when sharing on Twitter is **1200x600** pixels.
 
-_Please note that if you set your homepage as a static page, then the plugin treats it like a normal page._
+:::caution Homepage settings
+
+If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage won't be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
+
+:::
+
+## How to change Twitter image programmatically?
+
+To change the Twitter image with code, please use this snippet:
+
+```php
+add_filter( 'slim_seo_twitter_card_image', function( $image ) {
+	return 'https://domain.com/path/to/image.jpg';
+} );
+```
