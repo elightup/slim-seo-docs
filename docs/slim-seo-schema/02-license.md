@@ -1,11 +1,10 @@
 ---
 title: License
-hide_table_of_contents: true
 ---
 
 ## Adding a license key
 
-Before using Slim SEO Schema, you need to add your license key in the plugin settings. Go to **Settings > Slim SEO** and click the **License** tab, then enter the license key in the input box:
+Before using Slim SEO Schema, you need to add your license key. Go to **Settings > Slim SEO** and click the **License** tab, then enter the license key in the input box:
 
 ![Add license key in Slim SEO Schema](https://i.imgur.com/x3zCnv6.png)
 

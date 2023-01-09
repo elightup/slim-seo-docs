@@ -89,6 +89,12 @@ const config = {
             label: 'Slim SEO Schema',
           },
           {
+            type: 'doc',
+            docId: 'slim-seo-link-manager/installation',
+            position: 'left',
+            label: 'Slim SEO Link Manager',
+          },
+          {
             href: 'https://www.facebook.com/groups/slimseo',
             label: 'Community',
             position: 'right',

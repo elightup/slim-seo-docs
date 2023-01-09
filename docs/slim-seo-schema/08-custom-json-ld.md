@@ -1,6 +1,5 @@
 ---
 title: Custom JSON-LD
-hide_table_of_contents: true
 ---
 
 If you're an advanced user and want to add and edit schemas with custom JSON-LD code, then Slim SEO Schema has that for you.
