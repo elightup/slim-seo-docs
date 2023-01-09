@@ -64,7 +64,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: 'Need to optimize structured data for your sites? Check out our new plugin <a target="_blank" rel="noopener noreferrer" href="https://wpslimseo.com/slim-seo-schema/"><strong>Slim SEO Schema</strong></a>!',
+        content: '<strong>🔥 HOT:</strong> New plugin released: <a target="_blank" rel="noopener noreferrer" href="https://wpslimseo.com/slim-seo-link-manager/"><strong>Slim SEO Link Manager</strong></a> - Build internal links easier!',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
