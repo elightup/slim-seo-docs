@@ -71,3 +71,7 @@ If you want to output the breadcrumbs in your theme, add the following snippet i
 ```php
 echo do_shortcode( '[slim_seo_breadcrumbs]' );
 ```
+
+### Breadcrumbs schema
+
+Slim SEO automatically creates [a schema](/slim-seo/schema/) for breadcrumbs. The breadcrumbs schema inherits all the settings in the shortcode. So if you output the shortcode in your theme, all links in the breadcrumbs are parsed, and the schema will use these links again.
