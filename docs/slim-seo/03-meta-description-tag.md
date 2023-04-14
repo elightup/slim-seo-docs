@@ -47,31 +47,31 @@ If you want to change the meta description, please use the `slim_seo_meta_descri
 
 The following code change the description of a post with ID = 24. The description is set via a custom field:
 
-```
-add_filter( 'slim_seo_meta_description', function ( $description ){
-    if ( is_single( 24 ) ) {
-        $description = get_post_meta( get_the_ID(), 'field_id', true );
+```php
+add_filter( 'slim_seo_meta_description', function ( $description, $object_id ) {
+    if ( get_post_type( $object_id ) === 'movie' ) {
+        $description = get_post_meta( $object_id, 'movie_desc', true );
     }
     return $description;
-} );
+}, 10, 2 );
 ```
 
 Note that using filter will have the highest priority, e.g. it will overwrite the meta description you enter manually. To avoid that, you can check if the post has manual meta description and change the description only when it doesn't:
 
-```
-add_filter( 'slim_seo_meta_description', function( $description ) {
-    if ( is_single( 24 ) ) {
+```php
+add_filter( 'slim_seo_meta_description', function ( $description, $object_id ) {
+    if ( get_post_type( $object_id ) === 'movie' ) {
 		// Detect if a single post has manual meta description.
-        $slim_meta = get_post_meta( get_the_ID(), 'slim_seo', true );
+        $slim_meta = get_post_meta( $object_id, 'slim_seo', true );
         if ( ! empty( $slim_meta['description'] ) ) {
             return $slim_meta['description'];
         }
 
-        $description = get_post_meta( get_the_ID(), 'field_id', true );
+        $description = get_post_meta( $object_id, 'movie_desc', true );
     }
 
     return $description;
-} );
+}, 10, 2 );
 ```
 
 ## How to hide SEO columns
@@ -90,7 +90,7 @@ This way, you show or hide the columns for the current user only. It's not appli
 
 To hide the columns completely for all users, please use this snippet:
 
-```
+```php
 // Hide for 'post'
 add_filter( 'manage_post_posts_columns', 'prefix_hide_seo_columns', 20 );
 // Hide for a post type 'movie'
@@ -112,7 +112,7 @@ function prefix_hide_seo_columns( $columns ) {
 
 In some cases, where you want only admins can change the meta title, meta description or other SEO settings, then use this snippet to hide the SEO settings meta box from other user roles:
 
-```
+```php
 // Hide SEO settings meta box for posts.
 add_action( 'add_meta_boxes', function() {
 	if ( current_user_can( 'manage_options' ) ) {

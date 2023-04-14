@@ -51,30 +51,30 @@ If you want to change the title, please use the `slim_seo_meta_title` filter.
 The following code changes the meta title for a single post with ID = 24. The title is get via a custom field:
 
 ```php
-add_filter( 'slim_seo_meta_title', function( $title ) {
-    if ( is_single( 24 ) ) {
-        $title = get_post_meta( get_the_ID(), 'field_id', true );
+add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
+    if ( get_post_type( $object_id ) === 'movie' ) {
+        $title = get_post_meta( $object_id, 'movie_title', true );
     }
     return $title;
-} );
+}, 10, 2 );
 ```
 
 Note that using filter will have the highest priority, e.g. it will overwrite the meta title you enter manually. To avoid that, you can check if the post has manual meta title and change the title only when it doesn't:
 
 ```php
-add_filter( 'slim_seo_meta_title', function( $title ) {
-    if ( is_single( 24 ) ) {
+add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
+    if ( get_post_type( $object_id ) === 'movie' ) {
 		// Detect if a single post has manual meta title.
-        $meta = get_post_meta( get_the_ID(), 'slim_seo', true );
+        $meta = get_post_meta( $object_id, 'slim_seo', true );
         if ( ! empty( $meta['title'] ) ) {
             return $meta['title'];
         }
 
-		$title = get_post_meta( get_the_ID(), 'field_id', true );
+		$title = get_post_meta( $object_id, 'movie_title', true );
     }
 
     return $title;
-} );
+}, 10, 2 );
 ```
 
 ## How to auto append site title to the manual meta title
@@ -82,13 +82,13 @@ add_filter( 'slim_seo_meta_title', function( $title ) {
 When entering meta title, the plugin uses that meta title "as it is". It doesn't append the " - Site title" part at the end, so you might need to enter that manually to keep the format "Page title - Site title". In case you want to do that automatically, please use this code snippet:
 
 ```php
-add_filter( 'slim_seo_meta_title', function( $title ) {
+add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
     if ( ! is_singular() ) {
         return $title;
     }
-    $meta = get_post_meta( get_the_ID(), 'slim_seo', true );
+    $meta = get_post_meta( $object_id, 'slim_seo', true );
     return empty( $meta['title'] ) ? $title : $meta['title'] . ' - ' . get_bloginfo( 'name' );
-} );
+}, 10, 2 );
 ```
 
 ## How to change the separator in the meta title?

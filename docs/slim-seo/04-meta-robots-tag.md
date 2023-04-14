@@ -22,13 +22,13 @@ If you don't want a post or a term to be shown on search results page, simply se
 
 If you want to block all posts of a post type from being indexed, use the following snippet:
 
-```
-add_filter( 'slim_seo_robots_index', function( $value ) {
-    if ( is_singular( 'your_cpt' ) ) {
+```php
+add_filter( 'slim_seo_robots_index', function( $value, $object_id ) {
+    if ( get_post_type( $object_id ) === 'my-template' ) {
         return false;
     }
     return $value;
-} );
+}, 10, 2 );
 ```
 
 ## How to disable archive pages from being indexed?
@@ -36,7 +36,7 @@ add_filter( 'slim_seo_robots_index', function( $value ) {
 To disable some archive pages from being indexed, please use the following snippet (remember to update the conditions to match your need):
 
 ```php
-add_filter( 'slim_seo_robots_index', function( $value ) {
+add_filter( 'slim_seo_robots_index', function( $value, $object_id ) {
     // Disable for author archive page.
     if ( is_author() ) {
         return false;
@@ -53,7 +53,7 @@ add_filter( 'slim_seo_robots_index', function( $value ) {
     }
 
     return $value;
-} );
+}, 10, 2 );
 ```
 
 ## How to modify content of the robots meta tag
@@ -64,7 +64,7 @@ If you're using WordPress 5.7 or below, use the following snippet to modify the 
 add_filter( 'wp_robots', function( $robots ) {
     $robots['noodp']  = true;
 	$robots['noydir'] = true;
-    
+
     return $robots;
 } );
 ```
