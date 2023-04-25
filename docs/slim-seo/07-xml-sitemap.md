@@ -113,6 +113,25 @@ add_filter( 'slim_seo_taxonomy_query_args', function( $query_args ) {
 
 The query parameters are the same as in the [get_terms()](https://developer.wordpress.org/reference/functions/get_terms/) function.
 
+## User sitemap
+
+By default, Slim SEO doesn't include the user sitemap. If you want to enable user sitemap, please use the following snippet:
+
+```php
+add_filter( 'slim_seo_user_sitemap', '__return_true' );
+```
+
+If you want to include only some users in the sitemap, you can change the user query args like this:
+
+```php
+add_filter( 'slim_seo_user_query_args', function( $args ) {
+    $args['role'] = 'administrator';
+    return $args;
+} );
+```
+
+The parameters are the same as in the [get_users()](https://developer.wordpress.org/reference/functions/get_users/) function.
+
 ## Core sitemaps
 
 Since version 5.5, WordPress includes sitemap functionality in the core. However, the core sitemaps lack some features that Slim SEO provides:

@@ -38,7 +38,6 @@ These are the list of features that you can disable:
 | `notification` | Plugin notification |
 | `auto_redirection` | Auto redirection |
 | `feed` | RSS Feed |
-| `cleaner` | Header cleaner |
 | `schema` | Schema |
 | `code` | Header / footer code |
 

@@ -4,7 +4,7 @@ title: Troubleshooting
 
 This page lists some common issues that people often see and the corresponding solutions. If you find any bug not listed here, please [let us know](https://wpslimseo.com/contact/).
 
-## Shortcode not working
+## Shortcodes not working
 
 Sometimes, you have a shortcode in the post content or your page executes a special shortcode from a plugin like WooCommerce or EDD Invoices, and **you see a blank page** or **the shortcode doesn't work at all**.
 
@@ -14,7 +14,18 @@ To fix this problem, you can put the following snippet in your theme's `function
 
 ```php
 add_filter( 'slim_seo_skipped_shortcodes', function( $shortcodes ) {
-    $shortcodes\[\] = 'your_shortcode';
+    $shortcodes[] = 'your_shortcode';
     return $shortcodes;
+} );
+```
+
+## Blocks not working
+
+Similar to shortcodes, some blocks might not working properly. To fix this problem, use the following snippet:
+
+```php
+add_filter( 'slim_seo_skipped_blocks', function( $blocks ) {
+    $blocks[] = 'namespace/your-block-name';
+    return $blocks;
 } );
 ```
