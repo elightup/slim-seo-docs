@@ -60,7 +60,7 @@ To make it easier to style breadcrumbs, the plugin uses some CSS classes:
 - `breadcrumbs`: For the wrapper of the breadcrumbs.
 - Each breadcrumb item has a class `breadcrumb`.
 - The first and the last breadcrumb item has a class `breadcrumb--first` and `breadcrumb--last` correspondingly. It's very useful when you want to style the "Home" with an icon or something similar.
-- Separator has a class `breadcrumb__separator`.
+- Separator has a class `breadcrumbs__separator`.
 
 Using these CSS classes, you can style every detail of the breadcrumb trail.
 
