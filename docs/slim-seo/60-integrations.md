@@ -8,12 +8,15 @@ Slim SEO works nicely with most plugins and themes. In some cases, where a plugi
 
 ### Page builder plugins
 
+For page builder plugins, Slim SEO renders the content built with them and use this content for [meta description](/slim-seo/meta-description-tag/) and [Open Graph](/slim-seo/facebook-open-graph-tags/).
+
 - **Beaver Builder**
+- **Bricks Builder**: Slim SEO also disables Bricks's SEO tools.
+- **Brizy Builder**
+- **Divi**
 - **Elementor**
 - **Oxygen Builder**
-- **Brizy Builder**
 - **Zion Builder**
-- **Bricks Builder**: render the content and disable SEO tools from the builder.
 
 ### Multilingual plugins
 
@@ -22,12 +25,18 @@ Slim SEO works nicely with most plugins and themes. In some cases, where a plugi
 
 ### Other plugins
 
+- **AffiliateWP**
+- **[Auto Listings](https://wpautolistings.com)**
 - **AMP**: replace the default AMP schema with the more comprehensive schema from Slim SEO.
+- **Fluent Forms**
 - **Jetpack**: disable SEO tools from Jetpack to prevent duplication.
 - **LifterLMS**
-- **Polylang**
+- **MailPoet**
+- **[Meta Box](https://metabox.io)**
+- **Ultimate Member**
 - **WebStories**: replace the default schema & meta tags with the more comprehensive schema from Slim SEO.
-- **WooCommerce**: output SEO meta tags correctly for all shop pages.
+- **WooCommerce**: output SEO meta tags correctly for shop page.
+- **WPForms**
 
 ## Themes
 
