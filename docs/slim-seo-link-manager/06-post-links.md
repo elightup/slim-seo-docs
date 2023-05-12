@@ -38,8 +38,14 @@ To get link suggestions, click the **Link Suggestions** tab in the **Link Manage
 
 The plugin has 2 modes for link suggestions:
 
-- **Automatic**: automatically suggests other posts to link to **based on the keywords in the post title**. The plugin will find all posts that have the keywords in the post title and show them to you so you can link to them.
+- **Automatic**: automatically suggests other posts to link to **based on the keywords in the post content**. The plugin will find all posts that have the keywords in the post content and show them to you so you can link to them.
 - **Manual**: allows you to search for posts by keywords to link to. The plugin shows **most used words from the post content** that you can search faster by clicking on them.
+
+:::caution How do link suggestion work?
+
+It's important to understand that the automatic link suggestion works by analyzing the posts to see if they contains common words with the current post content. If a post doesn't have or have only few common words with the current post, it won't be suggested.
+
+:::
 
 For each found post, the plugin will **suggest the paragraph that has the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
 
