@@ -47,6 +47,8 @@ It's important to understand that the automatic link suggestion works by analyzi
 
 :::
 
+Slim SEO Link Manager also allows you to find posts that in the same category or tag with the current post by enabling the **Same taxonomies** switch. In this case, you will get only related posts in the same category/tag.
+
 For each found post, the plugin will **suggest the paragraph that has the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
 
 With this feature, you can **find related posts and link to them quickly**. When you add a link to another post, the link will be updated in the reports immediately (see the **Link reports** section above). It's a great way to build internal links and improve your website SEO!
