@@ -2,7 +2,7 @@
 title: Schema
 ---
 
-Schema is the best way to describes [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) for search engines. Based on the data provided, search engines can show the content in the search results page in a more appealing way.
+Schema is the best way to describes [structured data](https://wpslimseo.com/structured-data/) for search engines. Based on the data provided, search engines can show the content in the search results page in a more appealing way.
 
 Slim SEO outputs schema data via JSON-LD in a single `<script>` tag in the footer. The plugin also provides **connections between schemas**. Connections are important because it gives search engines a lot of information for not only the main content of the web page, but also related information, which help them understand it deeply.
 
@@ -10,7 +10,7 @@ For example, if you're on a single post, the plugin can tell search engines abou
 
 :::tip Advanced Schema
 
-The free version of Slim SEO has supports for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/slim-seo-schema/).
+The free version of Slim SEO has supports for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/).
 
 :::
 

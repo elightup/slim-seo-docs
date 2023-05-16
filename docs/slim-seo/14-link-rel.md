@@ -2,7 +2,7 @@
 title: Link rel
 ---
 
-By default, WordPress doesn't allow you to add a "rel" attribute to links. So all links are "dofollow". It's not helpful for SEO if you have a [link building](https://wpslimseo.com/slim-seo-link-manager/) strategy, where you need "nofollow" or "sponsored" links.
+By default, WordPress doesn't allow you to add a "rel" attribute to links. So all links are "dofollow". It's not helpful for SEO if you have a [link building](https://wpslimseo.com/products/slim-seo-link-manager/) strategy, where you need "nofollow" or "sponsored" links.
 
 ## Nofollow links
 
