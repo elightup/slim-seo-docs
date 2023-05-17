@@ -4,7 +4,7 @@ title: Sitemap
 
 Sitemap is a **collection of URLs** of your sites that you provide to search engines to crawl. With it, search engines know which URLs to crawl, so your website is indexed faster and no URLs are missed.
 
-When using Slim SEO, the sitemap is automatically created at `domain.com/sitemap.xml`, and you need to **submit this sitemap URL to search engines** (in Google Search Console and Bing Webmaster Tools).
+When using Slim SEO, the sitemap is automatically created at `domain.com/sitemap.xml`, and you need to **submit this WordPress sitemap URL to search engines** (in Google Search Console and Bing Webmaster Tools).
 
 :::caution No sitemap?
 
