@@ -2,7 +2,7 @@
 title: Disable Features
 ---
 
-Some features in Slim SEO like [auto redirection](/slim-seo/redirection/) are opinionated. We tried to automate all the SEO works without your touch, but sometimes it's too much. So, you might want to disable some features that you don't like.
+Some features in Slim SEO are opinionated. We tried to automate all the SEO works without your touch, but sometimes it's too much. So, you might want to disable some features that you don't like.
 
 To disable features, please go to **Settings > Slim SEO**, select tab **General** and you can deselect the features you don't want:
 
@@ -12,8 +12,8 @@ Alternatively, you can disable the features by adding the following code into yo
 
 ```
 add_action( 'slim_seo_init', function( $plugin ) {
-    $plugin->disable( 'auto_redirection' );
-    $plugin->disable( 'cleaner' );
+    $plugin->disable( 'redirection' );
+    $plugin->disable( 'code' );
 } );
 ```
 
@@ -36,7 +36,7 @@ These are the list of features that you can disable:
 | `images_alt` | Image alt text |
 | `breadcrumbs` | Breadcrumbs |
 | `notification` | Plugin notification |
-| `auto_redirection` | Auto redirection |
+| `redirection` | Auto redirection |
 | `feed` | RSS Feed |
 | `schema` | Schema |
 | `code` | Header / footer code |
