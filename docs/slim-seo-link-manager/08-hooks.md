@@ -38,3 +38,29 @@ add_filter( 'slim_seo_link_manager_search_args', function( $args ) {
 	return $args;
 } );
 ```
+
+### `slim_seo_link_manager_post_custom_fields`
+
+This filter allows you to add custom fields' content to the plugin's scanner.
+
+```php
+add_filter( 'slim_seo_link_manager_post_custom_fields', function( $fields ) {
+	$fields[] = 'my-text-field';
+	return $fields;
+} );
+```
+
+After running this filter, the plugin will get the content of the custom field (in the example above, the meta key of the custom field is `my-text-field`) and analyze that content to find links and add to the reports.
+
+### `slim_seo_link_manager_process_url`
+
+This filter allows you to bypass a URL, e.g. not including it in the reports. It's helpful if you want to keep the reports clean and don't want it to contain links like affiliate links.
+
+```php
+add_filter( 'slim_seo_link_manager_process_url', function( $process, $url ) {
+	if ( strpos( $url, 'amz.co' ) !== false ) {
+		$process = false;
+	}
+	return $process;
+} );
+```
