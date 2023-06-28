@@ -13,7 +13,7 @@ Here is an example from the Adidas website:
 Or you can see it at the top of this page:
 
 ```txt
-Home > Slim SEO > Breadcrumbs
+Home » Slim SEO » Breadcrumbs
 ```
 
 Each item in the breadcrumbs is a link, that describes the "steps" that users can follow (click) from the main page (homepage) to the current page. Whenever users want to go back to a previous step, they can simply click on these links.

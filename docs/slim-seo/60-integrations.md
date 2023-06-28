@@ -11,7 +11,8 @@ Slim SEO works nicely with most plugins and themes. In some cases, where a plugi
 For page builder plugins, Slim SEO renders the content built with them and use this content for [meta description](/slim-seo/meta-description-tag/) and [Open Graph](/slim-seo/facebook-open-graph-tags/).
 
 - **Beaver Builder**
-- **Bricks Builder**: Slim SEO also disables Bricks's SEO tools.
+- **Breakdance**
+- **Bricks Builder**: Bricks has some SEO features built-in like meta tags and Open Graph tags. When using it with Slim SEO, Slim SEO will disables these features and replace them with the features from Slim SEO.
 - **Brizy Builder**
 - **Divi**
 - **Elementor**
@@ -23,11 +24,14 @@ For page builder plugins, Slim SEO renders the content built with them and use t
 - **WPML**
 - **Polylang**
 
+When using Slim SEO with these plugins, for each post and term in the sitemap, Slim SEO will add `rel="alternate"` for the languages. With this addition, you don't need a separate sitemap for other languages.
+
 ### Other plugins
 
 - **AffiliateWP**
 - **[Auto Listings](https://wpautolistings.com)**
-- **AMP**: replace the default AMP schema with the more comprehensive schema from Slim SEO.
+- **AMP**: Slim SEO will replace the default AMP schema with the more comprehensive schema.
+- **[Auto Listings](https://wpautolistings.com)**
 - **Fluent Forms**
 - **Jetpack**: disable SEO tools from Jetpack to prevent duplication.
 - **LifterLMS**
@@ -35,9 +39,9 @@ For page builder plugins, Slim SEO renders the content built with them and use t
 - **[Meta Box](https://metabox.io)**
 - **Ultimate Member**
 - **WebStories**: replace the default schema & meta tags with the more comprehensive schema from Slim SEO.
-- **WooCommerce**: output SEO meta tags correctly for shop page.
+- **WooCommerce**: Slim SEO allows you to edit meta tags for the shop page & products. Besides, it sets the [breadcrumbs](/slim-seo/breadcrumbs/) for products with `product_cat`. The plugin also output additional Open Graph tags for Pinterest Pins.
 - **WPForms**
 
 ## Themes
 
-- **Genesis**: disable the default schema outputted by the plugin to prevent duplication.
+- **Genesis**: Genesis has some SEO features built-in, like microdata and meta title tag. Slim SEO will disable these features and replace them with the features in Slim SEO.
