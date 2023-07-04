@@ -7,7 +7,7 @@ The meta description tag is automatically generated from the post/page excerpt o
 Note that WordPress doesn't support excerpt for pages. Slim SEO fixes this by adding excerpt to pages, so you can enter custom excerpt for pages.
 
 - For homepage, if you set it as a static page, then the plugin treats it like a normal page.
-- For categories, post tags or custom taxonomies, their description will be used as meta description.
+- For categories, post tags or custom taxonomies, their description will be used as meta description. Edit these by visiting the post type of your choice and selecting your desired taxonomy. The Slim SEO metabox is found at the bottom of the page. Example: Posts > Categories/Tags, Products > Categories/Tags.
 
 The meta description will be normalized by stripping all the HTML tags, white spaces.
 
