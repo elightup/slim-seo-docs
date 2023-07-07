@@ -2,7 +2,7 @@
 title: Facebook Open Graph Tags
 ---
 
-Open Graph tags are essential when you want to boost your social SEO. Adding Open Graph meta tags to your web page HTML will provide the crawler structured info like a title, description, and thumbnail image for the content.
+[Open Graph](https://wpslimseo.com/open-graph/) tags are essential when you want to boost your social SEO. Adding Open Graph meta tags to your web page HTML will provide the crawler structured info like a title, description, and thumbnail image for the content.
 
 All Open Graph tags are generated automatically just like [meta title](/slim-seo/meta-title-tag/) and [meta description](/slim-seo/meta-description-tag/).
 
