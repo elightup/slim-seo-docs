@@ -26,6 +26,8 @@ For page builder plugins, Slim SEO renders the content built with them and use t
 
 When using Slim SEO with these plugins, for each post and term in the sitemap, Slim SEO will add `rel="alternate"` for the languages. With this addition, you don't need a separate sitemap for other languages.
 
+For more details about multilingual sitemap, please see this article: [How to Create a Multilingual Sitemap in WordPress with WPML or Polylang](https://wpslimseo.com/wordpress-multilingual-sitemap/).
+
 ### Other plugins
 
 - **AffiliateWP**
