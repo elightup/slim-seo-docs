@@ -49,6 +49,8 @@ Slim SEO integrates well with multilingual plugins like **WPML** and **Polylang*
 
 Instead of providing separated sitemaps for different languages, the plugin adds `rel="alternate"` for each post or term in the sitemap. So, the sitemap becomes a **global sitemap for all languages**. When the search engines view the sitemap, they see multiple links for all languages for each post. These links are not visible to humans, but you can see them when viewing the sitemap source.
 
+For more details about multilingual sitemap, please see this article: [How to Create a Multilingual Sitemap in WordPress with WPML or Polylang](https://wpslimseo.com/wordpress-multilingual-sitemap/).
+
 ## Excluding post types
 
 To exclude post types from the sitemap, use the following code:
