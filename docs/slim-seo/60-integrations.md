@@ -31,7 +31,6 @@ For more details about multilingual sitemap, please see this article: [How to Cr
 ### Other plugins
 
 - **AffiliateWP**
-- **[Auto Listings](https://wpautolistings.com)**
 - **AMP**: Slim SEO will replace the default AMP schema with the more comprehensive schema.
 - **[Auto Listings](https://wpautolistings.com)**
 - **Fluent Forms**
