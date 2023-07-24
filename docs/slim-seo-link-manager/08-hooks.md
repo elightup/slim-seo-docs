@@ -64,3 +64,18 @@ add_filter( 'slim_seo_link_manager_process_url', function( $process, $url ) {
 	return $process;
 } );
 ```
+
+### `slim_seo_link_manager_text`
+
+This filter allows you to change the content to be analyzed for links. Normally it's the post content, but you can add anything you want (like custom static text, or content from a complex custom field group).
+
+```php
+add_filter( 'slim_seo_link_manager_text', function( $text, $post_id ) {
+	// Your custom text that you want to add to the analyzer.
+	$your_text = '';
+
+
+	$text .= $your_text;
+	return $text;
+}, 20, 2 );
+```
