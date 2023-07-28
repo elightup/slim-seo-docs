@@ -143,7 +143,7 @@ add_filter( "slim_seo_schema_{$context}", function ( $schema ) {
     $schema['some_property'] = 'Some value';
 
     // Or remove a property.
-    unset( $schema['another_property']);
+    unset( $schema['another_property'] );
 
     return $schema;
 } );
