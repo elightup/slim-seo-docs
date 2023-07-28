@@ -19,6 +19,7 @@ For page builder plugins, Slim SEO Schema renders the content built with them an
 
 - **Beaver Builder**
 - **Bricks Builder**
+- **Breakdance**
 - **Divi**
 - **Elementor**
 - **Oxygen Builder**
