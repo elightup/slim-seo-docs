@@ -98,7 +98,7 @@ You don't need to do anything to add support for AMP or Web Stories. The plugin 
 
 To disable the schema feature, please use the following code:
 
-```
+```php
 add_action( 'slim_seo_init', function( $plugin ) {
      $plugin->disable( 'schema' );
 } );
@@ -108,13 +108,13 @@ add_action( 'slim_seo_init', function( $plugin ) {
 
 Each schema can be disabled with a filter. For example, to disable schema for breadcrumbs, use the following code:
 
-```
+```php
 add_filter( 'slim_seo_schema_breadcrumbs_enable', '__return_false' );
 ```
 
 In general, to disable a specific schema, use the following code:
 
-```
+```php
 add_filter( "slim_seo_schema_{$context}_enable", '__return_false' );
 ```
 
@@ -137,7 +137,7 @@ Where `$context` is the schema context, which can be referred below:
 
 To modify the output of a specific schema type, please use the following code:
 
-```
+```php
 add_filter( "slim_seo_schema_{$context}", function ( $schema ) {
     // Add or modify a property.
     $schema['some_property'] = 'Some value';
@@ -155,7 +155,7 @@ The `$context` is the same as the previous section.
 
 Using the hook described above, you can switch the schema type for posts from `Article` (default) to `BlogPost`:
 
-```
+```php
 add_filter( "slim_seo_schema_article", function ( $schema ) {
     $schema['@type'] = 'BlogPosting';
     return $schema;
@@ -166,35 +166,16 @@ add_filter( "slim_seo_schema_article", function ( $schema ) {
 
 Sometimes, you want to add more schemas to provide more information about the page, such as a product page or about page. To do that, use the following code:
 
-```
-add_filter( 'slim_seo_schema_entities', function( $entities ) {
-    $entity = new YourClass; // Will be defined below.
-    $entities[] = $entity;
+```php
+add_filter( 'slim_seo_schema_graph', function ( $graph ) {
+    if ( is_singular( 'movie' ) ) {
+        $graph[] = [
+            '@type'    => 'Movie',
+            'name'     => get_the_title(),
+            'director' => get_post_meta( get_the_ID(), 'director', true ),
+        ];
+    }
 
-    // You can connect schemas.
-    $entity->add_reference( 'author', $entities['author'] );
-    $entity->add_reference( 'isPartOf', $entities['webpage'] );
-
-    // Or like this.
-    $entities['website']->add_reference( 'publisher', $entity );
-
-    return $entities;
+    return $graph;
 } );
 ```
-
-You need to create a schema class (`YourClass`) which inherits the `SlimSEO\Schema\Types\Base` class. And it has to provide a `generate` methods to return an array of properties:
-
-```
-class YourClass extends SlimSEO\Schema\Types\Base {
-    protected function generate() {
-        $schema = [
-            'property_1' => 'Value 1',
-            'property_2' => 'Value 2',
-        ];
-
-        return $schema;
-    }
-}
-```
-
-You can take a look at the [code of WebPage schema](https://github.com/elightup/slim-seo/blob/master/src/Schema/Types/WebPage.php) for an example.
