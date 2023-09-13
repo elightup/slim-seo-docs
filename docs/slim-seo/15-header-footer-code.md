@@ -6,6 +6,8 @@ There are various 3rd-party codes that you want to insert into your website such
 
 To insert these codes into your website, go to **Settings > SEO**, and paste the code into one of the boxes for header, body or footer.
 
+![Insert header and footer code in Slim SEO](https://i.imgur.com/zBqFWWd.png)
+
 Please note that it requires your theme to have proper calls to WordPress functions, specifically:
 
 - For header code, your theme must implement `wp_head()` function in the `header.php` file.
