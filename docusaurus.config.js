@@ -74,6 +74,7 @@ const config = {
           alt: 'Slim SEO Logo',
           src: 'img/logo.svg',
           srcDark: 'img/logo-white.svg',
+          href: 'https://wpslimseo.com'
         },
         items: [
           {
