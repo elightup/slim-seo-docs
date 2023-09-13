@@ -117,25 +117,37 @@ const config = {
                 href: 'https://wpslimseo.com/about/',
               },
               {
-                label: 'Privacy Policy',
-                href: 'https://wpslimseo.com/privacy-policy/',
+                label: 'Contact',
+                href: 'https://wpslimseo.com/contact/',
               },
               {
-                label: 'Terms & Conditions',
-                href: 'https://wpslimseo.com/terms/',
+                label: 'Affiliate',
+                href: 'https://wpslimseo.com/affiliate/',
               },
-            ],
-          },
-          {
-            title: 'Account',
-            items: [
               {
                 label: 'My Account',
                 href: 'https://wpslimseo.com/my-account/',
               },
+            ],
+          },
+          {
+            title: 'Products',
+            items: [
               {
-                label: 'Open a Support Ticket',
-                href: 'https://wpslimseo.com/my-account/support/',
+                label: 'Slim SEO (free)',
+                href: 'https://wordpress.org/plugins/slim-seo/',
+              },
+              {
+                label: 'Slim SEO Schema',
+                href: 'https://wpslimseo.com/products/slim-seo-schema/',
+              },
+              {
+                label: 'Slim SEO Link Manager',
+                href: 'https://wpslimseo.com/products/slim-seo-link-manager/',
+              },
+              {
+                label: 'Slim SEO vs SEOPress',
+                href: 'https://wpslimseo.com/slim-seo-vs-seopress/',
               },
             ],
           },
@@ -151,8 +163,8 @@ const config = {
                 href: 'https://twitter.com/wpslimseo',
               },
               {
-                label: 'Youtube',
-                href: 'https://www.youtube.com/channel/UCDh7n12cD-ZILPHvKx9dOnw',
+                label: 'Github',
+                href: 'https://github.com/elightup/slim-seo',
               },
             ],
           },
