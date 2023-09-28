@@ -34,7 +34,7 @@ Slim SEO supports shortcodes in the meta title and meta description, you can add
 
 :::caution Manual meta title
 
-When you enter the manual meta title, they'll be used as they are. They won't be appended with the site title.
+When you enter the manual meta title, it'll be used as it is. It won't be appended with the site title.
 
 :::
 
