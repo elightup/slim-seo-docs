@@ -47,30 +47,35 @@ Slim SEO saves all data into a single field. So, we need helper functions to ext
 
 Then go to **Snippets > Add New** and add the following snippet:
 
-```
+```php
 function ss_get_title( $value ) {
 	$value = @unserialize( $value );
-	return isset( $value['title'] ) ? $value['title'] : '';
+	return $value['title'] ?? '';
 }
 
 function ss_get_description( $value ) {
 	$value = @unserialize( $value );
-	return isset( $value['description'] ) ? $value['description'] : '';
+	return $value['description'] ?? '';
 }
 
 function ss_get_facebook_image( $value ) {
 	$value = @unserialize( $value );
-	return isset( $value['facebook_image'] ) ? $value['facebook_image'] : '';
+	return $value['facebook_image'] ?? '';
 }
 
 function ss_get_twitter_image( $value ) {
 	$value = @unserialize( $value );
-	return isset( $value['twitter_image'] ) ? $value['twitter_image'] : '';
+	return $value['twitter_image'] ?? '';
 }
 
 function ss_get_noindex( $value ) {
 	$value = @unserialize( $value );
-	return isset( $value['noindex'] ) ? $value['noindex'] : '';
+	return $value['noindex'] ?? '';
+}
+
+function ss_get_canonical( $value ) {
+	$value = @unserialize( $value );
+	return $value['canonical'] ?? '';
 }
 ```
 
