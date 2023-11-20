@@ -64,7 +64,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: '<strong>🔥 HOT:</strong> New plugin released: <a target="_blank" rel="noopener noreferrer" href="https://wpslimseo.com/products/slim-seo-link-manager/"><strong>Slim SEO Link Manager</strong></a> - Build internal links easier!',
+        content: '<b>🔥 Black Friday Deal 🔥</b>: Up to <b>50% OFF</b> until <b>Nov 30</b>. <a href="https://wpslimseo.com/products/">Get it now!</a>',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
