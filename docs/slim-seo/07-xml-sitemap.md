@@ -134,6 +134,53 @@ add_filter( 'slim_seo_user_query_args', function( $args ) {
 
 The parameters are the same as in the [get_users()](https://developer.wordpress.org/reference/functions/get_users/) function.
 
+## Adding more URLs to the post sitemap
+
+Slim SEO has a hook `slim_seo_sitemap_post` that allows you to add more URLs to **each post entry** in the sitemap. It's good if you want to add more URLs like image URLs or language URLs to **each post** in the sitemap.
+
+```
+add_action( 'slim_seo_sitemap_post', function( WP_Post $post ) {
+    // Add image URL from a custom field.
+    $custom_image_url = get_post_meta( $post->ID, 'custom_image_url', true );
+    if ( ! $custom_image_url ) {
+        return;
+    }
+    echo "\t\t<image:image>\n";
+	echo "\t\t\t<image:loc>", esc_url( $custom_image_url ), "</image:loc>\n";
+    echo "\t\t</image:image>\n";
+} );
+```
+
+If you want to add URLs (like other posts) to the sitemap, you can use output them like this:
+
+```
+add_action( 'slim_seo_sitemap_post', 'ss_add_custom_posts_to_sitemap' );
+function ss_add_custom_posts_to_sitemap() {
+    // Used to make sure we output only once.
+    static $output = false;
+    if ( $output ) {
+        return;
+    }
+
+    // Close the current `<url>` entry.
+    echo "\t</url>\n";
+
+    // List of custom URLs you want to add to the sitemap.
+    $urls = [
+        'https://domain.com/page-1',
+        'https://domain.com/page-2',
+    ];
+    foreach ( $urls as $url ) {
+        echo "\t<url>\n";
+        echo "\t\t<loc>", esc_url( $url ), "</loc>\n";
+        echo "\t</url>\n";
+    }
+
+    // Don't output next time.
+    $output = true;
+}
+```
+
 ## Core sitemaps
 
 Since version 5.5, WordPress includes sitemap functionality in the core. However, the core sitemaps lack some features that Slim SEO provides:
