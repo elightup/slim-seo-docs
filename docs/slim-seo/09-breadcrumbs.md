@@ -72,11 +72,11 @@ If you want to output the breadcrumbs in your theme, add the following snippet i
 echo do_shortcode( '[slim_seo_breadcrumbs]' );
 ```
 
-### Breadcrumbs schema
+## Breadcrumbs schema
 
 Slim SEO automatically creates [a schema](/slim-seo/schema/) for breadcrumbs. The breadcrumbs schema inherits all the settings in the shortcode. So if you output the shortcode in your theme, all links in the breadcrumbs are parsed, and the schema will use these links again.
 
-### Add or remove a link from breadcrumbs
+## Add or remove a link from breadcrumbs
 
 To add a link to the breadcrumbs, please use the `slim_seo_breadcrumbs_links` filter. It accept an array of links in the breadcrumbs, each link is an array of `text` and `url`.
 
