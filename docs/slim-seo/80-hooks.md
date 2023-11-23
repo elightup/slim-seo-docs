@@ -20,7 +20,7 @@ Fires after outputting entry for post or term in the sitemap XML. These actions 
 
 Filters links in the breadcrumbs, accepts one parameter - array of links. For example, if you want to remove "Blog" from breadcrumbs for posts (if you set a static page to display your blog), use this snippet:
 
-```
+```php
 add_filter( 'slim_seo_breadcrumbs_links', function( $links ) {
 	if ( is_singular( 'post' ) ) {
 		unset( $links[1] ); // $link[0] = Home, $link[1] = Blog, $link[2] = Category, $link[3] = Post.

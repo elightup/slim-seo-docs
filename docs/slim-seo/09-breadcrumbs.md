@@ -75,3 +75,49 @@ echo do_shortcode( '[slim_seo_breadcrumbs]' );
 ### Breadcrumbs schema
 
 Slim SEO automatically creates [a schema](/slim-seo/schema/) for breadcrumbs. The breadcrumbs schema inherits all the settings in the shortcode. So if you output the shortcode in your theme, all links in the breadcrumbs are parsed, and the schema will use these links again.
+
+### Add or remove a link from breadcrumbs
+
+To add a link to the breadcrumbs, please use the `slim_seo_breadcrumbs_links` filter. It accept an array of links in the breadcrumbs, each link is an array of `text` and `url`.
+
+For example, if you're on a single post, the default breadcrumbs is "Home > Blog > Category > Post". You want to add a new link "All Categories" between Blog and Category, then you can do like this:
+
+```php
+add_filter( 'slim_seo_breadcrumbs_links', function( $links ) {
+	// Only process single posts.
+	if ( ! is_single() ) {
+		return $links;
+	}
+
+	$new_links = [];
+	foreach ( $links as $index => $link ) {
+		$new_links[] = $link;
+
+		// Append new item if the current link is "Blog", which has index = 1.
+		if ( $index === 1 ) {
+			$new_links[] = [
+				'url' => 'https://domain.com/all-categories/',
+				'text'=> 'All Categories',
+			];
+		}
+	}
+
+	return $new_links;
+} );
+```
+
+Similarly, if you want to remove a link, you can use the same filter. The example below removes the "Blog" link from the breadcrumbs for single posts:
+
+```php
+add_filter( 'slim_seo_breadcrumbs_links', function( $links ) {
+	// Only process single posts.
+	if ( ! is_single() ) {
+		return $links;
+	}
+
+	// Blog has the index 1.
+	unset( $links[1] );
+
+	return $links;
+} );
+```
