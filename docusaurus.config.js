@@ -63,12 +63,14 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      /*
       announcementBar: {
         content: '<b>🔥 Black Friday Deal 🔥</b>: Up to <b>50% OFF</b> until <b>Nov 30</b>. <a href="https://wpslimseo.com/products/">Get it now!</a>',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
       },
+      */
       navbar: {
         logo: {
           alt: 'Slim SEO Logo',
