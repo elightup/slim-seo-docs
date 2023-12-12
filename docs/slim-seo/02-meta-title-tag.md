@@ -137,21 +137,8 @@ This way, you show or hide the columns for the current user only. It's not appli
 To hide the columns completely for all users, please use this snippet:
 
 ```php
-// Hide for 'post'
-add_filter( 'manage_post_posts_columns', 'prefix_hide_seo_columns', 20 );
-// Hide for a post type 'movie'
-add_filter( 'manage_movie_posts_columns', 'prefix_hide_seo_columns', 20 );
-
-// Hide for 'category'
-add_filter( 'manage_edit-category_columns', 'prefix_hide_seo_columns', 20 );
-// Hide for a custom taxonomy 'product_cat'
-add_filter( 'manage_edit-product_cat_columns', 'prefix_hide_seo_columns', 20 );
-
-function prefix_hide_seo_columns( $columns ) {
-	unset( $columns['meta_title'] );
-	unset( $columns['meta_description'] );
-	return $columns;
-}
+add_filter( 'slim_seo_admin_columns_post', '__return_empty_array' );
+add_filter( 'slim_seo_admin_columns_term', '__return_empty_array' );
 ```
 
 ## How to hide SEO settings meta box for non-admin users?
@@ -169,3 +156,5 @@ add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
 	return current_user_can( 'manage_options' ) ? $taxonomies : [];
 } );
 ```
+
+Please note that if SEO settings is hidden, then users won't see the SEO columns in the post/term list table neither.
