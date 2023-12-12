@@ -52,3 +52,24 @@ Slim SEO Link Manager also allows you to find posts that in the same category or
 For each found post, the plugin will **suggest the paragraph that has the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
 
 With this feature, you can **find related posts and link to them quickly**. When you add a link to another post, the link will be updated in the reports immediately (see the **Link reports** section above). It's a great way to build internal links and improve your website SEO!
+
+## How to hide link manager settings meta box for non-admin users?
+
+In some cases, where you want only admins can change the link manager settings for specific posts, then use this snippet to hide the schema settings meta box from other user roles:
+
+```php
+// Hide SEO settings meta box for posts.
+add_filter( 'slim_seo_meta_box_post_types', function ( $post_types ) {
+	return current_user_can( 'manage_options' ) ? $post_types : [];
+} );
+
+// Hide SEO settings meta box for terms.
+add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
+	return current_user_can( 'manage_options' ) ? $taxonomies : [];
+} );
+```
+:::caution
+
+Please note that Slim SEO Link Manager uses the same filter as in [Slim SEO](/slim-seo/meta-title-tag/) to hide SEO settings. In this case, both link manager settings and SEO settings meta boxes are hidden.
+
+:::

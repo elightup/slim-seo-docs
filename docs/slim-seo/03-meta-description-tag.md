@@ -86,26 +86,13 @@ Click the **Screen Options** button at the top right corner of the screen and to
 
 This way, you show or hide the columns for the current user only. It's not applied to all users.
 
-### Hide the columns completely with code
+### Hide the columns with code
 
 To hide the columns completely for all users, please use this snippet:
 
 ```php
-// Hide for 'post'
-add_filter( 'manage_post_posts_columns', 'prefix_hide_seo_columns', 20 );
-// Hide for a post type 'movie'
-add_filter( 'manage_movie_posts_columns', 'prefix_hide_seo_columns', 20 );
-
-// Hide for 'category'
-add_filter( 'manage_edit-category_columns', 'prefix_hide_seo_columns', 20 );
-// Hide for a custom taxonomy 'product_cat'
-add_filter( 'manage_edit-product_cat_columns', 'prefix_hide_seo_columns', 20 );
-
-function prefix_hide_seo_columns( $columns ) {
-	unset( $columns['meta_title'] );
-	unset( $columns['meta_description'] );
-	return $columns;
-}
+add_filter( 'slim_seo_admin_columns_post', '__return_empty_array' );
+add_filter( 'slim_seo_admin_columns_term', '__return_empty_array' );
 ```
 
 ## How to hide SEO settings meta box for non-admin users?
@@ -114,36 +101,18 @@ In some cases, where you want only admins can change the meta title, meta descri
 
 ```php
 // Hide SEO settings meta box for posts.
-add_action( 'add_meta_boxes', function() {
-	if ( current_user_can( 'manage_options' ) ) {
-		return;
-	}
-
-	$context  = apply_filters( 'slim_seo_meta_box_context', 'normal' );
-	remove_meta_box( 'slim-seo', null, $context );
-}, 20 );
+add_filter( 'slim_seo_meta_box_post_types', function ( $post_types ) {
+	return current_user_can( 'manage_options' ) ? $post_types : [];
+} );
 
 // Hide SEO settings meta box for terms.
-add_action( 'init', function() {
-	if ( current_user_can( 'manage_options' ) ) {
-		return;
-	}
-
-	global $wp_filter;
-	$hook = $wp_filter['init'];
-	$callbacks = $hook->callbacks[99];
-	foreach ( $callbacks as $callback ) {
-		if ( ! is_array( $callback['function'] ) ) {
-			continue;
-		}
-		$function = $callback['function'];
-		if (
-			$function[0] instanceof \SlimSEO\MetaTags\Settings\Term &&
-			$function[1] === 'register_hooks'
-		) {
-			remove_action( 'init', $function, 99 );
-			return;
-		}
-	}
+add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
+	return current_user_can( 'manage_options' ) ? $taxonomies : [];
 } );
 ```
+
+:::caution
+
+Please note that if SEO settings meta box is hidden, then users won't see the SEO columns in the post/term list table neither.
+
+:::

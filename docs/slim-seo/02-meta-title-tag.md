@@ -157,4 +157,8 @@ add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
 } );
 ```
 
-Please note that if SEO settings is hidden, then users won't see the SEO columns in the post/term list table neither.
+:::caution
+
+Please note that if SEO settings meta box is hidden, then users won't see the SEO columns in the post/term list table neither.
+
+:::
