@@ -77,6 +77,17 @@ add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
 }, 10, 2 );
 ```
 
+## How to remove site title from the meta title
+
+By default, Slim SEO auto appends the " - Site title" part at the end. If you don't want that, please use this snippet:
+
+```php
+add_filter( 'document_title_parts', function( $parts ) {
+    unset( $parts['site'] );
+    return $parts;
+} );
+```
+
 ## How to auto append site title to the manual meta title
 
 When entering meta title, the plugin uses that meta title "as it is". It doesn't append the " - Site title" part at the end, so you might need to enter that manually to keep the format "Page title - Site title". In case you want to do that automatically, please use this code snippet:
