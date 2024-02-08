@@ -16,6 +16,14 @@ When the link scanning process finishes, the status (admin notice) will disappea
 
 ![Link reports](https://i.imgur.com/7zWliJr.png)
 
+## How it works
+
+Slim SEO Link Manage scans links in the background to avoid any performance issues if you have a lot of posts. The plugin uses WordPress cron to process posts and parse links from the post content. So in each run, the plugin will process only a batch of posts and parse links for them. This will reduce the performance impact on your hosting/server as the number of posts for each run is relatively small and can be processed at once. Even if the plugin fails at processing some posts, it will try again in the next run.
+
+Because the plugin depends on the WordPress cron, it requires the cron to work. If you disable WordPress cron and use an external cron (like a server cron or a remote system that sends requests to your site to trigger the cron), then the scanner runs only when the cron is called. If your cron setup is once per 15 minutes, then the plugin runs its background processing once every 15 minutes, which might take more time than usual to finish the process.
+
+In that case, we'd recommend enable the WordPress cron to run the scanner once and then disable the WordPress cron when you finish.
+
 ## Re-scan links
 
 In case you already ran the link scanning, and you want to scan again, go to the **Tools** tab and you'll find the **Scan links** button there:
