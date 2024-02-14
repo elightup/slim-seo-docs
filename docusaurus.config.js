@@ -18,6 +18,14 @@ const config = {
   projectName: 'slim-seo-docs', // Usually your repo name.
   titleDelimiter: '-',
 
+  scripts: [
+    {
+      src: 'https://beamanalytics.b-cdn.net/beam.min.js',
+      'data-token': '0be0dc94-dd6f-4c51-b876-9f9b81f6ad1d',
+      defer: true,
+    }
+  ],
+
   plugins: [
     './lightbox',
   ],
