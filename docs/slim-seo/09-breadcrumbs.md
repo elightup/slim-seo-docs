@@ -74,7 +74,11 @@ echo do_shortcode( '[slim_seo_breadcrumbs]' );
 
 ## Breadcrumbs schema
 
-Slim SEO automatically creates [a schema](/slim-seo/schema/) for breadcrumbs. The breadcrumbs schema inherits all the settings in the shortcode. So if you output the shortcode in your theme, all links in the breadcrumbs are parsed, and the schema will use these links again.
+Slim SEO automatically creates [a schema](/slim-seo/schema/) for breadcrumbs in the JSON-LD format. It doesn't output the schema in the HTML output of the breadcrumb to avoid conflicts and make it easier for you to style.
+
+The JSON-LD schema is always outputed regardless the breadcrumb shortcode is used. In case the shortcode is used, the breadcrumbs schema inherits all the settings in the shortcode. So if you output the shortcode in your theme, all links in the breadcrumbs are parsed, and the schema will use these links again.
+
+If you want to disable the breadcrumb schema, please refer to [this documentation](/slim-seo/schema/#how-to-disable-a-specific-schema).
 
 ## Add or remove a link from breadcrumbs
 
