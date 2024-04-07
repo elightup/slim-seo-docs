@@ -20,13 +20,13 @@ Each item in the breadcrumbs is a link, that describes the "steps" that users ca
 
 :::info
 
-The term of breadcrumbs is borrowed from the tale of Hansel and Gretel where the kids drop a trail of breadcrumbs to trace their way back.
+The term "breadcrumbs" is borrowed from the tale of Hansel and Gretel where the kids drop a trail of breadcrumbs to trace their way back.
 
 :::
 
 ## Why breadcrumbs are important for SEO?
 
-Breadcrumbs help search engines understand the structure of your website. If the content on your website is organized hierarchically (which you should always do), then search engine spiders can easily navigate and index your pages by scan links on each "step" of the breadcrumbs. This ensures search engines don't miss any links on the website.
+Breadcrumbs help search engines understand the structure of your website. If the content on your website is organized hierarchically (which you should always do), then search engine spiders can easily navigate and index your pages by scanning links on each "step" of the breadcrumbs. This ensures search engines don't miss any links on the website.
 
 Besides, breadcrumbs help connect all the pages on your website into a hierarchical graph. So no pages are orphaned (e.g. have no links to them) which always is a bad sign of SEO.
 
@@ -59,7 +59,7 @@ To make it easier to style breadcrumbs, the plugin uses some CSS classes:
 
 - `breadcrumbs`: For the wrapper of the breadcrumbs.
 - Each breadcrumb item has a class `breadcrumb`.
-- The first and the last breadcrumb item has a class `breadcrumb--first` and `breadcrumb--last` correspondingly. It's very useful when you want to style the "Home" with an icon or something similar.
+- The first and the last breadcrumb item have a class `breadcrumb--first` and `breadcrumb--last` correspondingly. It's very useful when you want to style the "Home" with an icon or something similar.
 - Separator has a class `breadcrumbs__separator`.
 
 Using these CSS classes, you can style every detail of the breadcrumb trail.
@@ -80,11 +80,28 @@ The JSON-LD schema is always outputed regardless the breadcrumb shortcode is use
 
 If you want to disable the breadcrumb schema, please refer to [this documentation](/slim-seo/schema/#how-to-disable-a-specific-schema).
 
+## Changing breadcrumbs attributes
+
+If you use the breadcrumbs shortcode, you can change the breadcrumbs attributes easily by passing the attributes' values directly into the shortcode.
+
+However, if you don't use the breadcrumbs shortcode to show the breadcrumbs on your site, the breadcrumbs will still be used in the schema. And there's no visual place to change the breadcrumbs' attributes.
+
+In this case, you can use the `slim_seo_breadcrumbs_args` filter to change the breadcrumbs attributes. This filter accepts an array of breadcrumbs attributes. In the following snippet, we change the default taxonomy from `category` to `group` for a custom post type `service`:
+
+```php
+add_filter( 'slim_seo_breadcrumbs_args', function( $args ) {
+	if ( is_singular( 'service' ) ) {
+		$args['taxonomy'] = 'group';
+	}
+	return $args;
+} );
+```
+
 ## Add or remove a link from breadcrumbs
 
-To add a link to the breadcrumbs, please use the `slim_seo_breadcrumbs_links` filter. It accept an array of links in the breadcrumbs, each link is an array of `text` and `url`.
+To add a link to the breadcrumbs, please use the `slim_seo_breadcrumbs_links` filter. It accepts an array of links in the breadcrumbs, each link is an array of `text` and `url`.
 
-For example, if you're on a single post, the default breadcrumbs is "Home > Blog > Category > Post". You want to add a new link "All Categories" between Blog and Category, then you can do like this:
+For example, if you're on a single post, the default breadcrumbs is "Home > Blog > Category > Post". If you want to add a new link "All Categories" between Blog and Category, then you can do this:
 
 ```php
 add_filter( 'slim_seo_breadcrumbs_links', function( $links ) {
