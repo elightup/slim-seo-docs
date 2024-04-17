@@ -8,7 +8,7 @@ To scan links, clink the **Scan links now** button:
 
 ![Start scan links in Slim SEO Link Manager](https://i.imgur.com/dwMR2Ts.png)
 
-After that, the plugin will refresh and show you the current status of link scanning process:
+After that, the plugin will refresh and show you the current status of the link-scanning process:
 
 ![Link scanning process status](https://i.imgur.com/MladUdi.png)
 
@@ -38,7 +38,19 @@ The link scanning action will remove all existing link data and scans from the b
 
 ## Troubleshooting
 
-If you see the scanning process doesn't finish, please follow these steps:
+### Requests blocked
+
+If you use a security plugin or a security rule in CloudFlare, there might be a chance that the requests made by the plugin are blocked. Technically, the plugin uses background processing to send requests to `admin-ajax.php` via the `wp_remote_post` function to perform the scan. If your security rules have a max request limit, then they might block the requests, even when the requests are made by the server itself.
+
+In this case, you might want to increase the limit or exclude the server IP of the website to avoid blocking the plugin's requests.
+
+For the **Shield Security** plugin, please go to the plugin settings > Config tab > Traffic, and update the settings **Max Request Limit** and **Request Limit Time Interval**.
+
+If you use CloudFlare WAF's [Rate Limiting Rules](https://developers.cloudflare.com/waf/rate-limiting-rules/), then increase the limit in its settings.
+
+### Scanning process not finishing
+
+If you see the scanning process isn't finished, please follow these steps:
 
 - Update Slink SEO Link Manager to the latest version.
 - Deactivate the plugin and reactivate it.
