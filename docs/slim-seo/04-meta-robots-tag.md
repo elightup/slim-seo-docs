@@ -109,7 +109,7 @@ add_filter( 'slim_seo_robots_txt', function( $content ) {
     // Your custom rule.
     $content .= "Disallow: /page/search/*\n";
     return $content;
-}
+} );
 ```
 
 Please note that you can't filter the rule for sitemap. You can either enable or disable it by enable or disable the sitemap feature from the Slim SEO's settings page.
