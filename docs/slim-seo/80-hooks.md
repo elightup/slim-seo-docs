@@ -74,6 +74,18 @@ Note that the `$short_name` is the tag name without prefix `og:` or `fb:`.
 
 Changes the value of robots index, accepts one parameter - a boolean value indicating if the current page is indexed or not.
 
+### `slim_seo_robots_txt`
+
+Change the disallow rules added by Slim SEO in `robots.txt` file, accepts one parameter - the content of the rules.
+
+```php
+add_filter( 'slim_seo_robots_txt', function( $content ) {
+    // Your custom rule.
+    $content .= "Disallow: /page/search/*\n";
+    return $content;
+}
+```
+
 ### `slim_seo_meta_box_context`
 
 Changes the context of the Search Engine Optimization meta box, which can be `advanced`, `normal` (below post content) or `side` (on the sidebar). Accepts one parameter - the context value. Note that if your post type is using Gutenberg, then `advanced` and `normal` works exactly the same.

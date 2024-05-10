@@ -72,3 +72,44 @@ add_filter( 'wp_robots', function( $robots ) {
 ## Large image preview
 
 By default, Slim SEO enables large image preview on SERPs (search engine result pages). This is recommended [by Google](https://developers.google.com/search/blog/2019/09/more-controls-on-search) to encourage users click to go to the website, thus, increase CTR (click-through-rate). You don't need to do anything about this as the plugin automatically handles this for you.
+
+## robots.txt
+
+Besides meta robots tag, Slim SEO also changes the content of the `robots.txt` to better support SEO.
+
+:::info
+If you don't install WordPress in a subfolder, e.g. your website is example.com, WordPress automatically creates a virtual `robots.txt` file for you. This file is not available and can't be seen if you browse your website via a file manager (in cPanel, FTP, or SSH).
+:::
+
+What Slim SEO does is:
+
+- Add rules to block search engine robots to crawl internal search pages. This will help you save bandwidth and [reduce the crawl budget](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget#hide_urls).
+- Add sitemap URL to the `robots.txt` file to let search engines know where is your sitemap and can crawl all URLs of your site.
+
+Your `robots.txt` will look like this (highlighted lines are added by Slim SEO):
+
+```
+User-agent: *
+Disallow: /wp-admin/
+// highlight-start
+Disallow: /?s=
+Disallow: /page/*/?s=
+Disallow: /search/
+// highlight-end
+Allow: /wp-admin/admin-ajax.php
+
+// highlight-next-line
+Sitemap: http://ss.test/sitemap.xml
+```
+
+If you want to change the disallow rules added by Slim SEO, use the following snippet:
+
+```php
+add_filter( 'slim_seo_robots_txt', function( $content ) {
+    // Your custom rule.
+    $content .= "Disallow: /page/search/*\n";
+    return $content;
+}
+```
+
+Please note that you can't filter the rule for sitemap. You can either enable or disable it by enable or disable the sitemap feature from the Slim SEO's settings page.
