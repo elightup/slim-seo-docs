@@ -112,4 +112,10 @@ add_filter( 'slim_seo_robots_txt', function( $content ) {
 } );
 ```
 
+Or if you want to remove all rules added by Slim SEO, use the following snippet:
+
+```php
+add_filter( 'slim_seo_robots_txt', '__return_empty_string' );
+```
+
 Please note that you can't filter the rule for sitemap. You can either enable or disable it by enable or disable the sitemap feature from the Slim SEO's settings page.
