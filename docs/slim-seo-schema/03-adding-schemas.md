@@ -40,7 +40,13 @@ Besides, some optional properties are kept **hidden** (just to make you're not l
 
 ![Schema properties](https://i.imgur.com/2g9amcU.png)
 
-Most properties are auto-filled with default values to save you time to enter or select values for them. You can manually enter data for properties and also can enter **shortcodes** in the input. Slim SEO Schema will parse the shortcodes for you.
+Most properties are auto-filled with default values to save you time to enter or select values for them. You can manually enter data for properties if you want.
+
+:::info Shortcodes
+
+You can also use shortcodes for properties' values. Slim SEO Schema will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
+
+:::
 
 Besides, Slim SEO Schema supports **dynamic data** for properties (such as post title, author name, etc.). To insert dynamic data, click the the **Insert** button next to the input.
 
