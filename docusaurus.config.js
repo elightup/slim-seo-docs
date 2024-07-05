@@ -18,23 +18,14 @@ const config = {
   projectName: 'slim-seo-docs', // Usually your repo name.
   titleDelimiter: '-',
 
-  scripts: [
-    {
-      src: 'https://beamanalytics.b-cdn.net/beam.min.js',
-      'data-token': '0be0dc94-dd6f-4c51-b876-9f9b81f6ad1d',
-      defer: true,
-    }
-  ],
-
   plugins: [
     './lightbox',
   ],
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -43,7 +34,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+        googleTagManager: {
+          containerId: 'GTM-N55SZ2BT',
+        }
+      },
     ],
   ],
 
