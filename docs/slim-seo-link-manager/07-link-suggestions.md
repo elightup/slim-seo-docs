@@ -2,7 +2,7 @@
 title: Link suggestions
 ---
 
-Besides the [report for links of a specific post](/slim-seo-schema/post-links/), the plugin also **suggests related posts for you to build links with**. The plugin also allows you to connect different WordPress sites and suggest links between them. This feature is very useful to **build internal links** as well as **build backlinks** for your websites.
+Besides the [report for links of a specific post](/slim-seo-link-manager/post-links/), the plugin also **suggests related posts for you to build links with**. The plugin also allows you to connect different WordPress sites and suggest links between them. This feature is very useful to **build internal links** as well as **build backlinks** for your websites.
 
 To get link suggestions *when editing a post*, click the **Link Suggestions** tab in the **Link Manager** meta box, below the post content:
 
@@ -40,3 +40,11 @@ To do that, from the list of related (suggested) posts, click the edit icon to e
 A popup will appear. In the popup, you'll see the familiar edit screen of the selected old post, where you can edit its content and insert links. To make it more convenient, the plugin **automatically copies the URL of the current post to the clipboard**, so you can easily paste into the old post's content easily and fast.
 
 ![Insert the link to the old post content](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/insert-link-to-old-posts.png)
+
+## Link to your external sites
+
+If you have multiple external sites and you want the plugin suggest links from them, you can do that with Slim SEO Link Manager!
+
+The plugin allows you to connect multiple sites together in a network, and suggest related or relevant links from all sites in the network when you edit a post.
+
+For more details, please see [interlinking external sites](/slim-seo-link-manager/interlinking-external-sites/).
