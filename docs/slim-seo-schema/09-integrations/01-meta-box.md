@@ -1,5 +1,6 @@
 ---
 title: Meta Box Integration
+sidebar_label: Meta Box
 ---
 
 Slim SEO Schema has a deep integration with [Meta Box](https://metabox.io). The integration allows you to insert Meta Box fields into schema properties easily. It works with cloneable fields and groups.

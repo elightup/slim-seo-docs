@@ -1,1 +1,5 @@
-/slim-seo/auto-redirection/        /slim-seo/redirection/
+/slim-seo/auto-redirection/               /slim-seo/redirection/
+/slim-seo-schema/reusable-schemas/        /slim-seo-schema/connecting-schemas/
+/slim-seo-schema/meta-box-integration/    /slim-seo-schema/integrations/meta-box/
+/slim-seo-schema/acf-integration/         /slim-seo-schema/integrations/acf/
+/slim-seo-schema/integrations/            /slim-seo-schema/integrations/meta-box/

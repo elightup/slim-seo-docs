@@ -1,5 +1,6 @@
 ---
 title: ACF Integration
+sidebar_label: ACF
 ---
 
 Slim SEO Schema has a deep integration with [Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF). The integration allows you to insert ACF fields into schema properties easily. It works with normal fields, groups, repeaters and flexible content.

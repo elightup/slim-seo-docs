@@ -1,5 +1,5 @@
 ---
-title: Post-specific schema
+title: Post-Specific Schema
 ---
 
 Besides setting up schemas in the Settings page, you can also set up schemas for individual posts and pages.

@@ -1,5 +1,5 @@
 ---
-title: Connecting schemas
+title: Connecting Schemas
 ---
 
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
