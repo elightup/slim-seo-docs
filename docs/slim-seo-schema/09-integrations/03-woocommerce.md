@@ -19,6 +19,8 @@ Slim SEO Schema solves this problem by offering you the ability to **fill in all
 
 Of course, you can connect the Product properties with WooCommerce's values via [dynamic variables](/slim-seo-schema/dynamic-variables/).
 
+![WooCommerce dynamic variables](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/woocommerce-dynamic-variables.png)
+
 Slim SEO Schema also adds a location rule for product type, so you can build multiple Product schemas and assign them to each produc type:
 
 ![Product type rules](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/product-type-rules.png)
