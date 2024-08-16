@@ -14,7 +14,10 @@ Then click **Save Changes** to validate the license key. If your license key is 
 
 ### What happens if my license expires?
 
-In this case, the plugin will work normally. You'll still have access to all the plugin features and admin settings. However, you won't receive any updates or bug fixes, or support from us.
+- You won't receive any updates or bug fixes from us
+- You can't access to our support
+- You won't be able to add or edit schemas in the admin
+- The existing schemas that you already setup for your site won't be outputted in the front end
 
 ### Can I define the license key in `wp-config.php`?
 
