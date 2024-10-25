@@ -1,4 +1,5 @@
 /slim-seo/auto-redirection/               /slim-seo/redirection/
+/slim-seo/homepage-settings/              /slim-seo/dynamic-variables/
 /slim-seo-schema/reusable-schemas/        /slim-seo-schema/connecting-schemas/
 /slim-seo-schema/meta-box-integration/    /slim-seo-schema/integrations/meta-box/
 /slim-seo-schema/acf-integration/         /slim-seo-schema/integrations/acf/
