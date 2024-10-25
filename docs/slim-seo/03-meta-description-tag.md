@@ -11,15 +11,28 @@ Note that WordPress doesn't support excerpt for pages. Slim SEO fixes this by ad
 
 The meta description will be normalized by stripping all the HTML tags, white spaces.
 
+:::tip Shortcodes are allowed
+
 The plugin also **parses shortcodes** (in case you use shortcodes in the post content or use a [page builder plugin](https://metabox.io/best-wordpress-page-builders/) to build your page). This is _different_ from other SEO plugins, which don't parse shortcodes from post content.
 
+:::
+
 The [recommended length](https://moz.com/learn/seo/meta-description) for the meta description is **50-160 characters**. So, if the description is longer than 160 characters, it will be truncated to 160 characters.
+
+
+## How to set up meta description for post types and taxonomies?
+
+If you want to set up meta description format for custom post types, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. There you will see a list of available post types and taxonomies, and you can configure the meta tags for them.
+
+![Set up meta tags for post types and taxonomies](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+
+The plugin provides dynamic variables to help you configure the meta tags easier. Please refer to [this docs](/slim-seo/dynamic-variables/) for more details.
 
 ## How to change meta description manually?
 
 If you want to set custom meta description for a specific post or term, simply enter the text in the **Search Engine Optimization** meta box below the content area:
 
-![Edit meta description manually in Slim SEO](https://i.imgur.com/D0DdbxS.png)
+![Edit meta title and meta description](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/edit-post.png)
 
 You'll see the status icon showing if the description has a good length.
 

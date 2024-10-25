@@ -18,13 +18,21 @@ The title tag will have the following format:
 - For singular pages/posts: Page/Post title – Site title
 - For other pages: Page title – Site title
 
+## How to set up meta title for post types and taxonomies?
+
+If you want to set up meta title format for custom post types, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. There you will see a list of available post types and taxonomies, and you can configure the meta tags for them.
+
+![Set up meta tags for post types and taxonomies](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+
+The plugin provides dynamic variables to help you configure the meta tags easier. Please refer to [this docs](/slim-seo/dynamic-variables/) for more details.
+
 ## How to change meta title manually?
 
 If you want to set custom meta title for a specific post or term, simply enter the text in the **Search Engine Optimization** meta box below the content area:
 
-![Edit meta title and meta description](https://i.imgur.com/D0DdbxS.png)
+![Edit meta title and meta description](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/edit-post.png)
 
-You'll see the status icon showing if the description has a good length. The meta title should not be longer than **60 characters**.
+You'll see the status icon showing if the description has a good length. The meta title should not be longer than **60 characters**. You can also use [dynamic variables](/slim-seo/dynamic-variables/) here.
 
 :::tip Shortcodes are allowed
 
@@ -77,31 +85,6 @@ add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
 }, 10, 2 );
 ```
 
-## How to remove site title from the meta title
-
-By default, Slim SEO auto appends the " - Site title" part at the end. If you don't want that, please use this snippet:
-
-```php
-add_filter( 'document_title_parts', function( $parts ) {
-    unset( $parts['site'] );
-    return $parts;
-} );
-```
-
-## How to auto append site title to the manual meta title
-
-When entering meta title, the plugin uses that meta title "as it is". It doesn't append the " - Site title" part at the end, so you might need to enter that manually to keep the format "Page title - Site title". In case you want to do that automatically, please use this code snippet:
-
-```php
-add_filter( 'slim_seo_meta_title', function( $title, $object_id ) {
-    if ( ! is_singular() ) {
-        return $title;
-    }
-    $meta = get_post_meta( $object_id, 'slim_seo', true );
-    return empty( $meta['title'] ) ? $title : $meta['title'] . ' - ' . get_bloginfo( 'name' );
-}, 10, 2 );
-```
-
 ## How to change the separator in the meta title?
 
 By default, WordPress uses a dash (-) as the separator in the meta title. To change that, please use this snippet:
@@ -110,25 +93,6 @@ By default, WordPress uses a dash (-) as the separator in the meta title. To cha
 add_filter( 'document_title_separator', function() {
     return '|'; // Replace with your custom separator.
 } );
-```
-
-## How to reverse the order of site title and page title?
-
-By default, WordPress and Slim SEO shows the "Page title - Site title" for all pages except the front page. If you want to reverse this order to put the site title first, please use this snippet:
-
-```php
-add_filter( 'document_title_parts', function( $parts ) {
-	return is_front_page() ? $parts : array_filter( [
-		'site'  => $parts['site'],
-		'title' => $parts['title'],
-		'page'  => $parts['page'] ?? '',
-	] );
-} );
-
-// For preview in the admin.
-add_filter( 'slim_seo_title_parts', function( $parts, $type ) {
-	return $type === 'home' ? $parts : [ 'site', 'title' ];
-}, 10, 2 );
 ```
 
 ## How to hide SEO columns
