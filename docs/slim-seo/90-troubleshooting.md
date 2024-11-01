@@ -39,6 +39,25 @@ add_filter( 'slim_seo_skipped_shortcodes', function( $shortcodes ) {
 } );
 ```
 
+You can also use the *opposite* filter `slim_seo_allowed_shortcodes` to filter the list of allowed shortcodes:
+
+```php
+add_filter( 'slim_seo_allowed_shortcodes', function( $shortcodes ) {
+    return array_filter( $shortcodes, function( $shortcode ) {
+        // Do not allow shortcodes start with "my_prefix"
+        return ! str_starts_with( $shortcode, 'my_prefix_' );
+    }, ARRAY_FILTER_USE_KEY );
+} );
+```
+
+Note that the `slim_seo_allowed_shortcodes` accepts an associate array of shortcodes, where key is the shortcode name and value is the callback function.
+
+If you want to disable all shortcodes, use this snippet:
+
+```php
+add_filter( 'slim_seo_allow_shortcodes', '__return_empty_array' );
+```
+
 ## Blocks not working
 
 Similar to shortcodes, some blocks might not working properly. To fix this problem, use the following snippet:
@@ -51,5 +70,28 @@ add_filter( 'slim_seo_skipped_blocks', function( $blocks ) {
     $blocks[] = 'namespace/your-2nd-block-name';
 
     return $blocks;
+} );
+```
+
+You can also use the *opposite* filter `slim_seo_allowed_blocks` to filter the list of allowed blocks:
+
+```php
+add_filter( 'slim_seo_allowed_blocks', function( $blocks ) {
+    return array_filter( $blocks, function( $block ) {
+        // Do not allow blocks start with "my_prefix"
+        return ! str_starts_with( $block, 'my_prefix_' );
+    } );
+} );
+```
+
+Unlike `slim_seo_allowed_shortcodes`, the `slim_seo_allowed_blocks` accepts a numeric array of blocks, where each element is a block name.
+
+If you want to allow only core blocks, use the following snippet:
+
+```php
+add_filter( 'slim_seo_allowed_blocks', function( $blocks ) {
+    return array_filter( $blocks, function( $block ) {
+        return str_starts_with( $block, 'core/' );
+    } );
 } );
 ```
