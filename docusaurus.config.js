@@ -66,7 +66,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: '⚠️ Lifetime plans will be removed from <b>01 Dec 2024</b>. <a href="https://wpslimseo.com/products/">Get it now</a> before it\'s gone.',
+        content: '⚠️ Lifetime plans will be removed from <b>01 Dec 2024</b>. <a href="https://wpslimseo.com/products/"><b>Get it now</b></a> before it\'s gone.',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
