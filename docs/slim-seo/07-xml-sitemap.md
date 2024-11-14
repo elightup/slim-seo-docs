@@ -39,6 +39,12 @@ Image URLs are not visible to humans when you view the sitemap link. But they're
 
 :::
 
+If you want to disable the image sitemap, use the following snippet:
+
+```php
+add_filter( 'slim_seo_sitemap_image', '__return_false' );
+```
+
 ## Google News sitemap
 
 Slim SEO also includes the sitemap for Google News by default to make sure your posts can be submitted to Google News.
@@ -46,6 +52,12 @@ Slim SEO also includes the sitemap for Google News by default to make sure your 
 The news sitemap is enabled for the default post type `post` only. It's not available for other post types. Slim SEO automatically adds details for news in the `sitemap-post-type-post.xml` sitemap (the sitemap for `post`). So you can use this URL `https://domain.com/sitemap-post-type-post.xml` to submit news sitemap to Google (or you can simply submit `https://domain.com/sitemap.xml` as usual as Google will discover the news sitemap by going through each sub-sitemap).
 
 Similarly to the image sitemap, the details for news sitemap are not visible to humans when you view the sitemap link. But they're there if you view the sitemap source code as they're made for search engines only.
+
+If you want to disable the news sitemap, use the following snippet:
+
+```php
+add_filter( 'slim_seo_sitemap_news', '__return_false' );
+```
 
 ## Sitemap and robots.txt
 
@@ -61,7 +73,11 @@ For more details about multilingual sitemap, please see this article: [How to Cr
 
 ## Excluding post types
 
-To exclude post types from the sitemap, use the following code:
+To exclude a post type from the sitemap, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. Then pick a post type and enable the option **Hide from search engines**:
+
+![Excluding a post type from the XML sitemap](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/exclude-post-type-from-sitemap.png)
+
+You can also use the following snippet:
 
 ```php
 add_filter( 'slim_seo_sitemap_post_types', function( $post_types ) {
@@ -79,7 +95,9 @@ To tell search engines to not index these posts, it’s better to use [the robot
 
 ## Excluding taxonomies
 
-Similar to the above, please use the following code:
+Similar to the above, if you want to exclude a taxonomy from the sitemap, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. Then pick a taxonomy and enable the option **Hide from search engines**.
+
+You can also use the following snippet:
 
 ```php
 add_filter( 'slim_seo_sitemap_taxonomies', function( $taxonomies ) {
