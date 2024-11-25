@@ -60,6 +60,22 @@ Besides, you can select how the plugin matches the URL:
 - **End With**: the requested URL must end with the entered value.
 - **Regex**: the requested URL must match the entered value using regular expression.
 
+## Export/Import Redirects
+
+You can export your redirects in CSV format by using **Export** button.
+
+![export redirect](https://i.imgur.com/TII5vKx.png)
+
+You can import your redirects by using **Import** button.
+
+![import redirect](https://i.imgur.com/i3BFzg1.png)
+
+A new popup with instructions will appear that lets you upload the CSV file:
+
+![import redirect popup](https://i.imgur.com/0ytPTiF.png)
+
+In case you want to manual enter redirect. You can click **Download sample CSV file** to get a sample file and use it to fill up your redirects.
+
 ## Monitoring 404 pages
 
 A wonderful feature of Slim SEO is that the plugin helps you **monitor 404 pages and create redirects for them**. This helps you provide alternative content to users by redirecting them to the correct page if they enter a wrong URL, and thus increase the user experience. It also helps if you shared a wrong URL or deleted some content that no longer exists.
