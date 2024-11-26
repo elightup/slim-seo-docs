@@ -70,11 +70,21 @@ You can import your redirects by using **Import** button.
 
 ![import redirect](https://i.imgur.com/i3BFzg1.png)
 
-A new popup with instructions will appear that lets you upload the CSV file:
+A new popup with instructions will appear that lets you upload the CSV file.
 
-![import redirect popup](https://i.imgur.com/0ytPTiF.png)
+Please note that your CSV file must have a header row and exact 7 columns as follows:
 
-In case you want to manual enter redirect. You can click **Download sample CSV file** to get a sample file and use it to fill up your redirects.
+Column name|Data type|Description|Posible values|Sample
+---|---|---|---|---
+Type|Number|Redirect type is used to forward one URL to another|301, 302, 307, 410|301
+Condition|String|Condition is used for matching URL to redirect|exact-match,contain,start-with,end-with,regex|exact-match
+From|String|URL to redirect||old-post
+To|String|Destination URL||https://example.com/new-post/
+Note|String|Something to reminds you about the redirects||
+Enable|Number|Is the redirect enabled?|0, 1|1
+Ignore Parameters|Number|Ignore URL's parameters if URL has parameters|0, 1|0
+
+You can also click **Download sample CSV file** to get a sample file and use it to fill up your redirects.
 
 ## Monitoring 404 pages
 
