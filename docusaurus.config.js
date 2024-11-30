@@ -66,7 +66,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: '⚠️ Lifetime plans will be removed from <b>01 Dec 2024</b>, and there are <b>no Black Friday deals</b>. <a href="https://wpslimseo.com/products/"><b>Get it now</b></a> before it\'s gone.',
+        content: 'Due to payment issue with some users, we\'ll extend the deadline for removing lifetime plans to the end of <b>02 Dec 2024</b>. <a href="https://wpslimseo.com/products/"><b>Get it now</b></a> before it\'s gone.',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
