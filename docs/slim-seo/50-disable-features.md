@@ -59,4 +59,4 @@ You can also disable integrations with other plugins if you want. Slim SEO autom
 
 Please note that some features require other features to be active. For example: the `schema` feature requires `breadcrumbs`. So, when disable a feature, make sure to disable all dependent features.
 
-Learn more about the features' dependencies in the plugin [source code](https://github.com/elightup/slim-seo/blob/master/src/Plugin.php).
+Learn more about the features' dependencies in the plugin [source code](https://github.com/elightup/slim-seo/).
