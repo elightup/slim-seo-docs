@@ -65,14 +65,12 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      /*
       announcementBar: {
-        content: 'Due to payment issue with some users, we\'ll extend the deadline for removing lifetime plans to the end of <b>02 Dec 2024</b>. <a href="https://wpslimseo.com/products/"><b>Get it now</b></a> before it\'s gone.',
+        content: '🔥 Christmas and New Year sale: Get <b>20% OFF</b> for any plan with coupon <b>XMAS24</b>. <a href="https://wpslimseo.com/products/">Get it now</a>.',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
       },
-      */
       navbar: {
         logo: {
           alt: 'Slim SEO Logo',
