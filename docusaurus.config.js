@@ -65,12 +65,12 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   content: '🔥 Christmas and New Year sale: Get <b>20% OFF</b> for any plan with coupon <b>XMAS24</b>. <a href="https://wpslimseo.com/products/">Get it now</a>.',
-      //   backgroundColor: '#fed7aa',
-      //   textColor: '#7c2d12',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        content: ' 🔥 Get 20% OFF for any plan with coupon <b>WCASIA2025</b> during the WordCamp Asia 2025 event until Feb 22. <a href="https://wpslimseo.com/products/">Get it now</a>.',
+        backgroundColor: '#fed7aa',
+        textColor: '#7c2d12',
+        isCloseable: false,
+      },
       navbar: {
         logo: {
           alt: 'Slim SEO Logo',
