@@ -65,11 +65,15 @@ The sitemap URL is automatically included in the `robots.txt` on your website if
 
 ## Multilingual sitemap
 
-Slim SEO integrates well with multilingual plugins like **WPML** and **Polylang**.
+Slim SEO integrates well with multilingual plugins like **WPML**, **Polylang**, and **TranslatePress**.
 
-Instead of providing separated sitemaps for different languages, the plugin adds `rel="alternate"` for each post or term in the sitemap. So, the sitemap becomes a **global sitemap for all languages**. When the search engines view the sitemap, they see multiple links for all languages for each post. These links are not visible to humans, but you can see them when viewing the sitemap source.
+Slim SEO strictly follows [Google's guidelines](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) on creating a multilingual sitemap. According to the guidelines, the plugin adds `rel="alternate"` for every alternate version of the post or term in the sitemap. When the search engines view the sitemap, they see multiple links for all languages for each post. These links are not visible to humans, but you can see them when viewing the sitemap source code.
 
-For more details about multilingual sitemap, please see this article: [How to Create a Multilingual Sitemap in WordPress with WPML or Polylang](https://wpslimseo.com/wordpress-multilingual-sitemap/).
+:::info
+By following this method from Google, you won't have separated sitemaps for different languages. Instead, you'll have a global sitemap at `example.com/sitemap.xml` for all languages.
+:::
+
+For more details about multilingual sitemap, please see this article: [How to create a multilingual sitemap in WordPress](https://wpslimseo.com/wordpress-multilingual-sitemap/).
 
 ## Excluding post types
 
