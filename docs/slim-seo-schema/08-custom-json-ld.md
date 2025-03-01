@@ -20,7 +20,7 @@ And the plugin will render the variables on the front end.
 
 :::tip
 
-Your custom JSON-LD code may contains `<script>` tag or only the JSON code. The plugin automatically detects that and works well in both cases.
+Although the plugin can process your custom JSON-LD code if it contains `<script>` tag, it's recommended to enter **only the JSON code**. Some hostings has special security rules that block the plugin from saving the data if it contains `<script>` tag.
 
 :::
 
