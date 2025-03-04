@@ -1,5 +1,5 @@
 ---
-title: WooCommerce Integration
+title: Slim SEO Schema - WooCommerce Integration
 sidebar_label: WooCommerce
 ---
 

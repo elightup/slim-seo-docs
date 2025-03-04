@@ -1,5 +1,5 @@
 ---
-title: Meta Box Integration
+title: Slim SEO Schema - Meta Box Integration
 sidebar_label: Meta Box
 ---
 

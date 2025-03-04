@@ -1,5 +1,5 @@
 ---
-title: Page Builder Integrations
+title: Slim SEO Schema - Page Builder Integrations
 sidebar_label: Page builders
 ---
 

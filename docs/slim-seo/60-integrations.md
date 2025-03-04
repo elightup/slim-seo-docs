@@ -23,6 +23,7 @@ For page builder plugins, Slim SEO renders the content built with them and use t
 
 - **WPML**
 - **Polylang**
+- **TranslatePress**
 
 When using Slim SEO with these plugins, for each post and term in the sitemap, Slim SEO will add `rel="alternate"` for the languages. With this addition, you don't need a separate sitemap for other languages.
 
@@ -40,7 +41,6 @@ For more details about multilingual sitemap, please see this article: [How to Cr
 - **[Meta Box](https://metabox.io)**
 - **Ultimate Member**
 - **WebStories**: replace the default schema & meta tags with the more comprehensive schema from Slim SEO.
-- **WooCommerce**: Slim SEO allows you to edit meta tags for the shop page & products. Besides, it sets the [breadcrumbs](/slim-seo/breadcrumbs/) for products with `product_cat`. The plugin also output additional Open Graph tags for Pinterest Pins.
 - **WPForms**
 
 ## Themes

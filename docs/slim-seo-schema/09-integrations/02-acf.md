@@ -1,5 +1,5 @@
 ---
-title: ACF Integration
+title: Slim SEO Schema - ACF Integration
 sidebar_label: ACF
 ---
 
