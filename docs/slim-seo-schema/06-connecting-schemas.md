@@ -9,7 +9,7 @@ Connecting schemas together via properties is a powerful feature of Slim SEO Lin
 
 For example, if you want to add a schema for a review of a book, then you can build two separate schemas: Review and Book. Inside the Review schema, you can set its property "item reviewed" that links to the Book schema. This way, you connect the Book schema to the Review schema as a property.
 
-![Review snippet for book](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/connecting-schemas.png)
+![Review snippet for book](img/connecting-schemas.png)
 
 ## Why multiple schemas?
 
@@ -27,13 +27,13 @@ Let's create a review (Review schema) for a book, which has the following detail
 
 This is the diagram of how these schemas connect to each other:
 
-![Schema graph diagram](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/schema-graph-diagram.png)
+![Schema graph diagram](img/schema-graph-diagram.png)
 
 Now let's create these schemas:
 
 First, we'll create a Person schema for the book author. Simply add a Person schema to the list. Note that you have to use [dynamic variables](/slim-seo-schema/dynamic-variables/) to add values from custom fields to the properties:
 
-![Book author schema](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/book-author.png)
+![Book author schema](img/book-author.png)
 
 :::info
 
@@ -43,23 +43,23 @@ I'm using [Meta Box](https://metabox.io) to create the custom post type and cust
 
 Then we'll create a Book schema. When adding a Book schema, you should fill the properties with values from custom fields (via dynamic variables). For the **Author** property, make sure you select the Person schema that you created in the step above:
 
-![Book schema](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/book-schema.png)
+![Book schema](img/book-schema.png)
 
 The next step is creating a Person schema for the reviewer. Simply add a Person schema to the list and it will automatically fill with the current user data, which is good:
 
-![Reviewer schema](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/reviewer.png)
+![Reviewer schema](img/reviewer.png)
 
 :::info Changing schema title
 
 When building multiple schemas, you might have the same schema types. To differentiate them, you can change their title. To change the title, click the schema title in the title bar and enter a new title:
 
-![Changing schema title](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/change-schema-titles.png)
+![Changing schema title](img/change-schema-titles.png)
 
 :::
 
 Finally, create a Review schema. Now, as you already have Book and Person (reviewer) schemas, you can connect them in the Review schema:
 
-![Review schema](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/review.png)
+![Review schema](img/review.png)
 
 That's all! All schemas are connected. You can add as many properties for each of them as you want. This way, each schema can provide search engines a lot of details.
 

@@ -8,11 +8,11 @@ Besides [suggeting internal links](/slim-seo-link-manager/link-suggestions/), Sl
 
 To start using this feature, go to **Slim SEO > Link Manager > Settings**:
 
-![Go to Slim SEO Link Manager settings tab](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/settings.png)
+![Go to Slim SEO Link Manager settings tab](img/settings.png)
 
 Scroll down and enable the **Interlink external sites** option:
 
-![Enable interlinking external sites option](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/enable-interlink.png)
+![Enable interlinking external sites option](img/enable-interlink.png)
 
 The plugin will reveal two more options:
 
@@ -39,7 +39,7 @@ After having a secret key for all sites, then you need to connect them together.
 
 The plugin will connect to the newly added site, using the secret key to verify the connection. When everything is finished, the new site will be shown in the table below.
 
-![List of linked sites](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/linked-sites.png)
+![List of linked sites](img/linked-sites.png)
 
 That's done the setup part for interlinking external sites. To see it in action, let's go to edit a post and see [how the plugin suggests links](/slim-seo-link-manager/link-suggestions/) from other sites.
 
@@ -49,7 +49,7 @@ To build backlinks between sites, Slim SEO Link Manager will suggest links to ot
 
 To do that, go to edit a post, and in the **Link Manager** meta box, below the post content, click **Link Suggestions** and you'll see two new options: **Internal** and **External** tabs as follows:
 
-![View suggestions for links from external websites](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/link-suggestions-external.png)
+![View suggestions for links from external websites](img/link-suggestions-external.png)
 
 Where:
 
@@ -60,11 +60,11 @@ When clicking the **External** tab, the plugin will show you a table of the rela
 
 After doing that, you'll see the new links appear in the **External Outbound** [report](/slim-seo-link-manager/post-links/):
 
-![External outbound link report](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/external-outbound.png)
+![External outbound link report](img/external-outbound.png)
 
 Of course, those links will be available in the plugin's [reports](/slim-seo-link-manager/reports/) under **Slim SEO > Link Manager**, so you can see all the available details about them, like status, anchor text, etc.
 
-![Slim SEO Link Manager reports](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/reports.png)
+![Slim SEO Link Manager reports](img/reports.png)
 
 Now you can monitor those links easily to see which links are redirected, which ones are broken, and can fix them.
 

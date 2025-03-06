@@ -15,13 +15,13 @@ Of course, this is not enough for a Product. It lacks a lot of data which the [P
 
 Slim SEO Schema solves this problem by offering you the ability to **fill in all the properties of the Product schema**. It also allows you to [connect to other schemas](/slim-seo-schema/connecting-schemas/) to build even more detailed schema graph:
 
-![Product schema](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/product-schema.png)
+![Product schema](../img/product-schema.png)
 
 Of course, you can connect the Product properties with WooCommerce's values via [dynamic variables](/slim-seo-schema/dynamic-variables/).
 
-![WooCommerce dynamic variables](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/woocommerce-dynamic-variables.png)
+![WooCommerce dynamic variables](../img/woocommerce-dynamic-variables.png)
 
 Slim SEO Schema also adds a location rule for product type, so you can build multiple Product schemas and assign them to each produc type:
 
-![Product type rules](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/product-type-rules.png)
+![Product type rules](../img/product-type-rules.png)
 

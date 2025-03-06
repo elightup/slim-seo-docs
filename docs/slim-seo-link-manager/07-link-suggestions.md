@@ -35,11 +35,11 @@ However, you can do backward with the plugin, e.g. **build links from existing p
 
 To do that, from the list of related (suggested) posts, click the edit icon to edit that post:
 
-![Edit an old post to insert link](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/popup-old-posts.png)
+![Edit an old post to insert link](img/popup-old-posts.png)
 
 A popup will appear. In the popup, you'll see the familiar edit screen of the selected old post, where you can edit its content and insert links. To make it more convenient, the plugin **automatically copies the URL of the current post to the clipboard**, so you can easily paste into the old post's content easily and fast.
 
-![Insert the link to the old post content](https://i0.wp.com/images.elightup.com/slim-seo/docs/link-manager/insert-link-to-old-posts.png)
+![Insert the link to the old post content](img/insert-link-to-old-posts.png)
 
 ## Link to your external sites
 
