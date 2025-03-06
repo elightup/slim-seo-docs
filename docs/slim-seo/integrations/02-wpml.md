@@ -39,6 +39,14 @@ If you don't see Slim SEO's settings here, that means that the settings is not m
 
 :::
 
+
+:::info
+
+It's not possible to switch the language (from the language switcher in the admin bar) and enter the translations directly on the Slim SEO's settings page. You **must** translate the settings on the WPML's String Translations page.
+
+:::
+
+
 ## Hreflang tag and multilingual sitemap
 
 Another aspect of multilingual SEO is the `hreflang` tag. By default, WPML automatically outputs the `hreflang` in the HTML of the posts on the front end, like this, so Slim SEO has to do nothing:

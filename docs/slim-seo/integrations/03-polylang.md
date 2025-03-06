@@ -29,6 +29,18 @@ If you don't see Slim SEO's settings here, that means that the settings is not m
 
 :::
 
+:::info
+
+It's not possible to switch the language (from the language switcher in the admin bar) and enter the translations directly on the Slim SEO's settings page. You **must** translate the settings on the Polylang's Translations page. Slim SEO always shows the settings for the default language.
+
+:::
+
+:::caution Known issue
+
+If you change settings for a post type, when you edit a post, the preview of meta title and meta description will use these settings. However, **the settings are always loaded for the default language**. But when you view the post on the front end, the settings will be loaded accordingly to the current language.
+
+:::
+
 ## Hreflang tag and multilingual sitemap
 
 Another aspect of multilingual SEO is the `hreflang` tag. By default, Polylang automatically outputs the `hreflang` in the HTML of the posts on the front end, like this, so Slim SEO has to do nothing:
@@ -43,3 +55,5 @@ However, in the [XML sitemap](/slim-seo/xml-sitemap/) for posts, Slim SEO will a
 ![Multilingual sitemap with Polylang](../img/wpml-multilingual-sitemap.png)
 
 Both methods (outputting in HTML and in XML sitemap) are the [recommended ways](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) to tell Google about translations of your pages.
+
+## Known issues
