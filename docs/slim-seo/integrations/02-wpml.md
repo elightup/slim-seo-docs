@@ -13,11 +13,11 @@ Slim SEO allows you to set specific [meta title](/slim-seo/meta-title-tag/) and 
 
 Assuming that you have a post with manual meta title and description as follows:
 
-![Translate meta title and meta description](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/wpml-translate-post.png)
+![Translate meta title and meta description](../img/wpml-translate-post.png)
 
 On the right sidebar, in the **Translation** area, click the plus icon (or the settings icon if you already translated it) next to the language to add a new translation for the post. WPML will automatically loads the translation editor screen for you to translate the content like this:
 
-![WPML translate editor screen](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/wpml-translate-editor-screen.png)
+![WPML translate editor screen](../img/wpml-translate-editor-screen.png)
 
 You'll see Slim SEO's meta tags (title and description) available there, so you can translate them for the post.
 
@@ -25,13 +25,13 @@ You'll see Slim SEO's meta tags (title and description) available there, so you 
 
 Slim SEO has a settings page, where you can set up the meta tags for post types and taxonomies with [dynamic variables](/slim-seo/dynamic-variables/):
 
-![Dynamic variables in Slim SEO](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+![Dynamic variables in Slim SEO](../img/settings-meta-tags-tab.png)
 
 You can translate these settings with WPML with the help of the [String Translation](https://wpml.org/documentation/getting-started-guide/string-translation/) module.
 
 Simply go to **WPML → String Translation**, and enter **slim_seo** in the search box to find all settings by Slim SEO. Then in the table list below, you can click the plus icon next to the settings you want to translate:
 
-![Translate Slim SEO settings with WPML](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/wpml-translate-settings.png)
+![Translate Slim SEO settings with WPML](../img/wpml-translate-settings.png)
 
 :::caution
 
@@ -51,6 +51,6 @@ Another aspect of multilingual SEO is the `hreflang` tag. By default, WPML autom
 
 However, in the [XML sitemap](/slim-seo/xml-sitemap/) for posts, Slim SEO will automatically adds `hreflang` tags to the sitemap **for each post**. This is not visible to human, but when you view the source code of the sitemap, you will see it like this:
 
-![Multilingual sitemap with WPML](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/wpml-multilingual-sitemap.png)
+![Multilingual sitemap with WPML](../img/wpml-multilingual-sitemap.png)
 
 Both methods (outputting in HTML and in XML sitemap) are the [recommended ways](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) to tell Google about translations of your pages.

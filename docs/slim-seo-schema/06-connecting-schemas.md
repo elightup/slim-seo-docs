@@ -37,7 +37,7 @@ First, we'll create a Person schema for the book author. Simply add a Person sch
 
 :::info
 
-I'm using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Schema has a [deep integration with Meta Box](/slim-seo-schema/meta-box-integration/). You can also use ACF which is [also supported](/slim-seo-schema/acf-integration/).
+I'm using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Schema has a [deep integration with Meta Box](/slim-seo-schema/integrations/meta-box/). You can also use ACF which is [also supported](/slim-seo-schema/integrations/acf/).
 
 :::
 

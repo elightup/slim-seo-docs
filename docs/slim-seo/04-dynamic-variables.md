@@ -10,7 +10,7 @@ There's another popular example is review articles. When you write a review, let
 
 All the above can be done through a new feature of Slim SEO - dynamic variables.
 
-![Dynamic variables in Slim SEO](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+![Dynamic variables in Slim SEO](img/settings-meta-tags-tab.png)
 
 ## What are dynamic variables?
 
@@ -24,13 +24,13 @@ In other words, dynamic variables will allow you to use dynamic data in meta tag
 
 ## Setting up meta tags with dynamic variables
 
-![Accessing the Meta Tags tab in Slim SEO settings page to configure meta tags for homepage, post types, and taxonomies.](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+![Accessing the Meta Tags tab in Slim SEO settings page to configure meta tags for homepage, post types, and taxonomies.](img/settings-meta-tags-tab.png)
 
 Go to **Settings > Slim SEO**, you'll see a new tab **Meta Tags**, replacing the two old tabs in previous versions, **Homepage** and **Post Types**. This tab allows you to configure meta tags for all types of content, including homepage, post types, taxonomies, and other pages, such as author archives.
 
 For each type of content, you can configure meta title, meta description, Facebook and Twitter images. To load the dynamic variables, you just need to click the "3 dots" icon and select a dynamic variable:
 
-![Showing popup to pick dynamic variables for meta tags](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/dynamic-variables-popup.png)
+![Showing popup to pick dynamic variables for meta tags](img/dynamic-variables-popup.png)
 
 When you select it, it will be inserted into the input box. You can select/insert multiple variables as you want. You can also type the variable into the input box, or type text between them.
 
@@ -38,7 +38,7 @@ When you select it, it will be inserted into the input box. You can select/inser
 
 When you edit a single post, or single term (category, tag, or any taxonomy), the plugin also provides you with the same dynamic variables. But there is a big difference: **you can preview the value of the meta tags** as soon as you write it. This is a very important point for you to see how they are rendered as well as their length (and you'll see an indicator for whether they're too long or too short).
 
-![Use dynamic variables for single posts with preview](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/dynamic-variables-for-single-posts-with-preview.png)
+![Use dynamic variables for single posts with preview](img/dynamic-variables-for-single-posts-with-preview.png)
 
 There is a small note about the preview. For post types or taxonomies in the settings page, the indicator for the number of characters and also the preview may not work. The reason is that the plugin won't be able to know which specific post or term you're configuring for. So, generating a preview won't be possible.
 

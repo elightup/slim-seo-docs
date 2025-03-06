@@ -52,7 +52,7 @@ Sometimes, when you set a featured image for a post, or even manually set an ima
 
 In that case, you need to ask Facebook to clear its cache. To do that, go to [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/), and enter your URL, and click **Debug**:
 
-![Debugging social image on Facebook](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/facebook-sharing-debugger.png)
+![Debugging social image on Facebook](img/facebook-sharing-debugger.png)
 
 Then you can see all the Open Graph tags that Facebook can find on your page, including your image. If you see that the details (tags or image) are incorrect, click the **Scrape Again** button to ask Facebook to scrape the info again, and thus refresh its cache.
 

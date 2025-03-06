@@ -13,7 +13,7 @@ As you know, Slim SEO has a powerful meta tags configuration with [dynamic varia
 
 Now you can select dynamic variables from WooCommerce for meta tags as shown below:
 
-![WooCommerce variables](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/woocommerce-variables.png)
+![WooCommerce variables](../img/woocommerce-variables.png)
 
 List of supported variables:
 

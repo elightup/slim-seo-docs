@@ -79,7 +79,7 @@ For more details about multilingual sitemap, please see this article: [How to cr
 
 To exclude a post type from the sitemap, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. Then pick a post type and enable the option **Hide from search engines**:
 
-![Excluding a post type from the XML sitemap](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/exclude-post-type-from-sitemap.png)
+![Excluding a post type from the XML sitemap](img/exclude-post-type-from-sitemap.png)
 
 You can also use the following snippet:
 

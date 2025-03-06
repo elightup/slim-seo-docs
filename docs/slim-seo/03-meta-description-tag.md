@@ -24,7 +24,7 @@ The [recommended length](https://moz.com/learn/seo/meta-description) for the met
 
 If you want to set up meta description format for custom post types, please go to **Settings > Slim SEO** and select the **Meta Tags** tab. There you will see a list of available post types and taxonomies, and you can configure the meta tags for them.
 
-![Set up meta tags for post types and taxonomies](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/settings-meta-tags-tab.png)
+![Set up meta tags for post types and taxonomies](img/settings-meta-tags-tab.png)
 
 The plugin provides dynamic variables to help you configure the meta tags easier. Please refer to [this docs](/slim-seo/dynamic-variables/) for more details.
 
@@ -32,7 +32,7 @@ The plugin provides dynamic variables to help you configure the meta tags easier
 
 If you want to set custom meta description for a specific post or term, simply enter the text in the **Search Engine Optimization** meta box below the content area:
 
-![Edit meta title and meta description](https://i0.wp.com/images.elightup.com/slim-seo/docs/slim-seo/edit-post.png)
+![Edit meta title and meta description](img/edit-post.png)
 
 You'll see the status icon showing if the description has a good length.
 
