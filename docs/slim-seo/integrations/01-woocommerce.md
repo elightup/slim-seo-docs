@@ -61,3 +61,5 @@ Home > Shop > Category > Product
 WooCommerce has various shortcodes and dynamic blocks for displaying content of cart, checkout, and my account pages. Those pages are dynamic, and sometimes they handle logic like changing quantity of a product.
 
 And because these pages don't need to be ranked in search engines, Slim SEO automatically don't parse content of them to generate [meta description](/slim-seo/meta-description-tag/). This also avoids a lot of issues when rendering these pages, especially with page builder plugins.
+
+There are also [other shortcodes](https://woocommerce.com/document/woocommerce-shortcodes/) and dynamic blocks for displaying products and other things as well. As they're all dynamic and not necessary for SEO, we also ignore them when generating meta description.
