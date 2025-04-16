@@ -66,7 +66,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: '🔥 Introducing Slim SEO Pro - Get <b>20% OFF</b> for any plan with coupon <b>PRO20</b> until Apr 14. <a href="https://wpslimseo.com/products/slim-seo-pro/">Get it now</a>.',
+        content: '🔥 Introducing Slim SEO Pro - One single plugin with all premium features. <a href="https://wpslimseo.com/products/slim-seo-pro/">Get it now</a>.',
         backgroundColor: '#fed7aa',
         textColor: '#7c2d12',
         isCloseable: false,
