@@ -174,7 +174,7 @@ add_action( 'slim_seo_sitemap_post', function( WP_Post $post ) {
         return;
     }
     echo "\t\t<image:image>\n";
-	echo "\t\t\t<image:loc>", esc_url( $custom_image_url ), "</image:loc>\n";
+    echo "\t\t\t<image:loc>", esc_url( $custom_image_url ), "</image:loc>\n";
     echo "\t\t</image:image>\n";
 } );
 ```
@@ -198,10 +198,15 @@ function ss_add_custom_posts_to_sitemap() {
         'https://domain.com/page-1',
         'https://domain.com/page-2',
     ];
-    foreach ( $urls as $url ) {
+
+    foreach ( $urls as $i => $url ) {
         echo "\t<url>\n";
         echo "\t\t<loc>", esc_url( $url ), "</loc>\n";
-        echo "\t</url>\n";
+
+        // Do not output the closing tag for the last URL.
+        if ( $i < count( $urls ) - 1) {
+            echo "\t</url>\n";
+        }
     }
 
     // Don't output next time.
