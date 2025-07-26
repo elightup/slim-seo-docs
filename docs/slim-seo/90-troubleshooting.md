@@ -55,7 +55,7 @@ Note that the `slim_seo_allowed_shortcodes` accepts an associate array of shortc
 If you want to disable all shortcodes, use this snippet:
 
 ```php
-add_filter( 'slim_seo_allow_shortcodes', '__return_empty_array' );
+add_filter( 'slim_seo_allowed_shortcodes', '__return_empty_array' );
 ```
 
 ## Blocks not working

@@ -2,9 +2,9 @@
 title: Custom JSON-LD
 ---
 
-If you're an advanced user and want to add and edit schemas with custom JSON-LD code, then Slim SEO Schema has that for you.
+If you're an advanced user and want to add and edit schemas with custom JSON-LD code, then Slim SEO Pro has that for you.
 
-Select **Custom JSON-LD** from the [list of available schemas](/slim-seo-schema/adding-schemas/):
+Select **Custom JSON-LD** from the [list of available schemas](/slim-seo-pro/schema/adding-schemas/):
 
 ![Custom json-ld](https://i.imgur.com/Koxfdw4.png)
 
@@ -12,7 +12,7 @@ Then in the schema panel, paste your JSON-LD code into the textarea box:
 
 ![Enter custom JSON-LD code](https://i.imgur.com/WdibSCb.png)
 
-You can still insert the [dynamic variables](/slim-seo-schema/dynamic-variables/) into your JSON-LD code as follows:
+You can still insert the [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) into your JSON-LD code as follows:
 
 ![Using dynamic variables in JSON-LD code](https://i.imgur.com/Oo2Mdeo.png)
 
@@ -26,4 +26,4 @@ Although the plugin can process your custom JSON-LD code if it contains `<script
 
 Using custom JSON-LD code with dynamic variables is a great and flexible way to control your schema output.
 
-After finish adding or editing JSON-LD code, don't forget to set the [location](/slim-seo-schema/adding-schemas/#location) for the schema.
+After finish adding or editing JSON-LD code, don't forget to set the [location](/slim-seo-pro/schema/adding-schemas/#location) for the schema.

@@ -1,13 +1,13 @@
 ---
-title: Slim SEO Schema - Meta Box Integration
+title: Slim SEO Pro - Meta Box Integration
 sidebar_label: Meta Box
 ---
 
-Slim SEO Schema has a deep integration with [Meta Box](https://metabox.io). The integration allows you to insert Meta Box fields into schema properties easily. It works with cloneable fields and groups.
+Slim SEO Pro has a deep integration with [Meta Box](https://metabox.io). The integration allows you to insert Meta Box fields into schema properties easily. It works with cloneable fields and groups.
 
 ## Inserting Meta Box fields
 
-Click the three-dots button for a property to insert [dynamic variables](/slim-seo-schema/dynamic-variables/), all field groups registered in Meta Box will display:
+Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in Meta Box will display:
 
 ![Inserting meta box fields](https://i.imgur.com/i6NepXU.png)
 
@@ -21,7 +21,7 @@ Dynamic variables for Meta Box fields have the following format:
 
 ## Inserting sub-group fields
 
-Inserting sub-group fields has no difference from inserting normal fields. Simply select it from the list. Slim SEO Schema already formats sub-fields indented for you to easily know which fields are group and which fields are sub-fields.
+Inserting sub-group fields has no difference from inserting normal fields. Simply select it from the list. Slim SEO Pro already formats sub-fields indented for you to easily know which fields are group and which fields are sub-fields.
 
 In the screenshot below, Price, Currency, and Valid until are sub-fields of the group Offers.
 
@@ -35,7 +35,7 @@ The format of dynamic variables for sub-fields is:
 
 ## Cloneable fields
 
-You might wonder how the plugin works with cloneable fields as they have multiple values. Slim SEO Schema automatically decides how to render multiple values in various scenarios like this (without your further actions):
+You might wonder how the plugin works with cloneable fields as they have multiple values. Slim SEO Pro automatically decides how to render multiple values in various scenarios like this (without your further actions):
 
 - If the property is **not repeatable**, the plugin will **take only the first value** from the field, e.g. the value of the first clone.
 - If the property is **repeatable** (like Image), the plugin will **take all values** from the field and merge them with manually entered values (if any).

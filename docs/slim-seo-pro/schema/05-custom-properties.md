@@ -2,7 +2,7 @@
 title: Custom Properties
 ---
 
-Although most important properties (which Google recommends) are implemented in Slim SEO Schema, there are some properties that are available in the schema.org specification, but are not required by Google. Adding these properties can help you add more details for a schema and thus, help search engines to understand and display the schema better.
+Although most important properties (which Google recommends) are implemented in Slim SEO Pro, there are some properties that are available in the schema.org specification, but are not required by Google. Adding these properties can help you add more details for a schema and thus, help search engines to understand and display the schema better.
 
 ## Adding custom properties
 
@@ -46,7 +46,7 @@ With the sample above, this can be understood like this:
 
 Here the params `name`, `age`, `gender` are sub-params of the `author` and they're defined with a dot prefixed.
 
-Implementing that in Slim SEO Schema as follows:
+Implementing that in Slim SEO Pro as follows:
 
 ![Implement structural data for custom properties](https://i.imgur.com/QwE9R3D.png)
 
@@ -78,7 +78,7 @@ Similar to above, this can be understood as:
 "images.2": "https://domain.com/3.jpg",
 ```
 
-And can be implemented as follows in Slim SEO Schema:
+And can be implemented as follows in Slim SEO Pro:
 
 ![Adding array of data for custom properties](https://i.imgur.com/8qc7Wm7.png)
 
@@ -97,9 +97,9 @@ Combining these, you can define a complex data structure as follows (this is a l
 ]
 ```
 
-In Slim SEO Schema:
+In Slim SEO Pro:
 
-![Complex data structure for custom properties in Slim SEO Schema](https://i.imgur.com/TwhqUbz.png)
+![Complex data structure for custom properties in Slim SEO Pro](https://i.imgur.com/TwhqUbz.png)
 
 ## Adding custom properties to an existing property
 
@@ -107,7 +107,7 @@ Assume that you're implementing the Local Business schema, which has an address 
 
 ![Address property for Local Business schema](https://i.imgur.com/z7IrbUk.png)
 
-In most cases, these properties are enough (as we try so hard to implement them all for you), but from the [schema.org specification](https://schema.org/PostalAddress), there are a lot more properties for address such as name, description, etc. They're not important and are not required, but if you want to add them, then you can do that with Slim SEO Schema.
+In most cases, these properties are enough (as we try so hard to implement them all for you), but from the [schema.org specification](https://schema.org/PostalAddress), there are a lot more properties for address such as name, description, etc. They're not important and are not required, but if you want to add them, then you can do that with Slim SEO Pro.
 
 As address is an implemented property in the plugin, you can't add it as a new custom property. Instead, you need to add custom property for a sub-param (name, description) using dot notation like this:
 

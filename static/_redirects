@@ -1,6 +1,30 @@
 /slim-seo/auto-redirection/               /slim-seo/redirection/
 /slim-seo/homepage-settings/              /slim-seo/dynamic-variables/
-/slim-seo-schema/reusable-schemas/        /slim-seo-schema/connecting-schemas/
-/slim-seo-schema/meta-box-integration/    /slim-seo-schema/integrations/meta-box/
-/slim-seo-schema/acf-integration/         /slim-seo-schema/integrations/acf/
-/slim-seo-schema/integrations/            /slim-seo-schema/integrations/meta-box/
+/slim-seo-schema/reusable-schemas/        /slim-seo-pro/schema/connecting-schemas/
+/slim-seo-schema/meta-box-integration/    /slim-seo-pro/schema/integrations/meta-box/
+/slim-seo-schema/acf-integration/         /slim-seo-pro/schema/integrations/acf/
+/slim-seo-schema/integrations/            /slim-seo-pro/schema/integrations/meta-box/
+
+/slim-seo-schema/installation/                        /slim-seo-pro/installation/
+/slim-seo-schema/license/                             /slim-seo-pro/license/
+/slim-seo-schema/adding-schemas/                      /slim-seo-pro/schema/adding-schemas/
+/slim-seo-schema/dynamic-variables/                   /slim-seo-pro/schema/dynamic-variables/
+/slim-seo-schema/custom-properties/                   /slim-seo-pro/schema/custom-properties/
+/slim-seo-schema/connecting-schemas/                  /slim-seo-pro/schema/connecting-schemas/
+/slim-seo-schema/post-specific-schema/                /slim-seo-pro/schema/post-specific-schema/
+/slim-seo-schema/custom-json-ld/                      /slim-seo-pro/schema/custom-json-ld/
+/slim-seo-schema/integrations/meta-box/               /slim-seo-pro/schema/integrations/meta-box/
+/slim-seo-schema/integrations/acf/                    /slim-seo-pro/schema/integrations/acf/
+/slim-seo-schema/integrations/woocommerce/            /slim-seo-pro/schema/integrations/woocommerce/
+/slim-seo-schema/integrations/page-builders/          /slim-seo-pro/schema/integrations/page-builders/
+
+/slim-seo-link-manager/installation/                 /slim-seo-pro/installation/
+/slim-seo-link-manager/license/                      /slim-seo-pro/license/
+/slim-seo-link-manager/scanning-links/               /slim-seo-pro/link-manager/scanning-links/
+/slim-seo-link-manager/reports/                      /slim-seo-pro/link-manager/reports/
+/slim-seo-link-manager/updating-links/               /slim-seo-pro/link-manager/updating-links/
+/slim-seo-link-manager/post-links/                   /slim-seo-pro/link-manager/post-links/
+/slim-seo-link-manager/link-suggestions/             /slim-seo-pro/link-manager/link-suggestions/
+/slim-seo-link-manager/interlinking-external-sites/  /slim-seo-pro/link-manager/interlinking-external-sites/
+/slim-seo-link-manager/integrations/                 /slim-seo-pro/link-manager/integrations/
+/slim-seo-link-manager/hooks/                        /slim-seo-pro/link-manager/hooks/

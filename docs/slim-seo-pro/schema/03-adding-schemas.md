@@ -8,7 +8,7 @@ Schema is the best way to describe [structured data](https://developers.google.
 
 For example, if you're on an event page, you can use schema to tell search engines what the event location is, and what the event date is. All event details can be described in a proper format (which is handled by the plugin) so that search engines can understand.
 
-Usually, in WordPress, a schema is used with a post type (like "event" in the example above) to describe it verbosely. With Slim SEO Schema, you can set more conditions to where a schema is applied.
+Usually, in WordPress, a schema is used with a post type (like "event" in the example above) to describe it verbosely. With Slim SEO Pro, you can set more conditions to where a schema is applied.
 
 So, let's started!
 
@@ -29,7 +29,7 @@ Once you selected a schema, it's added to the list. There are a few actions you 
 
 ## Properties
 
-Each schema has a list of properties, which define the detailed information for that schema. Slim SEO Schema follows the guidelines from Google and schema.org to give you the most comprehensive list of properties for your website. That ensures you provide details to search engines as much as possible.
+Each schema has a list of properties, which define the detailed information for that schema. Slim SEO Pro follows the guidelines from Google and schema.org to give you the most comprehensive list of properties for your website. That ensures you provide details to search engines as much as possible.
 
 There're two types of properties:
 
@@ -44,17 +44,17 @@ Most properties are auto-filled with default values to save you time to enter or
 
 :::info Shortcodes
 
-You can also use shortcodes for properties' values. Slim SEO Schema will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
+You can also use shortcodes for properties' values. Slim SEO Pro will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
 
 :::
 
-Besides, Slim SEO Schema supports **dynamic data** for properties (such as post title, author name, etc.). To insert dynamic data, click the the **Insert** button next to the input.
+Besides, Slim SEO Pro supports **dynamic data** for properties (such as post title, author name, etc.). To insert dynamic data, click the the **Insert** button next to the input.
 
 ![Insert dynamic data for properties](https://i.imgur.com/AjPAPBc.png)
 
 When clicking the **Insert** button, you'll see a popup with a list of supported dynamic variables for properties. You can search for them (by title) or simply click any of them to insert into the property value input box.
 
-Learn more about [dynamic variables](/slim-seo-schema/dynamic-variables/).
+Learn more about [dynamic variables](/slim-seo-pro/schema/dynamic-variables/).
 
 ## Location
 

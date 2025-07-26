@@ -2,13 +2,13 @@
 title: Integrations
 ---
 
-Slim SEO Link Manager works nicely with most plugins. It allows you to analyze content from these plugins and give you correct reports for links.
+Slim SEO Pro works nicely with most plugins. It allows you to analyze content from these plugins and give you correct reports for links.
 
 ## Plugins
 
 ### Custom fields plugins
 
-Slim SEO Link Manager can also analyze content from custom fields. To enable this feature, you need to use the `slim_seo_link_manager_post_custom_fields` filter to add custom fields to the plugin.
+Slim SEO Pro can also analyze content from custom fields. To enable this feature, you need to use the `slim_seo_link_manager_post_custom_fields` filter to add custom fields to the plugin.
 
 ```php
 add_filter( 'slim_seo_link_manager_post_custom_fields', function( $fields ) {
@@ -57,7 +57,7 @@ add_filter( 'slim_seo_link_manager_text', function( $text, $post_id ) {
 
 ### Page builder plugins
 
-For page builder plugins, Slim SEO Link Manager gets content built with them and use this content for analyze internal and external links.
+For page builder plugins, Slim SEO Pro gets content built with them and use this content for analyze internal and external links.
 
 - **Beaver Builder**
 - **Breakdance**
