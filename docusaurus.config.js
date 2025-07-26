@@ -83,19 +83,13 @@ const config = {
             type: 'doc',
             docId: 'slim-seo/installation',
             position: 'left',
-            label: 'Slim SEO',
+            label: 'Slim SEO Free',
           },
           {
             type: 'doc',
-            docId: 'slim-seo-schema/installation',
+            docId: 'slim-seo-pro/installation',
             position: 'left',
-            label: 'Slim SEO Schema',
-          },
-          {
-            type: 'doc',
-            docId: 'slim-seo-link-manager/installation',
-            position: 'left',
-            label: 'Slim SEO Link Manager',
+            label: 'Slim SEO Pro',
           },
           {
             href: 'https://www.facebook.com/groups/slimseo',
