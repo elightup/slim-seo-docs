@@ -5,7 +5,7 @@ title: Connecting Schemas
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
-Connecting schemas together via properties is a powerful feature of Slim SEO Link Manager. With this feature, you can build individual schemas, and then **link from one schema to another one via a property** (with the help of [dynamic variables](/slim-seo-schema/dynamic-variables/)).
+Connecting schemas together via properties is a powerful feature of Slim SEO Link Manager. With this feature, you can build individual schemas, and then **link from one schema to another one via a property** (with the help of [dynamic variables](/slim-seo-pro/schema/dynamic-variables/)).
 
 For example, if you want to add a schema for a review of a book, then you can build two separate schemas: Review and Book. Inside the Review schema, you can set its property "item reviewed" that links to the Book schema. This way, you connect the Book schema to the Review schema as a property.
 
@@ -31,13 +31,13 @@ This is the diagram of how these schemas connect to each other:
 
 Now let's create these schemas:
 
-First, we'll create a Person schema for the book author. Simply add a Person schema to the list. Note that you have to use [dynamic variables](/slim-seo-schema/dynamic-variables/) to add values from custom fields to the properties:
+First, we'll create a Person schema for the book author. Simply add a Person schema to the list. Note that you have to use [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) to add values from custom fields to the properties:
 
 ![Book author schema](img/book-author.png)
 
 :::info
 
-I'm using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Schema has a [deep integration with Meta Box](/slim-seo-schema/integrations/meta-box/). You can also use ACF which is [also supported](/slim-seo-schema/integrations/acf/).
+I'm using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Pro has a [deep integration with Meta Box](/slim-seo-pro/schema/integrations/meta-box/). You can also use ACF which is [also supported](/slim-seo-pro/schema/integrations/acf/).
 
 :::
 

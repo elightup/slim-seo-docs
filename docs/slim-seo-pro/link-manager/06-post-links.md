@@ -2,7 +2,7 @@
 title: Post link reports
 ---
 
-Besides the [global reports](/slim-seo-link-manager/reports/), you can also see links from/to a specific post when editing it.
+Besides the [global reports](/slim-seo-pro/link-manager/reports/), you can also see links from/to a specific post when editing it.
 
 When editing a post, you'll see a meta box **Link Manager** below the post content as follows:
 
@@ -43,6 +43,6 @@ add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
 ```
 :::caution
 
-Please note that Slim SEO Link Manager uses the same filter as in [Slim SEO](/slim-seo/meta-title-tag/) to hide SEO settings. In this case, both link manager settings and SEO settings meta boxes are hidden.
+Please note that Slim SEO Pro uses the same filter as in [Slim SEO](/slim-seo/meta-title-tag/) to hide SEO settings. In this case, both link manager settings and SEO settings meta boxes are hidden.
 
 :::

@@ -153,7 +153,7 @@ add_filter( 'slim_seo_schema_data', function( $data ) {
 
 ## Dynamic variables and shortcodes
 
-Besides dynamic variables, you can also use shortcodes for properties' values. Slim SEO Schema will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
+Besides dynamic variables, you can also use shortcodes for properties' values. Slim SEO Pro will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
 
 Using shortcodes has a benefit as it's familiar to most WordPress developers. Creating a shortcode is also easier than creating a dynamic variable. However, shortcodes are not available in the suggestion list. So, just pick a method that suits you.
 

@@ -12,7 +12,7 @@ By default, the post will inherit the schema from the global settings. If you wa
 
 ![Select a different schema for a post](https://i.imgur.com/DLQo8vk.png)
 
-The properties in the schema are the same as in the [global settings](/slim-seo-schema/adding-schemas/#properties), including [dynamic variables](/slim-seo-schema/dynamic-variables/).
+The properties in the schema are the same as in the [global settings](/slim-seo-pro/schema/adding-schemas/#properties), including [dynamic variables](/slim-seo-pro/schema/dynamic-variables/).
 
 When you finish editing the schema for the post, click **Save** or **Update** to save the changes. This schema will be used for the post and will override the global settings.
 
@@ -33,6 +33,6 @@ add_filter( 'slim_seo_meta_box_taxonomies', function ( $taxonomies ) {
 ```
 :::caution
 
-Please note that Slim SEO Schema uses the same filter as in [Slim SEO](/slim-seo/meta-title-tag/) to hide SEO settings. In this case, both schema settings and SEO settings meta boxes are hidden.
+Please note that Slim SEO Pro uses the same filter as in [Slim SEO](/slim-seo/meta-title-tag/) to hide SEO settings. In this case, both schema settings and SEO settings meta boxes are hidden.
 
 :::

@@ -2,7 +2,7 @@
 title: Reports
 ---
 
-Slim SEO Link Manager provides several reports to help you understand links on your website. Based on the data here, you'll have an overview of your links, see problems, and fix them.
+Slim SEO Pro provides several reports to help you understand links on your website. Based on the data here, you'll have an overview of your links, see problems, and fix them.
 
 ![Link reports](img/reports.png)
 

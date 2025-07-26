@@ -1,13 +1,13 @@
 ---
-title: Slim SEO Schema - ACF Integration
+title: Slim SEO Pro - ACF Integration
 sidebar_label: ACF
 ---
 
-Slim SEO Schema has a deep integration with [Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF). The integration allows you to insert ACF fields into schema properties easily. It works with normal fields, groups, repeaters and flexible content.
+Slim SEO Pro has a deep integration with [Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF). The integration allows you to insert ACF fields into schema properties easily. It works with normal fields, groups, repeaters and flexible content.
 
 ## Inserting ACF fields
 
-Click the three-dots button for a property to insert [dynamic variables](/slim-seo-schema/dynamic-variables/), all field groups registered in ACF will display:
+Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in ACF will display:
 
 ![Inserting ACF fields](https://i.imgur.com/xJwUezN.png)
 
@@ -21,7 +21,7 @@ Dynamic variables for ACF fields have the following format:
 
 ## Inserting fields in a group
 
-Inserting fields in a group (sub-fields) has no difference from inserting normal fields. Simply select it from the list. Slim SEO Schema already formats sub-fields indented for you to easily know which fields are group and which fields are sub-fields.
+Inserting fields in a group (sub-fields) has no difference from inserting normal fields. Simply select it from the list. Slim SEO Pro already formats sub-fields indented for you to easily know which fields are group and which fields are sub-fields.
 
 In the screenshot below, Price, Currency, and Valid until are sub-fields of the group Offers.
 
@@ -35,7 +35,7 @@ The format of dynamic variables for sub-fields is:
 
 ## Repeater fields
 
-You might wonder how the plugin works with repeater fields as they have multiple values. Slim SEO Schema automatically decides how to render multiple values in various scenarios like this (without your further actions):
+You might wonder how the plugin works with repeater fields as they have multiple values. Slim SEO Pro automatically decides how to render multiple values in various scenarios like this (without your further actions):
 
 - If the property is **not repeatable**, the plugin will **take only the first value** from the field, e.g. the value of the first clone.
 - If the property is **repeatable** (like Image), the plugin will **take all values** from the field and merge them with manually entered values (if any).

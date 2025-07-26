@@ -2,7 +2,7 @@
 title: Link suggestions
 ---
 
-Besides the [report for links of a specific post](/slim-seo-link-manager/post-links/), the plugin also **suggests related posts for you to build links with**. The plugin also allows you to connect different WordPress sites and suggest links between them. This feature is very useful to **build internal links** as well as **build backlinks** for your websites.
+Besides the [report for links of a specific post](/slim-seo-pro/link-manager/post-links/), the plugin also **suggests related posts for you to build links with**. The plugin also allows you to connect different WordPress sites and suggest links between them. This feature is very useful to **build internal links** as well as **build backlinks** for your websites.
 
 To get link suggestions *when editing a post*, click the **Link Suggestions** tab in the **Link Manager** meta box, below the post content:
 
@@ -13,7 +13,7 @@ The plugin has 2 modes for link suggestions:
 - **Automatic**: automatically suggests other posts to link to **based on the keywords in the post content**. The plugin will find all posts that have the keywords in the post content and show them to you so you can link to them.
 - **Manual**: allows you to search for posts by keywords to link to. The plugin shows **most used words from the post content** that you can search faster by clicking on them.
 
-Slim SEO Link Manager also allows you to find posts that in the same category or tag with the current post by enabling the **Same taxonomies** switch. In this case, you will get only related posts in the same category/tag.
+Slim SEO Pro also allows you to find posts that in the same category or tag with the current post by enabling the **Same taxonomies** switch. In this case, you will get only related posts in the same category/tag.
 
 For each found post, the plugin will **suggest the sentence that has the related content to the post, where you should put the link**. To save you time, a **Copy link** button is also available for you to copy the post URL.
 
@@ -29,7 +29,7 @@ This way, the plugin ensures suggested posts are quite related to sentences and 
 
 ## Create links from old posts to new posts
 
-By default, Slim SEO Link Manager allows you to build links from the current post to exsiting posts. This way, the existing posts will have more internal links and will become stronger in term of SEO.
+By default, Slim SEO Pro allows you to build links from the current post to exsiting posts. This way, the existing posts will have more internal links and will become stronger in term of SEO.
 
 However, you can do backward with the plugin, e.g. **build links from existing posts to the current post**. So the new post will immediately have internal links and thus, will be indexed and ranked faster.
 
@@ -43,8 +43,8 @@ A popup will appear. In the popup, you'll see the familiar edit screen of the se
 
 ## Link to your external sites
 
-If you have multiple external sites and you want the plugin suggest links from them, you can do that with Slim SEO Link Manager!
+If you have multiple external sites and you want the plugin suggest links from them, you can do that with Slim SEO Pro!
 
 The plugin allows you to connect multiple sites together in a network, and suggest related or relevant links from all sites in the network when you edit a post.
 
-For more details, please see [interlinking external sites](/slim-seo-link-manager/interlinking-external-sites/).
+For more details, please see [interlinking external sites](/slim-seo-pro/link-manager/interlinking-external-sites/).
