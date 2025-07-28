@@ -28,7 +28,11 @@ On the next screen, click **Enable** button to enable the API.
 
 ![Enable Google Search Console API](img/enable-gsc-api.png)
 
-## Creating branding
+## Configuring the consent screen
+
+The app created in the previous step requires your permission to connect to your Google Search Console account. The steps below will let you know how to configure the screen for asking your permission (the consent screen).
+
+### Creating branding
 
 When connecting to Google Search Console, an authorization screen will appear and ask for your permission to access to GSC data. We need to configure the branding for that screen.
 
@@ -52,13 +56,13 @@ Enter your information by following their instruction:
 
 ![Create Branding 5](img/create-branding-5.png)
 
-## Adding authorised domain
+### Adding authorised domain
 
 This step ensures the app runs only for your domain. Click **Branding** menu again, and scroll down to see the new input for authorised domains. Simply add your domain(s) here:
 
 ![Add Authorised domain](img/add-authorised-domain.png)
 
-## Setting up audience
+### Setting up audience
 
 This step tells Google that your app is a public app, which can be used by other users or a test app, which is used by yourself only. Click the **Audience** menu, and you'll see by default, the app is **Testing**. This is our recommend mode to use as the app is for your websites only. It's not a public app for others.
 
