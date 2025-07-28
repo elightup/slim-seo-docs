@@ -32,15 +32,15 @@ On the next screen, click **Enable** button to enable the API.
 
 The app created in the previous step requires your permission to connect to your Google Search Console account. The steps below will let you know how to configure the screen for asking your permission (the consent screen).
 
-### Creating branding
+### Branding
 
 When connecting to Google Search Console, an authorization screen will appear and ask for your permission to access to GSC data. We need to configure the branding for that screen.
 
-From the sidebar menu, select **OAuth consent screen**
+From the sidebar menu, select [**OAuth consent screen**](https://console.cloud.google.com/auth/overview):
 
 ![Oauth Consent Screen](img/oauth-consent-screen.png)
 
-Then select Branding on the menu:
+Then [select the **Branding** menu](https://console.cloud.google.com/auth/branding):
 
 ![Branding](img/branding.png)
 
@@ -56,39 +56,27 @@ Enter your information by following their instruction:
 
 ![Create Branding 5](img/create-branding-5.png)
 
-### Adding authorised domain
+### Audience
 
-This step ensures the app runs only for your domain. Click **Branding** menu again, and scroll down to see the new input for authorised domains. Simply add your domain(s) here:
+Now [go to the **Audience** tab](https://console.cloud.google.com/auth/audience) and click the **Publish app** button:
 
-![Add Authorised domain](img/add-authorised-domain.png)
-
-### Setting up audience
-
-This step tells Google that your app is a public app, which can be used by other users or a test app, which is used by yourself only. Click the **Audience** menu, and you'll see by default, the app is **Testing**. This is our recommend mode to use as the app is for your websites only. It's not a public app for others.
-
-:::caution
-
-If you want to keep the app in the testing mode, **do NOT** click the **Publish app** button.
-
-:::
-
-![Audience](img/setup-audience.png)
-
-When keeping the app in the testing mode, you will have to add test users. Scroll down to the **Test users** section and click **+ Add user** button.
-
-In the popup, add your email and click **Save** button:
-
-![Add test users](img/add-test-users.png)
+![Audience](img/publish-app.png)
 
 ## Creating credentials
 
-Go to **Credentials** tab and click the **+ Create credentials** button at the top, then select **OAuth client ID**:
+[Go to **Credentials** tab](https://console.cloud.google.com/apis/credentials) and click the **+ Create credentials** button at the top, then select **OAuth client ID**:
 
 ![Create OAuth](img/create-credentials-oauth.png)
 
 Select **Web application** in the **Application type** dropdown and enter `https://yourdomain.com/?ssp_gsc_callback=1` (replace `yourdomain.com` with your actual domain) in the **Authorised redirect URIs**:
 
 ![Create OAuth ID](img/create-oauth.png)
+
+:::info
+
+If you want to use Slim SEO Pro for multiple websites, you don't need to create multiple projects and go throught these settings from the beginning. Instead of that, just add more authorised redirect URIs here.
+
+:::
 
 Then click **Create** button to create the credentials. After finishing, you'll see **Client ID** and **Client Secret** in the popup:
 
@@ -104,11 +92,9 @@ After entering the client ID and client secret for GSC, you can connect to GSC t
 
 ![Get Google authentication token](img/login-google-to-get-authentication-token.png)
 
-then login with the account that you used for test users in the step above:
+then login with the your Google account:
 
 ![Get Google authentication token 1](img/get-authentication-token-1.png)
-
-![Get Google authentication token 2](img/get-authentication-token-2.png)
 
 ![Get Google authentication token 3](img/get-authentication-token-3.png)
 
