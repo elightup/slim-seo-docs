@@ -52,18 +52,29 @@ Enter your information by following their instruction:
 
 ![Create Branding 5](img/create-branding-5.png)
 
-## Add Authorised domain
+## Adding authorised domain
+
+This step ensures the app runs only for your domain. Click **Branding** menu again, and scroll down to see the new input for authorised domains. Simply add your domain(s) here:
 
 ![Add Authorised domain](img/add-authorised-domain.png)
 
-## Setup Audience
+## Setting up audience
 
-Select `Audience` on the menu, you have 2 options:
+This step tells Google that your app is a public app, which can be used by other users or a test app, which is used by yourself only. Click the **Audience** menu, and you'll see by default, the app is **Testing**. This is our recommend mode to use as the app is for your websites only. It's not a public app for others.
 
-- Testing (default), this is our recommend to use, you will have to add Test users if you select this one.
-- Publish app.
+:::caution
+
+If you want to keep the app in the testing mode, **do NOT** click the **Publish app** button.
+
+:::
 
 ![Audience](img/setup-audience.png)
+
+When keeping the app in the testing mode, you will have to add test users. Scroll down to the **Test users** section and click **+ Add user** button.
+
+In the popup, add your email and click **Save** button:
+
+![Add test users](img/add-test-users.png)
 
 ## Creating credentials
 
@@ -85,15 +96,13 @@ Copy these details and now go to your **WordPress admin > Settings > Slim SEO > 
 
 ## Authorizing with GSC
 
-For the first time using Analytics, you will have to get Google authentication token by click the link in the dashboard:
+After entering the client ID and client secret for GSC, you can connect to GSC to get the reports. To connect to GSC, click the link in the dashboard:
 
 ![Get Google authentication token](img/login-google-to-get-authentication-token.png)
 
-then follow their instruction:
+then login with the account that you used for test users in the step above:
 
 ![Get Google authentication token 1](img/get-authentication-token-1.png)
-
-Notice: use the same email you entered on step 6 if you are using Testing mode.
 
 ![Get Google authentication token 2](img/get-authentication-token-2.png)
 
@@ -102,3 +111,5 @@ Notice: use the same email you entered on step 6 if you are using Testing mode.
 After all these steps, it will redirect you back to Analytics and ready for you to use:
 
 ![Analytics screen](img/analytics-screen.png)
+
+Now it's time to [learn about the reports](/slim-seo-pro/analytics/reports/).
