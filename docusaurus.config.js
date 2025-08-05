@@ -65,12 +65,12 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        content: '🔥 Introducing Slim SEO Pro - One single plugin with all premium features. <a href="https://wpslimseo.com/products/slim-seo-pro/">Get it now</a>.',
-        backgroundColor: '#fed7aa',
-        textColor: '#7c2d12',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   content: '🔥 Introducing Slim SEO Pro - One single plugin with all premium features. <a href="https://wpslimseo.com/products/slim-seo-pro/">Get it now</a>.',
+      //   backgroundColor: '#fed7aa',
+      //   textColor: '#7c2d12',
+      //   isCloseable: false,
+      // },
       navbar: {
         logo: {
           alt: 'Slim SEO Logo',
