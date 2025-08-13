@@ -48,7 +48,7 @@ In the **Keywords** section:
 For each keyword, the plugin checks:
 
 - **Keyword density**: Counts how often and how many times a keyword appears. A density between **0.5% and 3%** is recommended. Lower values mean the keyword may not be a topic of the article, while higher values may appear spammy.
-- **Keyword placement**: Checks if the keyword appears in the title, slug, meta description, intro paragraph, headings, and image alt text - important locations for signaling your topic to readers and search engines.
+- **Keyword placement**: Checks if the keyword appears in the title, slug, excerpt, intro paragraph, headings, and image alt text - important locations for signaling your topic to readers and search engines.
 
 ### Media
 
