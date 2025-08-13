@@ -2,96 +2,109 @@
 title: Writing Assistant
 ---
 
-The Writing Assistant feature analyzes your content in real-time to help you create SEO-optimized posts and pages. It provides instant feedback on keywords, readability, content structure, and media optimization to improve your search engine rankings.
+The **Writing Assistant** feature analyzes your content in real time to help you create SEO-optimized posts and pages. It provides instant feedback on keywords, readability, content structure, and media optimization, helping you improve quality and search engine rankings.
 
 ## Where to Find It
 
-If you use **Slim SEO free**, when you edit a post or a page, you'll see the **Writing Assistant** tab in the **Search Engine Optimization** meta box:
+If you use **Slim SEO Free**, you'll see the **Writing Assistant** tab in the **Search Engine Optimization** meta box when editing a post or page:
 
 ![Writing assistant tab with Slim SEO](img/writing-assistant-with-slim-seo.png)
 
-If you don't use **Slim SEO free**, you'll see the **Writing Assistant** meta box instead:
+If you don't use **Slim SEO Free**, you'll see the **Writing Assistant** meta box instead:
 
 ![Writing assistant tab without Slim SEO](img/writing-assistant-without-slim-seo.png)
 
 :::info
+Just a reminder that you can use [Slim SEO Pro](https://wpslimseo.com/products/slim-seo-pro/) with or without Slim SEO Free.
 
-Just a reminder that you can use [Slim SEO Pro](https://wpslimseo.com/products/slim-seo-pro/) with or without Slim SEO free. Both plugins have a different feature set: Slim SEO free has basic SEO features (completed, not half-baked), and Slim SEO Pro has other premium SEO features (which is *not* in Slim SEO free). If you want to have the strength from all features, please install both of them.
+- **Slim SEO Free** includes a complete set of basic SEO features.
+- **Slim SEO Pro** offers additional premium SEO features *not included in Slim SEO Free*.
 
+For the best results and the full feature set, install and use both plugins together.
 :::
 
-## How it works?
+## How It Works
 
-The Writing Assistant feature provides suggestions for you to improve your content. These are **opinionated recommendations** only. They are **not** standards or rules that you must follow. Think about it as an assistant that gives you some feedback for your content (that's why we call it *writing assistant*).
+The Writing Assistant offers suggestions to help you improve your content. These are **opinionated recommendations**, not strict rules you must follow. Think of it as an assistant providing feedback to enhance your writing.
 
 ## Recommendations
 
-Here are the full list of recommendations that we suggest, each recommendation has an indicator at the title, which lets you know whether you should improve it (orange) or not (green):
+Below is the full list of recommendations. Each has a colored indicator in its title:
+- **Orange**: Needs improvement
+- **Green**: No issues detected
 
 ![Recommendations](img/recommendations.png)
 
-Clicking each section title will open the details of that section with explaination or issues that you should improve. Let's dive in each section to see how they work.
+Click a section title to expand details, including explanations and specific issues to address.
 
 ### Keywords
 
-The first thing is keywords (see the screenshot above). Slim SEO Pro allows you to enter **multiple keywords** and analyze them against your content.
+Keywords are the first element analyzed (see the screenshot above). Slim SEO Pro lets you enter **multiple keywords** and evaluate them against your content.
 
-In the **Keywords** section, enter your target keywords, separate multiple keywords with commas or press Enter. You can mark one keyword as your **Main keyword** using the toggle switch.
+In the **Keywords** section:
+- Enter your target keywords, separate multiple keywords with commas or press **Enter**.
+- Mark one keyword as your **Main keyword** using the toggle switch.
 
-For each keyword, the plugin will analyze your content and provide the following feedback:
+For each keyword, the plugin checks:
 
-- Keyword density: count how many times a keyword appear in your content. It's recommended to keep the keyword density between 0.5% and 3%. Lower means that keyword is probably not the topic of the article, and higher usually means spam.
-- Does the keyword appear in title, slug, meta description, intro paragraph, headings, and image alt text? These are important places where you should put your keywords, to let people know the topic of the article, and what's it about.
+- **Keyword density**: Counts how often and how many times a keyword appears. A density between **0.5% and 3%** is recommended. Lower values mean the keyword may not be a topic of the article, while higher values may appear spammy.
+- **Keyword placement**: Checks if the keyword appears in the title, slug, meta description, intro paragraph, headings, and image alt text - important locations for signaling your topic to readers and search engines.
 
 ### Media
 
 ![Media section](img/media.png)
 
-This section provides feedback about your featured image and images in your post content.
+This section analyzes your featured image and any images within your content.
 
-- For the featured image, the plugin will warn you if you forgot to set it
-- For images in your post content, the plugin will warn you if you don't set alt text for them
+- **Featured image**: Warns if no featured image is set.
+- **Post images**: Warns if images are missing alt text.
 
-Besides, for each image, the plugin will also analyze some properties and give you feedback on:
+It also evaluates each image for:
 
-- Image dimension: warns you if your images are too large. We use 1920px as a threadhold, which is wide enough for most screens.
-- Imaze size: warns you if your images &gt; 2MB. This ensures your images are loaded fast.
-- Image filename: warns you if your images contain special characters in file name. You can review this and name files meaningfully, or add keywords if you want. We don't stricly check this.
+- **Dimensions**: Warns if width exceeds 1920px (suitable for most screens).
+- **File size**: Warns if the image is larger than 2MB, to ensure fast loading.
+- **Filename**: Warns if filenames contain special characters. Use meaningful, descriptive names, and consider adding keywords. (This check is advisory and not enforced strictly.)
 
-### Words Count
+### Word Count
 
-This section tracks total word count including image alt text. We suggests to write at least 500 words to avoid creating thin content, which is bad for SEO.
+Tracks total word count, including image alt text. We recommend writing **at least 500 words** to avoid thin content, which can hurt SEO.
 
 ### Internal Links
 
 ![Internal links](img/internal-links.png)
 
-This section counts internal links to other posts/pages. It's recommended to add internal links to other posts to:
+Counts internal links to other posts or pages. Adding internal links can:
 
-- Help users find related and useful content
-- Assist search engines in understanding the context of your content
+- Help readers find related and useful content
+- Assist search engines in understanding your content's context
 - Help search engines discover new posts
-- And by creating links to other posts, it will increase the link juice and trust of your posts
-- Show search engines that you have deep knowledge of the topic, and thus, increase your authority
+- Pass link juice to other pages
+- Demonstrate expertise, boosting your authority
 
-This is a quick check for internal links only. It's recommended to use [Link Manager](/slim-seo-pro/link-manager/post-links/) module to have more in-depth report for post links, including:
+This is a quick overview. For detailed link analysis, use the [Link Manager](/slim-seo-pro/link-manager/post-links/) module, which provides:
 
-- Internal outbound links: links from this post to other posts
-- Internal inbound links: links from other posts to this post
-- External outbout links: links from this post to other websites
-- [Link suggestions](/slim-seo-pro/link-manager/link-suggestions/): suggest related content to build internal links
+- **Internal outbound links**: From this post to other posts
+- **Internal inbound links**: From other posts to this one
+- **External outbound links**: From this post to other websites
+- [**Link suggestions**](/slim-seo-pro/link-manager/link-suggestions/): Related content suggestions for internal linking
 
 ### Slug
 
-Slug is an important SEO feature. We check the slug length and suggest keeping slugs under 5 words for better readability. Note that we already check if the slug contains keywords in the **Keywords** section above.
+The slug is an important SEO element. We check slug length and recommend keeping it under **5 words** for better readability.
 
-### Readability (English only)
+:::info
+
+Note that keyword inclusion in slugs is already checked in the **Keywords** section.
+
+:::
+
+### Readability (English Only)
 
 ![Readability](img/readability.png)
 
-We also analyze your content and check if it's readable. We use [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests) to measures how easy your content is to read
+We assess content readability using the [Flesch–Kincaid readability tests](https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests).
 
-**Score Ranges**:
+**Score ranges**:
 
 - 90-100: Very easy to read
 - 80-89: Easy to read
@@ -101,21 +114,20 @@ We also analyze your content and check if it's readable. We use [Flesch–Kincai
 - 30-49: Difficult to read
 - 0-29: Very difficult to read
 
-If your content is difficult to read, we suggest:
+If your content scores low, try:
 
-- Use shorter sentences for complex topics
-- Break up long paragraphs into digestible chunks
-- Avoid jargon when possible
-- Target a readability score of 60 or higher
+- Shortening sentences, especially for complex topics
+- Breaking up long paragraphs
+- Avoiding unnecessary jargon
 
 ### Paragraphs
 
-We also check your paragraphs to make sure they're not too short or not too long, which also affects readibility.
+Checks paragraph length for optimal readability.
 
-**Recommendations:**
+**Recommendations**:
 
-- Minimum 2 sentences per paragraph, otherwise your paragraph will have only 1 sentence, which is awkward.
-- Maximum 10 sentences per paragraph, otherwise they'll too long and hard to read.
-- Maximum 200 words per paragraph, otherwise they'll too long and hard to read.
+- **Minimum**: 2 sentences per paragraph (avoid single-sentence paragraphs)
+- **Maximum**: 10 sentences per paragraph (too long is harder to read)
+- **Maximum words**: 200 words per paragraph
 
-Now it's time to create good and useful content!
+Now you're ready to create content that's both useful and optimized for SEO!
