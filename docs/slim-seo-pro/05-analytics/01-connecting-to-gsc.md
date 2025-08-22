@@ -5,7 +5,9 @@ sidebar_label: Connecting to GSC
 
 Analytics is a pro feature that allows you to connect to Google Search Console (GSC) to bring the reports to WordPress. It helps you see how your pages perform on SERP, and give you more info about your impressions, positions, CTR, and keywords.
 
-To connect to Google Search Console, follow these steps:
+To connect your site with Google Search Console, the plugin uses the official Google OAuth2 SDK for authorization. This is the standard and recommended method provided by Google. With this setup, you'll need a Google account and a project in Google Cloud Console. By creating your own app, you maintain full control and ownership of your data. Some third-party services let you connect through their Google app instead. However, this gives them access to your site's data, which can pose security and privacy risks.
+
+Let's get started!
 
 ## Creating a project
 
