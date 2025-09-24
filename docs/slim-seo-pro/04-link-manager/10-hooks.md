@@ -8,14 +8,7 @@ Slim SEO Pro provides some hooks for developers to extend the functionality of t
 
 ### `slim_seo_link_manager_post_types`
 
-This filer allows you to ignore some post types when [scanning links](/slim-seo-pro/link-manager/scanning-links/). It accepts one parameter - an array of allowed post type objects (with key is the post type slug and value is the post type object) and returns an array.
-
-```php
-add_filter( 'slim_seo_link_manager_post_types', function ( $post_types ) {
-	unset( $post_types['movies'] );
-	return $post_types;
-} );
-```
+This hook was removed in Slim SEO Pro 1.4.3 because you can exclude post types via UI in the plugin settings page, under Settings > Slim SEO > Link Manager > Settings.
 
 ### `slim_seo_link_manager_link_suggestions_args`
 
