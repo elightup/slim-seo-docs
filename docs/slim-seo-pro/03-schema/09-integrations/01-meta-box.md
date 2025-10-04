@@ -9,7 +9,7 @@ Slim SEO Pro has a deep integration with [Meta Box](https://metabox.io). The int
 
 Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in Meta Box will display:
 
-![Inserting meta box fields](https://i.imgur.com/i6NepXU.png)
+![Inserting meta box fields](https://imgur.elightup.com/i6NepXU.png)
 
 In the dropdown panel, select a field you want to insert and click on it. The dynamic variable of the field will be inserted in the input box.
 
@@ -25,7 +25,7 @@ Inserting sub-group fields has no difference from inserting normal fields. Simpl
 
 In the screenshot below, Price, Currency, and Valid until are sub-fields of the group Offers.
 
-![Inserting sub-group fields](https://i.imgur.com/0dVI84m.png)
+![Inserting sub-group fields](https://imgur.elightup.com/0dVI84m.png)
 
 The format of dynamic variables for sub-fields is:
 
@@ -42,13 +42,13 @@ You might wonder how the plugin works with cloneable fields as they have multipl
 
 In case you have a **repeatable property that also has sub-properties** like Review:
 
-![Repeatable property](https://i.imgur.com/Tvbn8pw.png)
+![Repeatable property](https://imgur.elightup.com/Tvbn8pw.png)
 
 When you insert sub-fields from a cloneable group (like inserting Name and Value from the cloneable group Reviews in the screenshot above), the plugin will automatically **take values of sub-fields for each clone** of the group.
 
 For example, if you enter the value for Reviews for a post like this:
 
-![Enter value for posts](https://i.imgur.com/pIrrMAG.png)
+![Enter value for posts](https://imgur.elightup.com/pIrrMAG.png)
 
 Enter values for Meta Box fields for a post
 

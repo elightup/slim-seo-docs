@@ -8,7 +8,7 @@ Breadcrumbs are the secondary navigation that helps users understand where they 
 
 Here is an example from the Adidas website:
 
-![A sample of breadcrumbs in real life](https://i.imgur.com/C6QquQR.png)
+![A sample of breadcrumbs in real life](https://imgur.elightup.com/C6QquQR.png)
 
 Or you can see it at the top of this page:
 

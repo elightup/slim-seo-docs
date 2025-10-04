@@ -8,11 +8,11 @@ Redirection is an important feature, which helps you to redirect broken pages, u
 
 Go to **Settings > Slim SEO** and select the **Redirection** tab, then click **Add Redirect** button:
 
-![add a new redirect](https://i.imgur.com/3Ma54kd.png)
+![add a new redirect](https://imgur.elightup.com/3Ma54kd.png)
 
 A new popup will appear that lets you enter the redirect details:
 
-![redirect settings](https://i.imgur.com/E6laZ26.png)
+![redirect settings](https://imgur.elightup.com/E6laZ26.png)
 
 After entering the redirect details, click the **Add Redirect** button to finish. After that, the redirect will appear in the redirect table.
 
@@ -64,11 +64,11 @@ Besides, you can select how the plugin matches the URL:
 
 You can export your redirects in CSV format by using **Export** button.
 
-![export redirect](https://i.imgur.com/TII5vKx.png)
+![export redirect](https://imgur.elightup.com/TII5vKx.png)
 
 You can import your redirects by using **Import** button.
 
-![import redirect](https://i.imgur.com/i3BFzg1.png)
+![import redirect](https://imgur.elightup.com/i3BFzg1.png)
 
 A new popup with instructions will appear that lets you upload the CSV file.
 
@@ -94,11 +94,11 @@ A wonderful feature of Slim SEO is that the plugin helps you **monitor 404 pages
 
 To enable 404 logging, go to tab **Settings** and select **Enable 404 logs**:
 
-![enable to log 404 pages](https://i.imgur.com/s1sjmOf.png)
+![enable to log 404 pages](https://imgur.elightup.com/s1sjmOf.png)
 
 After clicking the **Save Changes** button, you'll see the **404 Logs** tab, where you can see all 404 pages.
 
-![list of 404 pages](https://i.imgur.com/xaZatgU.png)
+![list of 404 pages](https://imgur.elightup.com/xaZatgU.png)
 
 Each 404 page has the following details:
 
@@ -116,11 +116,11 @@ The plugin allows you to **sort the table** by "hit", "created at" and "updated 
 
 When an URL is visited many times, it's best to create a redirect for it. To do that, click the **Add Redirect icon** in the **Actions** column.
 
-![add a redirect for a 404 link](https://i.imgur.com/PRu4tcZ.png)
+![add a redirect for a 404 link](https://imgur.elightup.com/PRu4tcZ.png)
 
 A popup will appear that helps you to create a redirect. It's similar to add a redirect manually, except that the **From URL** is **auto filled by the 404 URL**.
 
-![enter redirect details for a 404 link](https://i.imgur.com/kywAzvB.png)
+![enter redirect details for a 404 link](https://imgur.elightup.com/kywAzvB.png)
 
 Enter the **To URL** and click **Add Redirect** button to finish.
 
@@ -128,7 +128,7 @@ Enter the **To URL** and click **Add Redirect** button to finish.
 
 When enabling 404 logs, the plugin will create a table in the database to store the 404 URL details. If you don't want to log 404, then you might want to delete this table to keep your database clean. To do that, click the **Delete 404 logs table**:
 
-![delete 404 log table](https://i.imgur.com/9GUH8G7.png)
+![delete 404 log table](https://imgur.elightup.com/9GUH8G7.png)
 
 :::info
 
@@ -156,7 +156,7 @@ Another case is if **authors have no posts**, their page will be empty. Thus, in
 
 Besides manual and auto redirections, the plugin provides some settings for other usual redirections. You can find these settings under the **Settings** tab.
 
-![other redirection settings](https://i.imgur.com/eMl4gpJ.png)
+![other redirection settings](https://imgur.elightup.com/eMl4gpJ.png)
 
 Setting|Description
 ---|---

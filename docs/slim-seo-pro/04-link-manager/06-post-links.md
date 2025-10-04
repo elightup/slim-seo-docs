@@ -6,7 +6,7 @@ Besides the [global reports](/slim-seo-pro/link-manager/reports/), you can also 
 
 When editing a post, you'll see a meta box **Link Manager** below the post content as follows:
 
-![Link manager meta box on the post edit screen](https://i.imgur.com/KRhtKna.png)
+![Link manager meta box on the post edit screen](https://imgur.elightup.com/KRhtKna.png)
 
 The **Link Manager** meta box shows 3 types of links in your post content (organized in the corresponding tabs):
 

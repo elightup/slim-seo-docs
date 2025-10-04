@@ -103,7 +103,7 @@ By default, the plugin shows custom meta title and meta description in the admin
 
 Click the **Screen Options** button at the top right corner of the screen and toggle the checkboxes for Meta title and Meta description:
 
-![Toggle columns via screen options](https://i.imgur.com/N9oTreN.png)
+![Toggle columns via screen options](https://imgur.elightup.com/N9oTreN.png)
 
 This way, you show or hide the columns for the current user only. It's not applied to all users.
 

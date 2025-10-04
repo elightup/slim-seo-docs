@@ -24,7 +24,7 @@ By default, Slim SEO uses the featured image as the thumbnail when sharing a sin
 
 However, if the featured image is not optimized for Twitter (for example, the size is not correct), then you might want to use another image. To do that, simply select another image in the **Search Engine Optimization** meta box, below the content:
 
-![Change the image when sharing on Twitter](https://i.imgur.com/UnSVyqL.png)
+![Change the image when sharing on Twitter](https://imgur.elightup.com/UnSVyqL.png)
 
 The recommended size for image when sharing on Twitter is **1200x600** pixels.
 

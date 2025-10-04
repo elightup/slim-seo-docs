@@ -14,7 +14,7 @@ If you don't see the sitemap when visiting the URL, please go to **Settings > Pe
 
 Although the sitemap is mostly used by search engines and is a technical page, Slim SEO also styles it for human reading:
 
-![Slim SEO sitemap](https://i.imgur.com/BerokZG.png)
+![Slim SEO sitemap](https://imgur.elightup.com/BerokZG.png)
 
 To optimize the performance when generating sitemaps, the plugin splits the main sitemap into a list of smaller sitemaps:
 

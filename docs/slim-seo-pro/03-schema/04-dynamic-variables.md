@@ -4,7 +4,7 @@ title: Dynamic Variables
 
 Most properties are auto-filled with default values to save you time to enter or select values for them. You can manually enter data for them as well, but we recommend you use the **Insert** button to insert dynamic data for properties.
 
-![Insert dynamic data for properties](https://i.imgur.com/AjPAPBc.png)
+![Insert dynamic data for properties](https://imgur.elightup.com/AjPAPBc.png)
 
 When clicking the **Insert** button, you'll see a popup with a list of supported **dynamic variables** for properties. You can search for them (by title) or simply click any of them to insert them into the property value input box.
 

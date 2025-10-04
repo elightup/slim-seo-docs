@@ -16,7 +16,7 @@ So, let's started!
 
 To add a new schema, click the **\+ Add Schema** button. A popup will display that lets you choose a needed schema. You can search schemas by title as well:
 
-![Add a new schema](https://i.imgur.com/9Lghqac.png)
+![Add a new schema](https://imgur.elightup.com/9Lghqac.png)
 
 To add a schema, simply click the schema title from the list. All schemas are categorized the same way as in the [Google search gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery) which helps you find them easier.
 
@@ -25,7 +25,7 @@ Once you selected a schema, it's added to the list. There are a few actions you 
 - To expand/collapse the schema details, click the title bar or the up/down arrow
 - To remove the schema, click the trash icon. A confirmation will appear to ask you whether you're sure to remove it.
 
-![Toggle the schema details or remove it](https://i.imgur.com/9jHVNx8.png)
+![Toggle the schema details or remove it](https://imgur.elightup.com/9jHVNx8.png)
 
 ## Properties
 
@@ -38,7 +38,7 @@ There're two types of properties:
 
 Besides, some optional properties are kept **hidden** (just to make you're not lost in a long list of properties!). To show them, click the **\+ Add property** at the bottom of the panel.
 
-![Schema properties](https://i.imgur.com/2g9amcU.png)
+![Schema properties](https://imgur.elightup.com/2g9amcU.png)
 
 Most properties are auto-filled with default values to save you time to enter or select values for them. You can manually enter data for properties if you want.
 
@@ -50,7 +50,7 @@ You can also use shortcodes for properties' values. Slim SEO Pro will automatica
 
 Besides, Slim SEO Pro supports **dynamic data** for properties (such as post title, author name, etc.). To insert dynamic data, click the the **Insert** button next to the input.
 
-![Insert dynamic data for properties](https://i.imgur.com/AjPAPBc.png)
+![Insert dynamic data for properties](https://imgur.elightup.com/AjPAPBc.png)
 
 When clicking the **Insert** button, you'll see a popup with a list of supported dynamic variables for properties. You can search for them (by title) or simply click any of them to insert into the property value input box.
 
@@ -62,7 +62,7 @@ Each schema can be implemented for a post type or for posts in a specific catego
 
 To define location rules, switch to the **Location** tab in a schema panel:
 
-![Set location rules for a schema](https://i.imgur.com/cNw25MP.png)
+![Set location rules for a schema](https://imgur.elightup.com/cNw25MP.png)
 
 You'll see 2 options in that tab:
 
@@ -74,7 +74,7 @@ You'll see 2 options in that tab:
 
 If you choose singular or archive type, you need to click the **Add Rule Group** button to add a rule group. Each rule group contains a set of rules:
 
-![Rule groups and rules](https://i.imgur.com/wmr7tiZ.png)
+![Rule groups and rules](https://imgur.elightup.com/wmr7tiZ.png)
 
 For each rule, you can set to display the schema for any post type, or some specific posts as well as for specific terms (categories, tags).
 
@@ -85,6 +85,6 @@ The logic is applied as follows:
 
 If you use **code** to define whether the schema is displayed, then you'll see an input box to enter your PHP code:
 
-![Define locations with code](https://i.imgur.com/mgDaRY3.png)
+![Define locations with code](https://imgur.elightup.com/mgDaRY3.png)
 
 In the box, you can run any PHP code (without opening and closing PHP tags) that returns true or false. When it returns true, the schema is displayed. We recommend using [WordPress conditional tags](https://developer.wordpress.org/themes/basics/conditional-tags/) to set conditions here.

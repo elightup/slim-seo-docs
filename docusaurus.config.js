@@ -56,7 +56,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ( {
-      image: 'https://i.imgur.com/eYbsRxD.jpg',
+      image: 'https://imgur.elightup.com/eYbsRxD.jpg',
       docs: {
         sidebar: {
           autoCollapseCategories: true,

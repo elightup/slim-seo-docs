@@ -6,7 +6,7 @@ Besides the [report for links of a specific post](/slim-seo-pro/link-manager/pos
 
 To get link suggestions *when editing a post*, click the **Link Suggestions** tab in the **Link Manager** meta box, below the post content:
 
-![Link suggestions](https://i.imgur.com/VoTDofB.png)
+![Link suggestions](https://imgur.elightup.com/VoTDofB.png)
 
 The plugin has 2 modes for link suggestions:
 

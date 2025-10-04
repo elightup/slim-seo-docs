@@ -8,7 +8,7 @@ Slim SEO allows you to migrate SEO data like meta title and meta description fro
 
 To migrate data, go to **Slim SEO > Tools**, select the SEO plugin you want to migrate from, and click the **Migrate** button:
 
-![Migrate data from other SEO plugins](https://i.imgur.com/27Hm0Dw.png)
+![Migrate data from other SEO plugins](https://imgur.elightup.com/27Hm0Dw.png)
 
 Slim SEO will do the migration and show you the progress. Don't leave the page until it's done or you'll have to start again.
 
@@ -27,7 +27,7 @@ We recommend using the plugin [WP All Export](https://wordpress.org/plugins/wp-a
 
 To start exporting the SEO data, go to **All Export > New Export**, select a post type, and click **Customize Export File**.
 
-![Select a post type to export SEO data](https://i.imgur.com/s2bOGrM.png)
+![Select a post type to export SEO data](https://imgur.elightup.com/s2bOGrM.png)
 
 ### Adding SEO fields
 
@@ -81,19 +81,19 @@ function ss_get_canonical( $value ) {
 
 Make sure you set it to run everywhere.
 
-![Create helper export functions via Code Snippets plugin](https://i.imgur.com/c8ofRqf.png)
+![Create helper export functions via Code Snippets plugin](https://imgur.elightup.com/c8ofRqf.png)
 
 ### Modifying exported fields
 
 Now go back to the export. Click the **slim_seo** field in the added area to edit it. Change the column name to **Meta Title** and click the checkbox **Export the value returned by a PHP function**, and then enter the function name **ss_get_title**.
 
-![Enter function name](https://i.imgur.com/MZtEUjV.png)
+![Enter function name](https://imgur.elightup.com/MZtEUjV.png)
 
 Repeat the process for the other 4 fields: meta description, Facebook image, Twitter image, and noindex. Make sure you use the corresponding functions added in the previous step.
 
 After that, click the **Continue** button to start exporting. You'll get a CSV file like this:
 
-![Export SEO data](https://i.imgur.com/FbSeyeP.png)
+![Export SEO data](https://imgur.elightup.com/FbSeyeP.png)
 
 ## Importing SEO data from CSV/Excel
 
@@ -101,7 +101,7 @@ Similar to exporting SEO data, we recommend using [WP All Import](https://www.wp
 
 To importing data to Slim SEO, create a new import and configure other fields (title, content, etc.) as usual. In the **Custom Fields** panel, add a new field **slim_seo**. In the **Field options**, select **Serialized**. And then click the button **Click to specify** and set fields like this:
 
-![Specify Slim SEO fields in WP All Import](https://i.imgur.com/FbGlbys.png)
+![Specify Slim SEO fields in WP All Import](https://imgur.elightup.com/FbGlbys.png)
 
 This will import all 5 fields into a serialized field **slim_seo**, which is used by the plugin.
 

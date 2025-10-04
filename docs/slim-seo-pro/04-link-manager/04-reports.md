@@ -10,7 +10,7 @@ Slim SEO Pro provides several reports to help you understand links on your websi
 
 This report shows you **which pages are linked to the most**. All links counted here are **internal links**.
 
-![Top linked pages report](https://i.imgur.com/a7SEVWU.png)
+![Top linked pages report](https://imgur.elightup.com/a7SEVWU.png)
 
 Each line in the report shows you the page title and the number of links that page has.
 
@@ -18,11 +18,11 @@ It's very important to know the number of links each page has because **the more
 
 To see more links in the report, click **Load more**. Click **View all** to see the full report, which lists all pages with the number of links to each of them.
 
-![View more links in the report](https://i.imgur.com/jf8Ry53.png)
+![View more links in the report](https://imgur.elightup.com/jf8Ry53.png)
 
 To **view pages link to a specific page**. To do that, **click the corresponding row** in the report.
 
-![Viewing links to a page](https://i.imgur.com/CsXrLMC.png)
+![Viewing links to a page](https://imgur.elightup.com/CsXrLMC.png)
 
 On the new screen, you'll see the following info on each link:
 
@@ -39,7 +39,7 @@ When hovering the row, you'll see **View** and **Edit** post links, where you ca
 
 This report shows you the **HTTP statuses of links**, which tell you **which link is working, broken, or redirected**. This report includes **both internal and external links**.
 
-![Link statuses report](https://i.imgur.com/W4VSZeM.png)
+![Link statuses report](https://imgur.elightup.com/W4VSZeM.png)
 
 Each line in this report shows you the HTTP status code and the number of links that have the status.
 
@@ -50,11 +50,11 @@ This report is very helpful for you to check:
 
 To see more links in the report, click **Load more**. Click **View all** to see the full report, which lists all statuses with the number of links for each status.
 
-![View more statuses in the report](https://i.imgur.com/7BAVutu.png)
+![View more statuses in the report](https://imgur.elightup.com/7BAVutu.png)
 
 To **view all links that have a specific status**, **click the corresponding row** in the report.
 
-![Viewing links with a status](https://i.imgur.com/0M3gBfu.png)
+![Viewing links with a status](https://imgur.elightup.com/0M3gBfu.png)
 
 On the new screen, you'll see the following details of each link:
 
@@ -72,7 +72,7 @@ When hovering the row, you'll see **View** and **Edit** post links, where you ca
 
 This report shows you the **external URLs that are linked to the most**.
 
-![Top external links report](https://i.imgur.com/80NxrwW.png)
+![Top external links report](https://imgur.elightup.com/80NxrwW.png)
 
 Each line in this report shows you the external URL and the number of links to it.
 
@@ -80,11 +80,11 @@ It's very helpful to know which sites you link to, and which status of the links
 
 To see more links in the report, click **Load more**. Click **View all** to see the full report, which lists all URLs with the number of links for each of them.
 
-![View more external URLs](https://i.imgur.com/XXSq65s.png)
+![View more external URLs](https://imgur.elightup.com/XXSq65s.png)
 
 To **view all pages that have a specific external link**, **click the corresponding row** in the report.
 
-![Viewing pages with an external link](https://i.imgur.com/Mvx3j71.png)
+![Viewing pages with an external link](https://imgur.elightup.com/Mvx3j71.png)
 
 On the new screen, you'll see the following details of each link:
 
@@ -99,7 +99,7 @@ Status|The link HTTP status code.
 
 This report shows you the **keywords that are used the most as anchor text**. It counts keywords for both internal and external links.
 
-![Top keywords report](https://i.imgur.com/8MReza8.png)
+![Top keywords report](https://imgur.elightup.com/8MReza8.png)
 
 Each line in the report shows you the keyword and the number of links that use this keyword as the anchor text.
 
@@ -107,11 +107,11 @@ Anchor text is very important because it gives the search engines the context an
 
 To see more keywords in the report, click **Load more**. Click **View all** to see the full report, which lists all keywords with the number of links that use the keywords as the anchor text.
 
-![Viewing more keywords in the report](https://i.imgur.com/ARSJxmb.png)
+![Viewing more keywords in the report](https://imgur.elightup.com/ARSJxmb.png)
 
 To **view all links (and the corresponding pages) that use a specific keyword as the anchor text**, **click the corresponding row** in the report.
 
-![Viewing links with a keyword](https://i.imgur.com/qbDoKik.png)
+![Viewing links with a keyword](https://imgur.elightup.com/qbDoKik.png)
 
 On the new screen, you'll see the following details of each link:
 

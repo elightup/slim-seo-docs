@@ -9,7 +9,7 @@ Slim SEO Pro has a deep integration with [Advanced Custom Fields](https://www.ad
 
 Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in ACF will display:
 
-![Inserting ACF fields](https://i.imgur.com/xJwUezN.png)
+![Inserting ACF fields](https://imgur.elightup.com/xJwUezN.png)
 
 In the dropdown panel, select a field you want to insert and click on it. The dynamic variable of the field will be inserted in the input box.
 
@@ -25,7 +25,7 @@ Inserting fields in a group (sub-fields) has no difference from inserting normal
 
 In the screenshot below, Price, Currency, and Valid until are sub-fields of the group Offers.
 
-![Inserting sub-fields](https://i.imgur.com/fappenm.png)
+![Inserting sub-fields](https://imgur.elightup.com/fappenm.png)
 
 The format of dynamic variables for sub-fields is:
 
@@ -42,13 +42,13 @@ You might wonder how the plugin works with repeater fields as they have multiple
 
 In case you have a **repeatable property that also has sub-properties** like Review:
 
-![Repeatable property](https://i.imgur.com/Z19AknN.png)
+![Repeatable property](https://imgur.elightup.com/Z19AknN.png)
 
 When you insert sub-fields from a repeater (like inserting Name and Value from the repeater field Reviews in the screenshot above), the plugin will automatically **take values of sub-fields for each clone** of the repeater.
 
 For example, if you enter the value for Reviews for a post like this:
 
-![Enter value for posts](https://i.imgur.com/17aToKZ.png)
+![Enter value for posts](https://imgur.elightup.com/17aToKZ.png)
 
 Enter values for ACF fields for a post
 
@@ -63,7 +63,7 @@ Inserting fields in a flexible content field type has no difference from inserti
 
 In the screenshot below, country is a sub-field of the flexible content Stores.
 
-![Inserting sub-fields of a flexible content field type](https://i.imgur.com/nsqkG6C.png)
+![Inserting sub-fields of a flexible content field type](https://imgur.elightup.com/nsqkG6C.png)
 
 The format of dynamic variables for sub-fields in flexible content is:
 

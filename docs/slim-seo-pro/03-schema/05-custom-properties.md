@@ -8,11 +8,11 @@ Although most important properties (which Google recommends) are implemented in 
 
 To add custom properties, click the **\+ Add Property** link at the bottom of the schema panel.
 
-![Add custom properties](https://i.imgur.com/2q09Hdv.png)
+![Add custom properties](https://imgur.elightup.com/2q09Hdv.png)
 
 After that, you'll see a new property called **Custom** with a **\+ Add New** button. Clicking the button will show you a pair of key-value.
 
-![Pairs of key-value for custom properties](https://i.imgur.com/U2F7HQm.png)
+![Pairs of key-value for custom properties](https://imgur.elightup.com/U2F7HQm.png)
 
 Each key-value pair represents a custom property, where key is the property name and value is the property value.
 
@@ -48,7 +48,7 @@ Here the params `name`, `age`, `gender` are sub-params of the `author` and they'
 
 Implementing that in Slim SEO Pro as follows:
 
-![Implement structural data for custom properties](https://i.imgur.com/QwE9R3D.png)
+![Implement structural data for custom properties](https://imgur.elightup.com/QwE9R3D.png)
 
 Another case is when you want to add **a set of data without keys** (like list of images). The data in JSON-LD looks like this:
 
@@ -80,7 +80,7 @@ Similar to above, this can be understood as:
 
 And can be implemented as follows in Slim SEO Pro:
 
-![Adding array of data for custom properties](https://i.imgur.com/8qc7Wm7.png)
+![Adding array of data for custom properties](https://imgur.elightup.com/8qc7Wm7.png)
 
 Combining these, you can define a complex data structure as follows (this is a list of addresses, each address is an object):
 
@@ -99,18 +99,18 @@ Combining these, you can define a complex data structure as follows (this is a l
 
 In Slim SEO Pro:
 
-![Complex data structure for custom properties in Slim SEO Pro](https://i.imgur.com/TwhqUbz.png)
+![Complex data structure for custom properties in Slim SEO Pro](https://imgur.elightup.com/TwhqUbz.png)
 
 ## Adding custom properties to an existing property
 
 Assume that you're implementing the Local Business schema, which has an address property. Address is a complex object which has street address, city, postal code like this:
 
-![Address property for Local Business schema](https://i.imgur.com/z7IrbUk.png)
+![Address property for Local Business schema](https://imgur.elightup.com/z7IrbUk.png)
 
 In most cases, these properties are enough (as we try so hard to implement them all for you), but from the [schema.org specification](https://schema.org/PostalAddress), there are a lot more properties for address such as name, description, etc. They're not important and are not required, but if you want to add them, then you can do that with Slim SEO Pro.
 
 As address is an implemented property in the plugin, you can't add it as a new custom property. Instead, you need to add custom property for a sub-param (name, description) using dot notation like this:
 
-![Adding custom properties to an existing property](https://i.imgur.com/TAkqR13.png)
+![Adding custom properties to an existing property](https://imgur.elightup.com/TAkqR13.png)
 
 Note that to add custom properties to an existing property, you need to know the name of the existing property (in the example above, it's `address`). The list of properties name are available in [Google search gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery) and [schema.org](https://schema.org) websites.

@@ -6,7 +6,7 @@ Some features in Slim SEO are opinionated. We tried to automate all the SEO work
 
 To disable features, please go to **Settings > Slim SEO**, select tab **General** and you can deselect the features you don't want:
 
-![Select the SEO features you want to enable/disable](https://i.imgur.com/qWrjGJS.png)
+![Select the SEO features you want to enable/disable](https://imgur.elightup.com/qWrjGJS.png)
 
 Alternatively, you can disable the features by adding the following code into your theme's `functions.php` file:
 

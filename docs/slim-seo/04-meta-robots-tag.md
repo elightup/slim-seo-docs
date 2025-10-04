@@ -16,7 +16,7 @@ The following pages are excluded from search results:
 
 If you don't want a post or a term to be shown on search results page, simply select **Hide from search results** in the **Search Engine Optimization** meta box below the content area:
 
-![Don't show a page from search results](https://i.imgur.com/D0DdbxS.png)
+![Don't show a page from search results](https://imgur.elightup.com/D0DdbxS.png)
 
 ## How to disable a post type from being indexed?
 

@@ -42,8 +42,8 @@ Slim SEO allows you to set the rel attribute to nofollow, sponsored, or ugc (use
 
 If you're using the classic editor, simply tick the checkboxes for the rel attribute:
 
-![Toggle link rel in the classic editor](https://i.imgur.com/7cGLJlO.png)
+![Toggle link rel in the classic editor](https://imgur.elightup.com/7cGLJlO.png)
 
 If you're using the block editor, toggle the rel attribute as follows:
 
-![Toggle link rel in the block editor](https://i.imgur.com/OBM5iuP.png)
+![Toggle link rel in the block editor](https://imgur.elightup.com/OBM5iuP.png)

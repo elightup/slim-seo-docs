@@ -6,15 +6,15 @@ After installing the plugin, you need to scan all posts to find links and their 
 
 To scan links, clink the **Scan links now** button:
 
-![Start scan links in Slim SEO Pro](https://i.imgur.com/dwMR2Ts.png)
+![Start scan links in Slim SEO Pro](https://imgur.elightup.com/dwMR2Ts.png)
 
 After that, the plugin will refresh and show you the current status of the link-scanning process:
 
-![Link scanning process status](https://i.imgur.com/MladUdi.png)
+![Link scanning process status](https://imgur.elightup.com/MladUdi.png)
 
 When the link scanning process finishes, the status (admin notice) will disappear and you'll see reports in the plugin dashboard.
 
-![Link reports](https://i.imgur.com/7zWliJr.png)
+![Link reports](https://imgur.elightup.com/7zWliJr.png)
 
 ## How it works
 
@@ -28,7 +28,7 @@ In that case, we'd recommend enable the WordPress cron to run the scanner once a
 
 In case you already ran the link scanning, and you want to scan again, go to the **Tools** tab and you'll find the **Scan links** button there:
 
-![Run the scan links tool again](https://i.imgur.com/mbEry3A.png)
+![Run the scan links tool again](https://imgur.elightup.com/mbEry3A.png)
 
 :::caution
 

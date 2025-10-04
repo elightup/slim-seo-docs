@@ -75,4 +75,4 @@ In the example above or in the video tutorial, you can notice that **schemas can
 
 To make it easy for you to compose your schemas, we also add **basic schemas such as Thing, Image, Person, and Organization** for you to build small pieces of data and insert them into other schemas as properties:
 
-![Basic schemas](https://i.imgur.com/qFXmgR1.png)
+![Basic schemas](https://imgur.elightup.com/qFXmgR1.png)

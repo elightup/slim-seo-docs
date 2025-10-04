@@ -9,7 +9,7 @@ Installing Slim SEO is very easy. The plugin is free and hosted on WordPress.org
 - Click **Install** button to install the plugin
 - Click **Activate** button to activate it
 
-![Install Slim SEO within WordPress dashboard](https://i.imgur.com/4t04yf8.png)
+![Install Slim SEO within WordPress dashboard](https://imgur.elightup.com/4t04yf8.png)
 
 Or you can manually download and install Slim SEO if you can't install it with the method above:
 

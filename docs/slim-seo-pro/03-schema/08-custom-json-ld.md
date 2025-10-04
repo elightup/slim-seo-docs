@@ -6,15 +6,15 @@ If you're an advanced user and want to add and edit schemas with custom JSON-LD 
 
 Select **Custom JSON-LD** from the [list of available schemas](/slim-seo-pro/schema/adding-schemas/):
 
-![Custom json-ld](https://i.imgur.com/Koxfdw4.png)
+![Custom json-ld](https://imgur.elightup.com/Koxfdw4.png)
 
 Then in the schema panel, paste your JSON-LD code into the textarea box:
 
-![Enter custom JSON-LD code](https://i.imgur.com/WdibSCb.png)
+![Enter custom JSON-LD code](https://imgur.elightup.com/WdibSCb.png)
 
 You can still insert the [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) into your JSON-LD code as follows:
 
-![Using dynamic variables in JSON-LD code](https://i.imgur.com/Oo2Mdeo.png)
+![Using dynamic variables in JSON-LD code](https://imgur.elightup.com/Oo2Mdeo.png)
 
 And the plugin will render the variables on the front end.
 
