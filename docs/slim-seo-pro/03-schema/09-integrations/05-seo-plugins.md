@@ -14,7 +14,7 @@ Slim SEO Pro provides direct integrations with:
 - Yoast SEO
 - Rank Math
 
-When you use Slim SEO Pro with any of these plugins and their **schema feature is enabled**, Slim SEO Pro will **merge** its schemas into their schema graph. This creates a single, unified JSON-LD graph on the front end — cleaner and more complete.
+When you use Slim SEO Pro with any of these plugins and their **schema feature is enabled**, Slim SEO Pro will **merge** its schemas into their schema graph. This creates a single, unified JSON-LD graph on the front end - cleaner and more complete.
 
 If you prefer to **disable the schema feature** in these plugins, Slim SEO Pro will step in and output only its own schemas on the front end.
 

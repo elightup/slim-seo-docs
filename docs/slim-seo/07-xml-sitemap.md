@@ -93,7 +93,7 @@ add_filter( 'slim_seo_sitemap_post_types', function( $post_types ) {
 
 Excluding post types does **not** tell search engines to **not index** them. It simply doesn't send the post types' URLs to search engines. If search engines can discover posts in another way (by crawling your site), then they still can index them.
 
-To tell search engines to not index these posts, it’s better to use [the robots tag](/slim-seo/meta-robots-tag/).
+To tell search engines to not index these posts, it's better to use [the robots tag](/slim-seo/meta-robots-tag/).
 :::
 
 

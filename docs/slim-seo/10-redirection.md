@@ -142,7 +142,7 @@ Auto redirection helps you redirect some URLs that have low value to users, or i
 
 ### Attachment pages to files
 
-When you upload any file to WordPress, WordPress creates an attachment page for that file. This page provides very little information about the file and the page looks quite empty. As search engines already index the files, allowing attachment pages to be indexed make duplicated content and increases the bounce rate. It’s better to disable the attachment pages.
+When you upload any file to WordPress, WordPress creates an attachment page for that file. This page provides very little information about the file and the page looks quite empty. As search engines already index the files, allowing attachment pages to be indexed make duplicated content and increases the bounce rate. It's better to disable the attachment pages.
 
 Without any configuration from users, Slim SEO will help you to **disable the attachment pages automatically** and **redirect them to the file URLs**. Users will see the real file and thus, no empty pages.
 
