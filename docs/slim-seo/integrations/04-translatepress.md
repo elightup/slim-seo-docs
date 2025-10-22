@@ -3,25 +3,32 @@ title: Slim SEO - TranslatePress Integration
 sidebar_label: TranslatePress
 ---
 
-**TranslatePress** is a powerful and user-friendly WordPress translation plugin that allows you to translate your entire website directly from the front end. It works seamlessly with any theme or plugin, and supports both manual and automatic (AI-powered) translations. With its intuitive visual interface, you can easily create multilingual websites in just a few clicks.
+**TranslatePress** is a powerful and user-friendly WordPress translation plugin that lets you translate your entire website directly from the front end. It works seamlessly with any theme or plugin and supports both manual and automatic (AI-powered) translations. With its intuitive visual interface, you can easily build multilingual websites in just a few clicks.
 
-If you're a Slim SEO user, you'll have a good integration with TranslatePress, that helps you improve your multilingual site's SEO performance.
+If you're using **Slim SEO**, you'll enjoy a smooth integration with TranslatePress that helps enhance your multilingual site's SEO performance.
 
-## Hreflang tag and multilingual sitemap
+## Hreflang tags and multilingual sitemaps
 
-An important aspect of multilingual SEO is the `hreflang` tag. By default, TranslatePress automatically outputs the `hreflang` in the HTML of the posts on the front end, like this, so Slim SEO has to do nothing:
+A key part of multilingual SEO is the `hreflang` tag. This tag helps search engines understand which version of a page to show to users based on their language or region.
+
+By default, TranslatePress automatically adds `hreflang` tags to your pages' HTML on the front end - Slim SEO doesn't need to do anything extra. For example, you'll see something like this in your page source:
 
 ```html
 <link rel="alternate" hreflang="en-US" href="http://ss.test/hello-world/"/>
 <link rel="alternate" hreflang="vi" href="http://ss.test/vi/hello-world/"/>
 ```
 
-However, in the [XML sitemap](/slim-seo/xml-sitemap/) for posts, Slim SEO will automatically adds `hreflang` tags to the sitemap **for each post**. This is not visible to human, but when you view the source code of the sitemap, you will see it like this:
+When it comes to sitemaps, Slim SEO automatically includes `hreflang` tags for each post in the [XML sitemap](/slim-seo/xml-sitemap/). These tags aren't visible on the front end but are available in the sitemap source code, which search engines use to understand your site structure better.
+
+Here's what that looks like:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="http://ss.test/wp-content/plugins/slim-seo/src/Sitemaps/style.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<url>
 		<loc>http://ss.test/hello-world/</loc>
 		<lastmod>2025-10-20T06:56:36+00:00</lastmod>
@@ -47,4 +54,4 @@ However, in the [XML sitemap](/slim-seo/xml-sitemap/) for posts, Slim SEO will a
 </urlset>
 ```
 
-Both methods (outputting in HTML and in XML sitemap) are the [recommended ways](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) to tell Google about translations of your pages.
+Both approaches - adding `hreflang` tags in HTML and in the XML sitemap - are [recommended by Google](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) for properly handling multilingual content.
