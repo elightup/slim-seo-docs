@@ -7,6 +7,23 @@ sidebar_label: TranslatePress
 
 If you're using **Slim SEO**, you'll enjoy a smooth integration with TranslatePress that helps enhance your multilingual site's SEO performance.
 
+## Translating meta titles and descriptions
+
+Slim SEO lets you set custom [meta titles](/slim-seo/meta-title-tag/) and [meta descriptions](/slim-seo/meta-description-tag/) for each post. You can translate these meta tags into different languages using the TranslatePress [SEO Pack add-on](https://translatepress.com/docs/addons/seo-pack/), which is included in all **premium versions**.
+
+If you haven't activated the SEO Pack add-on, go to **Settings > TranslatePress > tab Addons** and activate the add-on:
+
+![Activate SEO Pack add-on](../img/translatepress-seo-pack.png)
+
+To translate the meta title and description for a post, follow these steps:
+
+1. Open the post you want to translate.
+2. Click **Translate Page** from the WordPress admin bar.
+3. In the translation interface, open the dropdown menu and find the **Meta Information** section.
+   This section lists all Slim SEO meta tags that you can translate. Select one of them and start translating.
+
+![Translate meta tags in TranslatePress](../img/translatepress-translate-meta-tags.png)
+
 ## Hreflang tags and multilingual sitemaps
 
 A key part of multilingual SEO is the `hreflang` tag. This tag helps search engines understand which version of a page to show to users based on their language or region.

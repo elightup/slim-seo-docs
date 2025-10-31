@@ -7,7 +7,7 @@ sidebar_label: WPML
 
 If you're using **Slim SEO**, you'll benefit from a seamless integration with WPML that enhances your multilingual site's SEO performance.
 
-## Translating meta title and description for posts
+## Translating meta titles and descriptions
 
 Slim SEO lets you set custom [meta titles](/slim-seo/meta-title-tag/) and [meta descriptions](/slim-seo/meta-description-tag/) for each post. With WPML, you can easily translate these meta tags by following these steps:
 

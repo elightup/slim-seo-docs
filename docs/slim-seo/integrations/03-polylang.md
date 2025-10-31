@@ -7,7 +7,7 @@ sidebar_label: Polylang
 
 If you're using **Slim SEO**, you'll enjoy full integration with Polylang, helping you improve your multilingual site's SEO performance effortlessly.
 
-## Translating meta titles and descriptions for posts
+## Translating meta titles and descriptions
 
 Slim SEO lets you set custom [meta titles](/slim-seo/meta-title-tag/) and [meta descriptions](/slim-seo/meta-description-tag/) for each post.
 When you translate a post with Polylang, it automatically creates a new post for the translated version. So, to translate the meta title and description, simply open the translated post and enter the meta information as usual.
