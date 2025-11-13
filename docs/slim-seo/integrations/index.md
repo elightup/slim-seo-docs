@@ -23,7 +23,7 @@ For page builder plugins, Slim SEO renders the content built with them and use t
 
 - [WPML](/slim-seo/integrations/wpml/)
 - [Polylang](/slim-seo/integrations/polylang/)
-- **TranslatePress**
+- [TranslatePress](/slim-seo/integrations/translatepress/)
 
 When using Slim SEO with these plugins, for each post and term in the sitemap, Slim SEO will add `hreflang` for the languages. With this addition, you don't need a separate sitemap for other languages.
 
