@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/palenight');
+const lightCodeTheme = require( 'prism-react-renderer/themes/github' );
+const darkCodeTheme = require( 'prism-react-renderer/themes/palenight' );
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,11 +28,11 @@ const config = {
       {
         docs: {
           routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve( './sidebars.js' ),
           editUrl: 'https://github.com/elightup/slim-seo-docs/tree/master/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve( './src/css/custom.css' ),
         },
         googleTagManager: {
           containerId: 'GTM-N55SZ2BT',
@@ -43,7 +43,7 @@ const config = {
 
   themes: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve( "@easyops-cn/docusaurus-search-local" ),
       {
         hashed: true,
         indexBlog: false,
@@ -134,16 +134,12 @@ const config = {
                 href: 'https://wordpress.org/plugins/slim-seo/',
               },
               {
-                label: 'Slim SEO Schema',
-                href: 'https://wpslimseo.com/products/slim-seo-schema/',
+                label: 'Slim SEO Pro',
+                href: 'https://wpslimseo.com/products/slim-seo-pro/',
               },
               {
-                label: 'Slim SEO Link Manager',
-                href: 'https://wpslimseo.com/products/slim-seo-link-manager/',
-              },
-              {
-                label: 'Slim SEO vs SEOPress',
-                href: 'https://wpslimseo.com/slim-seo-vs-seopress/',
+                label: 'Browser extensions',
+                href: 'https://elu.to/ec',
               },
             ],
           },
@@ -155,17 +151,13 @@ const config = {
                 href: 'https://www.facebook.com/groups/slimseo',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/wpslimseo',
-              },
-              {
-                label: 'Github',
-                href: 'https://github.com/elightup/slim-seo',
+                label: 'Twitter (X)',
+                href: 'https://x.com/wpslimseo',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://wpslimseo.com">Slim SEO</a>, a brand of <a href="https://elightup.com">eLightUp</a>.`,
+        copyright: `Copyright © ${ new Date().getFullYear() } <a href="https://wpslimseo.com">Slim SEO</a>, a brand of <a href="https://elightup.com">eLightUp</a>.`,
       },
       prism: {
         theme: {
@@ -183,7 +175,7 @@ const config = {
         additionalLanguages: [ 'php' ],
         defaultLanguage: 'php',
       },
-    }),
+    } ),
 };
 
 module.exports = config;
