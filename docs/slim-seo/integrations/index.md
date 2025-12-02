@@ -39,6 +39,7 @@ Learn more about [multilingual sitemap](https://wpslimseo.com/wordpress-multilin
 - **LifterLMS**
 - **MailPoet**
 - **[Meta Box](https://metabox.io)**
+- **[WP Ultimate CSV Importer](https://www.smackcoders.com/wp-ultimate-csv-importer-pro.html?utm_source=slim-seo&utm_medium=referral&utm_campaign=integrations-page)**
 - **Ultimate Member**
 - **WebStories**: replace the default schema & meta tags with the more comprehensive schema from Slim SEO.
 - **WPForms**
