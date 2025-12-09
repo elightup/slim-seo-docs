@@ -59,3 +59,23 @@ If you see the scanning process isn't finished, please follow these steps:
 When deactivating the plugin, your data remains. No links are lost or changed.
 
 After scanning links, let's [discover the reports](/slim-seo-pro/link-manager/reports/).
+
+### Why dynamically generated links cannot be detected?
+
+Dynamic links are, by nature, always changing. For example, if you have a "Recent Posts" widget or a section that automatically lists your latest articles, every time you publish a new post:
+
+- New links appear
+- Older links disappear
+- The order may change
+
+Because these links update themselves over time, the list is never stable. That makes it extremely difficult (and often not very useful) to track them reliably. The report can quickly become noisy or misleading.
+
+Besides, Slim SEO stores all detected links in a dedicated database table and regularly runs background checks to verify their status.
+
+However, with dynamically generated links, this process becomes inefficient:
+
+- The plugin would have to **rescan your site constantly** to catch every change.
+- This would **impact performance**, especially on larger sites.
+- The database could **grow very large** because these links change frequently and are not meant to be stored long-term.
+
+To keep your website fast and your reports clean, Slim SEO avoids analyzing links that are generated dynamically. We only analyze **static links**—the links that appear directly in your post or page content and do not change unless you edit the content yourself. These are predictable, stable, and meaningful for SEO analysis.
