@@ -14,12 +14,13 @@ Then click **Save Changes** to validate the license key. If your license key is 
 
 ### What happens if my license expires?
 
-- You won't receive any updates or bug fixes from us
-- You can't access to our support
-- You won't be able to add or edit schemas in the admin
-- The existing schemas that you already setup for your site won't be outputted in the front end
-- You won't be see any reports for links and search performance in the admin or when editting a post
-- You won't be able to get suggestions to improve writing or build links
+- You won't receive any updates or bug fixes from us.
+- You can't access to our support.
+- All premium features will be disabled, including:
+  - You won't be able to add or edit schemas in the admin.
+  - The existing schemas that you already setup for your site won't be outputted in the front end.
+  - You won't be able to see any reports for links and search performance in the admin or when editting a post.
+  - You won't be able to get suggestions to improve writing or build links.
 
 ### Can I define the license key in `wp-config.php`?
 
