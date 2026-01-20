@@ -81,6 +81,20 @@ Delete keywords table|If enabled, Auto Link keyword data will be removed when th
 
 :::
 
+## Auto Link and Link Manager
+
+Auto Link and [Link Manager](/slim-seo-pro/link-manager/) are two different features:
+- Auto Link is used to **automatically** add links to your content.
+- Link Manager is used to **manage and monitor** your links, including internal links, external links, and broken links.
+
+You can use both features together to get the best of both worlds. For example, you can use Auto Link to automatically add links to your content, and then use Link Manager to get (manual) link suggestions and monitor those links.
+
+:::caution
+
+Because links added by Auto Link are dynamically generated, they are not visible in the Link Manager's reports, you can't use Link Manager to monitor them.
+
+:::
+
 ## Troubleshooting
 
 ### The keyword is not being linked
