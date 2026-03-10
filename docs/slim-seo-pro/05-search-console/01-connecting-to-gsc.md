@@ -3,7 +3,7 @@ title: Connecting to Google Search Console
 sidebar_label: Connecting to GSC
 ---
 
-Analytics is a pro feature that allows you to connect to Google Search Console (GSC) to bring the reports to WordPress. It helps you see how your pages perform on SERP, and give you more info about your impressions, positions, CTR, and keywords.
+Slim SEO Pro allows you to connect to Google Search Console (GSC) to bring the reports to WordPress. It helps you see how your pages perform on SERP, and give you more info about your impressions, positions, CTR, and keywords.
 
 To connect your site with Google Search Console, the plugin uses the official Google OAuth2 SDK for authorization. This is the standard and recommended method provided by Google. With this setup, you'll need a Google account and a project in Google Cloud Console. By creating your own app, you maintain full control and ownership of your data. Some third-party services let you connect through their Google app instead. However, this gives them access to your site's data, which can pose security and privacy risks.
 
@@ -85,7 +85,7 @@ Then click **Create** button to create the credentials. After finishing, you'll 
 
 ![OAuth client ID](img/oauth-info.png)
 
-Copy these details and now go to your **WordPress admin > Settings > Slim SEO > Analytics tab > Settings** and enter the details:
+Copy these details and now go to your **WordPress admin > Settings > Slim SEO > Search Console tab > Settings** and enter the details:
 
 ![Enter Client ID and Client Secret](img/enter-client-id-and-secret.png)
 
@@ -101,8 +101,8 @@ then login with the your Google account:
 
 ![Get Google authentication token 3](img/get-authentication-token-3.png)
 
-After all these steps, it will redirect you back to Analytics and ready for you to use:
+After all these steps, it will redirect you back to Search Console and ready for you to use:
 
-![Analytics screen](img/analytics-screen.png)
+![Search Console screen](img/analytics-screen.png)
 
-Now it's time to [learn about the reports](/slim-seo-pro/analytics/reports/).
+Now it's time to [learn about the reports](/slim-seo-pro/search-console/reports/).

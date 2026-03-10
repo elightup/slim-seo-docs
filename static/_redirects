@@ -28,3 +28,7 @@
 /slim-seo-link-manager/interlinking-external-sites/  /slim-seo-pro/link-manager/interlinking-external-sites/
 /slim-seo-link-manager/integrations/                 /slim-seo-pro/link-manager/integrations/
 /slim-seo-link-manager/hooks/                        /slim-seo-pro/link-manager/hooks/
+
+/slim-seo-pro/analytics/                             /slim-seo-pro/search-console/
+/slim-seo-pro/analytics/connecting-to-gsc/           /slim-seo-pro/search-console/connecting-to-gsc/
+/slim-seo-pro/analytics/reports/                     /slim-seo-pro/search-console/reports/
