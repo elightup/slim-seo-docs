@@ -12,7 +12,7 @@ This hook was removed in Slim SEO Pro 1.4.3 because you can exclude post types v
 
 ### `slim_seo_link_manager_link_suggestions_args`
 
-This filter allows you to change the post query for getting [suggested posts](/slim-seo-pro/link-manager/post-links/#link-suggestions).
+This filter allows you to change the post query for getting [suggested posts](/slim-seo-pro/link-manager/link-suggestions/).
 
 ```php
 add_filter( 'slim_seo_link_manager_link_suggestions_args', function( $args ) {

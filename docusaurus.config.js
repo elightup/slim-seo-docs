@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require( 'prism-react-renderer/themes/github' );
-const darkCodeTheme = require( 'prism-react-renderer/themes/palenight' );
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Slim SEO Documentation',
@@ -12,7 +9,6 @@ const config = {
   baseUrl: '/',
   trailingSlash: true,
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'elightup', // Usually your GitHub org/user name.
   projectName: 'slim-seo-docs', // Usually your repo name.
@@ -157,18 +153,6 @@ const config = {
         copyright: `Copyright © ${ new Date().getFullYear() } <a href="https://wpslimseo.com">Slim SEO</a>, a brand of <a href="https://elightup.com">eLightUp</a>.`,
       },
       prism: {
-        theme: {
-          ...lightCodeTheme,
-          plain: {
-            backgroundColor: '#f2f5f8'
-          }
-        },
-        darkTheme: {
-          ...darkCodeTheme,
-          plain: {
-            backgroundColor: '#2c3e50'
-          }
-        },
         additionalLanguages: [ 'php' ],
         defaultLanguage: 'php',
       },
