@@ -153,6 +153,7 @@ const config = {
         copyright: `Copyright © ${ new Date().getFullYear() } <a href="https://wpslimseo.com">Slim SEO</a>, a brand of <a href="https://elightup.com">eLightUp</a>.`,
       },
       prism: {
+        theme: require( 'prism-react-renderer' ).themes.oneDark,
         additionalLanguages: [ 'php' ],
         defaultLanguage: 'php',
       },
