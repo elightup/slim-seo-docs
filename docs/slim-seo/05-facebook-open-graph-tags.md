@@ -14,10 +14,10 @@ Slim SEO supports the following Open Graph tags:
 | --- | --- |
 | `og:title` | Title: inherits from meta title. |
 | `og:type` | Type: `article` if on a singular pages/posts, `website` on other pages. |
-| `og:image` | Image: URL of the featured image. Only available for singular pages/posts. |
-| `og:image:width` | Image width: width of the featured image. |
-| `og:image:height` | Image height: width of the featured image. |
-| `og:image:alt` | Image alt text: alt text of the featured image. |
+| `og:image` | Image URL: fallback to the featured image -> first image in the post content -> global social image (set in **Settings > Slim SEO > Social**) if no image is set. |
+| `og:image:width` | Image width |
+| `og:image:height` | Image height |
+| `og:image:alt` | Image alt text |
 | `og:description` | Description: inherits from meta description. |
 | `og:url` | URL: permalink of the singular posts/pages. |
 | `og:locale` | Locale: get from WordPress's settings. |
