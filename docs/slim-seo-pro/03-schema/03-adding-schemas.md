@@ -4,87 +4,131 @@ title: Adding Schemas
 
 ## What is a schema?
 
-Schema is the best way to describe [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) for search engines. Based on the data provided, search engines can show the content on the search results page in a more appealing way.
+A schema is a way to provide [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) that helps search engines better understand your content. With structured data, search engines can display richer results - like event details, ratings, or product information - directly in search results.
 
-For example, if you're on an event page, you can use schema to tell search engines what the event location is, and what the event date is. All event details can be described in a proper format (which is handled by the plugin) so that search engines can understand.
+For example, on an event page, you can use a schema to specify the event's date, location, and other details. Slim SEO Pro formats this data correctly so search engines can interpret it easily.
 
-Usually, in WordPress, a schema is used with a post type (like "event" in the example above) to describe it verbosely. With Slim SEO Pro, you can set more conditions to where a schema is applied.
-
-So, let's started!
+In WordPress, schemas are often tied to post types (e.g. an "event" schema for event posts). With Slim SEO Pro, you can go further and control exactly where each schema is applied using flexible conditions.
 
 ## Adding a new schema
 
-To add a new schema, click the **\+ Add Schema** button. A popup will display that lets you choose a needed schema. You can search schemas by title as well:
+To create a schema, click the **+ Add Schema** button. A popup will appear where you can browse or search for a schema by name.
 
 ![Add a new schema](https://imgur.elightup.com/9Lghqac.png)
 
-To add a schema, simply click the schema title from the list. All schemas are categorized the same way as in the [Google search gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery) which helps you find them easier.
+Click a schema to add it. Schemas are grouped similarly to the [Google Search Gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery), making them easier to find.
 
-Once you selected a schema, it's added to the list. There are a few actions you can do with a schema:
+Once added, you can:
 
-- To expand/collapse the schema details, click the title bar or the up/down arrow
-- To remove the schema, click the trash icon. A confirmation will appear to ask you whether you're sure to remove it.
+- Click the title or arrow icon to expand/collapse the schema details
+- Click the trash icon to remove the schema (with confirmation)
 
 ![Toggle the schema details or remove it](https://imgur.elightup.com/9jHVNx8.png)
 
 ## Properties
 
-Each schema has a list of properties, which define the detailed information for that schema. Slim SEO Pro follows the guidelines from Google and schema.org to give you the most comprehensive list of properties for your website. That ensures you provide details to search engines as much as possible.
+Each schema includes a set of properties that define its details.
+
+Slim SEO Pro follows standards from Google and schema.org to provide a comprehensive list of properties, helping you supply as much useful information as possible.
 
 There're two types of properties:
 
-- **Required**: which is required by Google. These properties are marked with a red asterisk next to its label.
-- **Optional**: which is not required by Google but is recommended. These properties are not marked with anything.
+- **Required**: Must be filled in (marked with a red asterisk *)
+- **Optional**: Recommended, but not required
 
-Besides, some optional properties are kept **hidden** (just to make you're not lost in a long list of properties!). To show them, click the **\+ Add property** at the bottom of the panel.
+To keep things simple, some optional properties are hidden by default. Click **+ Add property** at the bottom to reveal more.
 
 ![Schema properties](https://imgur.elightup.com/2g9amcU.png)
 
-Most properties are auto-filled with default values to save you time to enter or select values for them. You can manually enter data for properties if you want.
+Most fields are pre-filled with sensible defaults to save you time, but you can customize them as needed.
 
 :::info Shortcodes
 
-You can also use shortcodes for properties' values. Slim SEO Pro will automatically parse the shortcodes and use the returned value of the shortcodes for the properties values.
+You can use shortcodes in property values. Slim SEO Pro will process them and use their output as the final value.
 
 :::
 
-Besides, Slim SEO Pro supports **dynamic data** for properties (such as post title, author name, etc.). To insert dynamic data, click the the **Insert** button next to the input.
+You can also insert dynamic data (like post title, author name, etc.). Click the **Insert** button next to a field to choose from available variables.
 
 ![Insert dynamic data for properties](https://imgur.elightup.com/AjPAPBc.png)
 
-When clicking the **Insert** button, you'll see a popup with a list of supported dynamic variables for properties. You can search for them (by title) or simply click any of them to insert into the property value input box.
-
-Learn more about [dynamic variables](/slim-seo-pro/schema/dynamic-variables/).
+See more details in [dynamic variables](/slim-seo-pro/schema/dynamic-variables/).
 
 ## Location
 
-Each schema can be implemented for a post type or for posts in a specific category. There are various location rules that you can flexibly use to define where the schema is for.
+Schemas can be applied conditionally, giving you full control over where they appear.
 
-To define location rules, switch to the **Location** tab in a schema panel:
+Open the **Location** tab in a schema panel:
 
 ![Set location rules for a schema](https://imgur.elightup.com/cNw25MP.png)
 
-You'll see 2 options in that tab:
+### Location types
 
-- **Type:** the location type, which can be singular, archive or code.
-    - **Singular:** The schema is applied for singular pages only
-    - **Archive:** The schema is applied for archive pages only
-    - **Code:** The schema is applied for pages where the code returns true. This is for advanced users who knows coding. See below for details.
-- **Location:** The specific rules for singular and archive type.
+- **Singular**: Applies to individual posts/pages
+- **Archive**: Applies to archive pages (categories, tags, etc.)
+- **Code**: Applies based on custom PHP logic (advanced)
 
-If you choose singular or archive type, you need to click the **Add Rule Group** button to add a rule group. Each rule group contains a set of rules:
+### Rule groups
+
+For **Singular** and **Archive**, click **Add Rule Group** to define conditions.
 
 ![Rule groups and rules](https://imgur.elightup.com/wmr7tiZ.png)
 
-For each rule, you can set to display the schema for any post type, or some specific posts as well as for specific terms (categories, tags).
+Each group contains multiple rules. The logic works like this:
 
-The logic is applied as follows:
+- If **any rule** in a group is true → the group is true
+- If **all groups** are true → the schema is applied
 
-- If **any** rule in a group is true, then the whole group is true.
-- If **all** groups are true, then the final result is true.
+Rules let you target:
 
-If you use **code** to define whether the schema is displayed, then you'll see an input box to enter your PHP code:
+- All posts of a post type
+- Specific posts
+- Specific terms (categories, tags, etc.)
+
+### Using code (advanced)
+
+If you select **Code**, you can define custom logic using PHP:
 
 ![Define locations with code](https://imgur.elightup.com/mgDaRY3.png)
 
-In the box, you can run any PHP code (without opening and closing PHP tags) that returns true or false. When it returns true, the schema is displayed. We recommend using [WordPress conditional tags](https://developer.wordpress.org/themes/basics/conditional-tags/) to set conditions here.
+Enter any PHP expression (without `<?php ?>`) that returns `true` or `false`.
+
+We recommend using [WordPress conditional tags](https://developer.wordpress.org/themes/basics/conditional-tags/) for this.
+
+## Hooks
+
+Developers can programmatically register schemas using the `slim_seo_schema_settings` filter:
+
+```php
+add_filter( 'slim_seo_schema_settings', function( array $schemas ): array {
+	$schemas[ 'unique_schema_id' ] = [
+		'type'   => 'Brand',
+		'active' => true,
+		'fields' => [
+			'name' => '{{ site.title }}',
+		],
+		'location' => [
+			'type'               => 'singular',
+			'singular_locations' => [
+				'unique_group_id' => [
+					'unique_rule_id' => [
+						'name'  => 'product:post',
+						'value' => 'all',
+						'label' => 'All',
+					]
+				],
+			],
+		],
+	];
+	
+	return $schemas;
+} );
+```
+
+The schema format is the same as the exported JSON. A good workflow is:
+
+- Create a schema in the UI
+- Export it to JSON
+- Use that structure in your code
+
+You can also use [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) in schema properties.
