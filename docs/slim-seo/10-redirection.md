@@ -64,11 +64,9 @@ Besides, you can select how the plugin matches the URL:
 
 You can export your redirects in CSV format by using **Export** button.
 
-![export redirect](https://imgur.elightup.com/TII5vKx.png)
+![export redirect](img/redirection-export-import.webp)
 
 You can import your redirects by using **Import** button.
-
-![import redirect](https://imgur.elightup.com/i3BFzg1.png)
 
 A new popup with instructions will appear that lets you upload the CSV file.
 
@@ -164,3 +162,17 @@ Force trailing slash|Ensures all URLs on your site have the same format - with o
 Redirect www|Helps you to redirect non-www to www or vice-versa.
 Auto delete 404 logs|Automatically delete old logs after a specific time (a week, a month).
 Redirect all 404 URLs|Redirects all 404 URLs to your homepage or a specific URL. Note that if you already have a redirect for a 404 URL, then that redirect will take a higher priority and will be used.
+
+## Hooks
+
+Slim SEO provides a filter for developers to skip a redirect, it's useful if you want to programmatically enable/disable a redirect:
+
+```php
+add_filter( 'slim_seo_redirection_skip', function( bool $redirect, string $request_url ) {
+	// Disable redirect for admins.
+	if ( current_user_can( 'manage_options' ) ) {
+		return false;
+	}
+	return $redirect;
+} );
+```
