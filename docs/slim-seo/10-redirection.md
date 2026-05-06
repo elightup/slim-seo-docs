@@ -174,5 +174,5 @@ add_filter( 'slim_seo_redirection_skip', function( bool $redirect, string $reque
 		return false;
 	}
 	return $redirect;
-} );
+}, 10, 2 );
 ```
