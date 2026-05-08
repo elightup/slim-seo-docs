@@ -169,9 +169,9 @@ Slim SEO provides a filter for developers to skip a redirect, it's useful if you
 
 ```php
 add_filter( 'slim_seo_redirection_skip', function( bool $redirect, string $request_url ) {
-	// Disable redirect for admins.
+	// Skip redirect for admins.
 	if ( current_user_can( 'manage_options' ) ) {
-		return false;
+		return true;
 	}
 	return $redirect;
 }, 10, 2 );
