@@ -133,6 +133,9 @@ h1.title_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocCategoryGener
 figure > img {
   cursor: zoom-in;
 }
+pre {
+	tab-size: 4;
+}
 code {
   border: none;
   background: none;
