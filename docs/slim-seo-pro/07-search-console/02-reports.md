@@ -8,7 +8,7 @@ The integration with Google Search Console (GSC) allows Slim SEO Pro to pull the
 
 The 1st and the most important report is the **Performance** report. This report shows you how your pages perform on SERPs:
 
-![Performance report](img/report-performance.png)
+![Performance report](img/report-performance.webp)
 
 It has the following metrics:
 
@@ -37,7 +37,7 @@ In the table, you'll see each keyword with the same metrics as in the **Performa
 
 To view more details about each keywords, click the **View all** link at the top right of the widget, and you'll redirect to the detailed page:
 
-![Keywords report details](img/report-keywords-details.png)
+![Keywords report details](img/report-keywords-details.webp)
 
 In this screen, you can see the metrics clearer, and sort keywords by them.
 
@@ -59,7 +59,7 @@ In the table, you'll see each page with the same metrics as in the **Performance
 
 To view more details about each page, click the **View all** link at the top right of the widget, and you'll redirect to the detailed page:
 
-![Keywords report details](img/report-pages-details.png)
+![Keywords report details](img/report-pages-details.webp)
 
 In this screen, you can see the metrics clearer, and sort pages by them.
 
