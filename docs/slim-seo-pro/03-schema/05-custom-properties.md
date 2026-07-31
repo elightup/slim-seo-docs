@@ -2,21 +2,21 @@
 title: Custom Properties
 ---
 
-Although most important properties (which Google recommends) are implemented in Slim SEO Pro, there are some properties that are available in the schema.org specification, but are not required by Google. Adding these properties can help you add more details for a schema and thus, help search engines to understand and display the schema better.
+Slim SEO Pro implements most important properties that Google recommends. However, there are some properties that are available in the schema.org specification but are not required by Google. Adding these properties can help you add more details for a schema. This helps search engines understand and display the schema better.
 
 ## Adding custom properties
 
-To add custom properties, click the **\+ Add Property** link at the bottom of the schema panel.
+To add custom properties, click the **+ Add Property** link at the bottom of the schema panel.
 
 ![Add custom properties](https://imgur.elightup.com/2q09Hdv.png)
 
-After that, you'll see a new property called **Custom** with a **\+ Add New** button. Clicking the button will show you a pair of key-value.
+After that, you will see a new property called **Custom** with a **+ Add New** button. Clicking the button will show you a pair of key-value.
 
 ![Pairs of key-value for custom properties](https://imgur.elightup.com/U2F7HQm.png)
 
-Each key-value pair represents a custom property, where key is the property name and value is the property value.
+Each key-value pair represents a custom property. The key is the property name and the value is the property value.
 
-For example: if you enter property "street_address" with value "35 Nguyen Co Thach, Nam Tu Liem", then in your schema JSON-LD (the output of the schema), you'll see a pair like this:
+For example, if you enter property "street_address" with value "35 Nguyen Co Thach, Nam Tu Liem", then in your schema JSON-LD (the output of the schema), you will see a pair like this:
 
 ```
 "street_address": "35 Nguyen Co Thach, Nam Tu Liem"
@@ -24,7 +24,7 @@ For example: if you enter property "street_address" with value "35 Nguyen Co Tha
 
 ## Dot notation
 
-By default, you can only enter "plain" pair of key-value for custom properties. If you want to enter a structural data for a property like:
+By default, you can only enter a "plain" pair of key-value for custom properties. If you want to enter a structural data for a property like:
 
 ```
 "author": {
@@ -34,7 +34,7 @@ By default, you can only enter "plain" pair of key-value for custom properties. 
 }
 ```
 
-Then you need to use the dot notation. Dot notation is a way that let you define structural data (hierarchical data) with dots (`.`). **Each dot (`.`) defines a level in your data.**
+Then you need to use the dot notation. Dot notation is a way that lets you define structural data (hierarchical data) with dots (`.`). **Each dot (`.`) defines a level in your data.**
 
 With the sample above, this can be understood like this:
 
@@ -44,13 +44,13 @@ With the sample above, this can be understood like this:
 "author.gender": "Male",
 ```
 
-Here the params `name`, `age`, `gender` are sub-params of the `author` and they're defined with a dot prefixed.
+Here the params `name`, `age`, `gender` are sub-params of the `author`. They are defined with a dot prefixed.
 
 Implementing that in Slim SEO Pro as follows:
 
 ![Implement structural data for custom properties](https://imgur.elightup.com/QwE9R3D.png)
 
-Another case is when you want to add **a set of data without keys** (like list of images). The data in JSON-LD looks like this:
+Another case is when you want to add **a set of data without keys** (like a list of images). The data in JSON-LD looks like this:
 
 ```
 "images": [
@@ -103,14 +103,14 @@ In Slim SEO Pro:
 
 ## Adding custom properties to an existing property
 
-Assume that you're implementing the Local Business schema, which has an address property. Address is a complex object which has street address, city, postal code like this:
+Assume that you are implementing the Local Business schema, which has an address property. Address is a complex object which has street address, city, postal code like this:
 
 ![Address property for Local Business schema](https://imgur.elightup.com/z7IrbUk.png)
 
-In most cases, these properties are enough (as we try so hard to implement them all for you), but from the [schema.org specification](https://schema.org/PostalAddress), there are a lot more properties for address such as name, description, etc. They're not important and are not required, but if you want to add them, then you can do that with Slim SEO Pro.
+In most cases, these properties are enough (as we try so hard to implement them all for you). But from the [schema.org specification](https://schema.org/PostalAddress), there are a lot more properties for address such as name, description, etc. They are not important and are not required. But if you want to add them, then you can do that with Slim SEO Pro.
 
-As address is an implemented property in the plugin, you can't add it as a new custom property. Instead, you need to add custom property for a sub-param (name, description) using dot notation like this:
+As address is an implemented property in the plugin, you cannot add it as a new custom property. Instead, you need to add a custom property for a sub-param (name, description) using dot notation like this:
 
 ![Adding custom properties to an existing property](https://imgur.elightup.com/TAkqR13.png)
 
-Note that to add custom properties to an existing property, you need to know the name of the existing property (in the example above, it's `address`). The list of properties name are available in [Google search gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery) and [schema.org](https://schema.org) websites.
+Note that to add custom properties to an existing property, you need to know the name of the existing property (in the example above, it is `address`). The list of property names are available in [Google search gallery](https://developers.google.com/search/docs/advanced/structured-data/search-gallery) and [schema.org](https://schema.org) websites.

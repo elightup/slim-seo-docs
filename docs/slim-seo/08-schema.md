@@ -2,21 +2,21 @@
 title: Schema
 ---
 
-Schema is the best way to describes [structured data](https://wpslimseo.com/structured-data/) for search engines. Based on the data provided, search engines can show the content in the search results page in a more appealing way.
+Schema is the best way to describe [structured data](https://wpslimseo.com/structured-data/) for search engines. Based on the data provided, search engines can show the content in the search results page in a more appealing way.
 
-Slim SEO outputs schema data via JSON-LD in a single `<script>` tag in the footer. The plugin also provides **connections between schemas**. Connections are important because it gives search engines a lot of information for not only the main content of the web page, but also related information, which help them understand it deeply.
+Slim SEO outputs schema data via JSON-LD in a single `<script>` tag in the footer. The plugin also provides **connections between schemas**. Connections are important, because they give search engines a lot of information for not only the main content of the web page, but also related information, which helps them understand it deeply.
 
-For example, if you're on a single post, the plugin can tell search engines about the main entity of the page is an article, which has an author and belongs to a webpage of an organization. The webpage has a breadcrumb list, and belongs to a website, which has a search box. This way, search engines not only understand about the content of article, but also author, organization and the website structure.
+For example, if you are on a single post, the plugin can tell search engines that the main entity of the page is an article. The article has an author and belongs to a webpage of an organization. The webpage has a breadcrumb list, and belongs to a website, which has a search box. This way, search engines not only understand the content of the article, but also the author, the organization, and the website structure.
 
 :::tip Advanced Schema
 
-The free version of Slim SEO has supports for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/).
+The free version of Slim SEO has support for basic schemas of your website. If you want to add custom schemas for your custom post types, please see [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/).
 
 :::
 
 ## Supported Schema Types
 
-Slim SEO adds various schemas depending on the context of the current page. The sections below describes the schemas, omitting the `@type` and `@id` properties since they're just technical terms.
+Slim SEO adds various schemas depending on the context of the current page. The sections below describe the schemas, omitting the `@type` and `@id` properties since they are just technical terms.
 
 ### Global Schemas
 
@@ -69,7 +69,7 @@ For search result pages, the `@type` of `Webpage` becomes `SearchResultsPage`.
 
 ### Author Pages
 
-For search result pages, the `@type` of `Webpage` becomes `ProfilePage`. And there is a new schema `Person` with the following data:
+For author pages, the `@type` of `Webpage` becomes `ProfilePage`. And there is a new schema `Person` with the following data:
 
 - Name
 - Given name (first name)
@@ -79,24 +79,24 @@ For search result pages, the `@type` of `Webpage` becomes `ProfilePage`. And the
 
 ## Theme Compatibility
 
-Some WordPress themes already output schema in their HTML markup. And that might cause duplication of schema markup and makes search engines confuse. To fix this problem, Slim SEO automatically disables schema for the following popular themes:
+Some WordPress themes already output schema in their HTML markup. That might cause duplication of schema markup and make search engines confused. To fix this problem, Slim SEO automatically disables schema for the following popular themes:
 
 - Beaver Theme
 - Genesis framework and all Genesis themes
 
-For other themes, you might need to disable schema output from Slim SEO. See below for instruction.
+For other themes, you might need to disable schema output from Slim SEO. See below for instructions.
 
 ## AMP & Web Stories Support
 
-The plugin supports for AMP and Web Stories from Google. It removes the default schema graph added by the AMP, Web Stories plugin and provides the more comprehensive schema graph.
+The plugin supports AMP and Web Stories from Google. It removes the default schema graph added by the AMP and Web Stories plugin and provides a more comprehensive schema graph.
 
-You don't need to do anything to add support for AMP or Web Stories. The plugin automatically handle everything for you.
+You do not need to do anything to add support for AMP or Web Stories. The plugin automatically handles everything for you.
 
 ## FAQ
 
 ### How to disable schema output?
 
-To disable the schema feature, please use the following code:
+To disable the schema feature, use the following code:
 
 ```php
 add_action( 'slim_seo_init', function( $plugin ) {
@@ -106,7 +106,7 @@ add_action( 'slim_seo_init', function( $plugin ) {
 
 ### How to disable a specific schema?
 
-Each schema can be disabled with a filter. For example, to disable schema for breadcrumbs, use the following code:
+Each schema can be disabled with a filter. For example, to disable the schema for breadcrumbs, use the following code:
 
 ```php
 add_filter( 'slim_seo_schema_breadcrumbs_enable', '__return_false' );
@@ -135,7 +135,7 @@ Where `$context` is the schema context, which can be referred below:
 
 ### How to modify the schema output of a specific type?
 
-To modify the output of a specific schema type, please use the following code:
+To modify the output of a specific schema type, use the following code:
 
 ```php
 add_filter( "slim_seo_schema_{$context}", function ( $schema ) {
@@ -149,7 +149,7 @@ add_filter( "slim_seo_schema_{$context}", function ( $schema ) {
 } );
 ```
 
-The `$context` is the same as the previous section.
+The `$context` is the same as in the previous section.
 
 ### How to change schema for posts from Article to BlogPost
 

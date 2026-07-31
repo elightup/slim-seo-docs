@@ -13,7 +13,7 @@ For example, if you want to add a schema for a review of a book, then you can bu
 
 ## Why multiple schemas?
 
-Using individual schemas gives you **more options to enter a lot of properties for each schema**, which is quite hard to do if implementing them as nested schemas (that you probably see in another schema plugin for WordPress).
+Using individual schemas gives you **more options to enter a lot of properties for each schema**. This is quite hard to do if you implement them as nested schemas (that you probably see in another schema plugin for WordPress).
 
 Another benefit of this method is that you can **reuse schemas**. For example, you can build an Organization schema that can be the author of the review for a Book schema, and also be the organization of the current WebSite.
 
@@ -21,27 +21,27 @@ Another benefit of this method is that you can **reuse schemas**. For example, y
 
 Let's create a review (Review schema) for a book, which has the following details:
 
-- The review has an author property, which is a Person schema (the current user)
-- The review has an "item reviewed" property, which links to the Book schema
-- The Book schema has an author property which is another Person schema (which gets data from custom fields from the "book" post type)
+- The review has an author property, which is a Person schema (the current user).
+- The review has an "item reviewed" property, which links to the Book schema.
+- The Book schema has an author property, which is another Person schema (which gets data from custom fields from the "book" post type).
 
 This is the diagram of how these schemas connect to each other:
 
 ![Schema graph diagram](img/schema-graph-diagram.png)
 
-Now let's create these schemas:
+Now create these schemas:
 
-First, we'll create a Person schema for the book author. Simply add a Person schema to the list. Note that you have to use [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) to add values from custom fields to the properties:
+First, we will create a Person schema for the book author. Simply add a Person schema to the list. Note that you have to use [dynamic variables](/slim-seo-pro/schema/dynamic-variables/) to add values from custom fields to the properties:
 
 ![Book author schema](img/book-author.png)
 
 :::info
 
-I'm using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Pro has a [deep integration with Meta Box](/slim-seo-pro/schema/integrations/meta-box/). You can also use ACF which is [also supported](/slim-seo-pro/schema/integrations/acf/).
+I am using [Meta Box](https://metabox.io) to create the custom post type and custom fields for books. Slim SEO Pro has a [deep integration with Meta Box](/slim-seo-pro/schema/integrations/meta-box/). You can also use ACF which is [also supported](/slim-seo-pro/schema/integrations/acf/).
 
 :::
 
-Then we'll create a Book schema. When adding a Book schema, you should fill the properties with values from custom fields (via dynamic variables). For the **Author** property, make sure you select the Person schema that you created in the step above:
+Then we will create a Book schema. When adding a Book schema, you should fill the properties with values from custom fields (via dynamic variables). For the **Author** property, make sure you select the Person schema that you created in the step above:
 
 ![Book schema](img/book-schema.png)
 

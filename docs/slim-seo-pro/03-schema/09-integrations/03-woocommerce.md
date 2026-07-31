@@ -10,7 +10,7 @@ Slim SEO Pro **disables the default product schema from WooCommerce** and replac
 By default, WooCommerce outputs a very basic Product schema for simple and variable products. You can see it in [its source code](https://github.com/woocommerce/woocommerce/blob/trunk/plugins/woocommerce/includes/class-wc-structured-data.php).
 This schema only includes the **product name, price, and reviews**.
 
-That's a start, but it's far from enough. A proper [Product schema](https://schema.org/Product) can include much richer data, such as brand, color, size, logo, manufacturer, model, country of origin, or global identifiers. Sticking with WooCommerce's default schema means you're likely missing opportunities to rank better in search results.
+That is a start, but it is far from enough. A proper [Product schema](https://schema.org/Product) can include much richer data, such as brand, color, size, logo, manufacturer, model, country of origin, or global identifiers. Sticking with WooCommerce's default schema means you are likely missing opportunities to rank better in search results.
 
 ## How Slim SEO Pro helps
 
@@ -25,7 +25,7 @@ And yes, you can map WooCommerce product values to schema properties using [dyna
 
 ![WooCommerce dynamic variables](../img/woocommerce-dynamic-variables.png)
 
-On top of that, Slim SEO Pro adds **location rules for product types**, so you can create different Product schemas and assign them to each product type:
+On top of that, Slim SEO Pro adds **location rules for product types**. You can create different Product schemas and assign them to each product type:
 
 ![Product type rules](../img/product-type-rules.png)
 
@@ -44,7 +44,7 @@ For variable products, Slim SEO Pro comes with built-in support for these attrib
 
 If you create product variations with any of these attributes, they will automatically appear in the dropdown list of suggested dynamic variables.
 
-But what if you're using **custom attributes** not included in the list above? Don't worry - you can still connect them to Product schema properties manually. Just use this format:
+What if you are using **custom attributes** not included in the list above? Do not worry. You can still connect them to Product schema properties manually. Just use this format:
 
 ```
 {{ product.variants.attributes.name }}

@@ -13,8 +13,8 @@ Slim SEO supports the following Open Graph tags:
 | Tag | Description |
 | --- | --- |
 | `og:title` | Title: inherits from meta title. |
-| `og:type` | Type: `article` if on a singular pages/posts, `website` on other pages. |
-| `og:image` | Image URL: fallback to the featured image -> first image in the post content -> global social image (set in **Settings > Slim SEO > Social**) if no image is set. |
+| `og:type` | Type: `article` if on singular pages/posts, `website` on other pages. |
+| `og:image` | Image URL: fallback to the featured image, then the first image in the post content, then the global social image (set in **Settings > Slim SEO > Social**) if no image is set. |
 | `og:image:width` | Image width |
 | `og:image:height` | Image height |
 | `og:image:alt` | Image alt text |
@@ -38,11 +38,11 @@ However, if the featured image is not optimized for Facebook (for example, the s
 
 ![Change the image when sharing on Facebook](https://imgur.elightup.com/judjFm9.png)
 
-The recommended size for image when sharing on Facebook is **1200x630** pixels (1.91:1 ratio).
+The recommended size for the image when sharing on Facebook is **1200x630** pixels (1.91:1 ratio).
 
 :::caution Homepage settings
 
-If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage won't be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
+If you set your homepage as a static page, then the plugin treats it like a normal page. SEO settings for the homepage will not be available in the plugin settings (**Settings > Slim SEO**). Instead, they will be available below the editor when you edit the homepage.
 
 :::
 
@@ -50,20 +50,20 @@ If you set your homepage as a static page, then the plugin treats it like a norm
 
 Slim SEO tries to get the image for a post/page for Open Graph in the following order, from top to bottom. If it finds any image first, then it will use it:
 
-- From the **Search Engine Optimization** meta box for that specific post
-- From the global settings for the post type at **Settings > Slim SEO > Meta Tags**
-- Featured image
-- First image in the post content
+- From the **Search Engine Optimization** meta box for that specific post.
+- From the global settings for the post type at **Settings > Slim SEO > Meta Tags**.
+- Featured image.
+- First image in the post content.
 
 If no image is found, the plugin will use the default social image, which is set in the **Settings > Slim SEO > Social**.
 
 ![Default social sharing image](https://imgur.elightup.com/H1VmiH9.png)
 
-## My image doesn't appear on Facebook
+## My image does not appear on Facebook
 
-Sometimes, when you set a featured image for a post, or even manually set an image for Facebook, it still doesn't show on Facebook correctly. Or when you change the social image to a new one, Facebook still show the old one.
+Sometimes, when you set a featured image for a post, or even manually set an image for Facebook, it still does not show on Facebook correctly. Or when you change the social image to a new one, Facebook still shows the old one.
 
-In that case, you need to ask Facebook to clear its cache. To do that, go to [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/), and enter your URL, and click **Debug**:
+In that case, you need to ask Facebook to clear its cache. To do that, go to [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/), enter your URL, and click **Debug**:
 
 ![Debugging social image on Facebook](img/facebook-sharing-debugger.png)
 
@@ -71,11 +71,11 @@ Then you can see all the Open Graph tags that Facebook can find on your page, in
 
 After that, when you share your URL, Facebook will show the new image as you wanted.
 
-Also please note that Facebook only supports images with format jpeg, gif, or png. If you're using a plugin to auto converts images to WebP, then this format will not work.
+Also please note that Facebook only supports images with the format jpeg, gif, or png. If you are using a plugin to auto convert images to WebP, then this format will not work.
 
 ## How to add/remove an Open Graph tag
 
-If you want to remove an Open Graph tag from the list, please use the following snippet:
+If you want to remove an Open Graph tag from the list, use the following snippet:
 
 ```php
 add_filter( 'slim_seo_open_graph_tags', function( $tags ) {
@@ -85,7 +85,7 @@ add_filter( 'slim_seo_open_graph_tags', function( $tags ) {
 
 The snippet above removes the `article:publish_time` and `article:modified_time` tags. You can add it to your theme's `functions.php` or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin to run it.
 
-## How to change value of an Open Graph tag
+## How to change the value of an Open Graph tag
 
 To change the value of an open graph tag (for example `og:type`) for a specific post, use the following snippet:
 
@@ -100,9 +100,9 @@ add_filter( 'slim_seo_open_graph_type', function( $value, $tag ) {
 
 The filter name is `slim_seo_open_graph_{$tag_name}`, where the tag name strips `og:` and replaces `:` with `_` in the tag. For example: `title` for `og:title` and `article_section` for `article:section`.
 
-## How to add custom Open Graph tag
+## How to add a custom Open Graph tag
 
-Please use the following snippet:
+Use the following snippet:
 
 ```php
 add_action( 'wp_head', function() {

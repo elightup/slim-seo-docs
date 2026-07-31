@@ -16,7 +16,7 @@ Now you can select custom fields from ACF for meta tags as shown below:
 - For **groups**, the variable looks like: `{{ acf.my_group.subfield }}`. **Nested groups** are supported: `{{ acf.parent_group.child_group.field }}`.
 - For **flexible content**, use the layout name as the key, then the sub-field: `{{ acf.flex_field.layout_name.subfield }}`. Only the first block of each layout type is used.
 
-**Example:** A field group called "Product" with a field "Subtitle" might appear as **[ACF] Product** with an option like **Subtitle**. In the template you'll see `{{ acf.subtitle }}`.
+**Example:** A field group called "Product" with a field "Subtitle" might appear as **[ACF] Product** with an option like **Subtitle**. In the template you will see `{{ acf.subtitle }}`.
 
 ## Supported field types
 

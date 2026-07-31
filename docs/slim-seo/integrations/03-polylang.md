@@ -3,9 +3,9 @@ title: Slim SEO - Polylang Integration
 sidebar_label: Polylang
 ---
 
-**Polylang** is a popular WordPress plugin that helps you easily create multilingual websites. It allows you to translate posts, pages, custom post types, widgets, menus, and more - all without needing a [separate WordPress installation](https://metabox.io/polylang-vs-wordpress-multisite/).
+**Polylang** is a popular WordPress plugin that helps you easily create multilingual websites. It allows you to translate posts, pages, custom post types, widgets, menus, and more, all without needing a [separate WordPress installation](https://metabox.io/polylang-vs-wordpress-multisite/).
 
-If you're using **Slim SEO**, you'll enjoy full integration with Polylang, helping you improve your multilingual site's SEO performance effortlessly.
+If you are using **Slim SEO**, you will enjoy full integration with Polylang, helping you improve your multilingual site's SEO performance effortlessly.
 
 ## Translating meta titles and descriptions
 
@@ -18,7 +18,7 @@ Slim SEO includes a settings page where you can define meta tag templates for po
 
 ![Dynamic variables in Slim SEO](../img/settings-meta-tags-tab.png)
 
-You can translate these settings directly in Polylang. Here's how:
+You can translate these settings directly in Polylang. Here is how:
 
 1. Go to **Languages → Translations**.
 2. Search for settings under the group `plugins/slim-seo`.
@@ -27,7 +27,7 @@ You can translate these settings directly in Polylang. Here's how:
 ![Translate Slim SEO settings with Polylang](../img/polylang-translate-settings.png)
 
 :::caution
-If you don't see Slim SEO settings listed, it means they still use their default values. To make them appear, go to **Slim SEO → Meta Tags**, modify the default settings, and then return to the Polylang Translations page - the settings will now be visible.
+If you do not see Slim SEO settings listed, it means they still use their default values. To make them appear, go to **Slim SEO → Meta Tags**, modify the default settings, and then return to the Polylang Translations page. The settings will now be visible.
 :::
 
 :::info
@@ -40,11 +40,11 @@ When you change meta settings for a post type, Slim SEO shows a preview of the m
 On the front end, the correct settings are applied according to the current language.
 :::
 
-## Hreflang tags and multilingual Sitemap
+## Hreflang tags and multilingual sitemap
 
 Another key aspect of multilingual SEO is the `hreflang` tag. This tag helps search engines identify language and regional variations of your content.
 
-By default, Polylang automatically adds `hreflang` tags to your pages' HTML on the front end - Slim SEO doesn't need to do anything extra. For example:
+By default, Polylang automatically adds `hreflang` tags to your pages' HTML on the front end. Slim SEO does not need to do anything extra. For example:
 
 ```html
 <link rel="alternate" hreflang="en" href="http://ss.test/hello-world/"/>
@@ -53,7 +53,7 @@ By default, Polylang automatically adds `hreflang` tags to your pages' HTML on t
 ```
 
 In addition, Slim SEO automatically adds `hreflang` tags to your [XML sitemap](/slim-seo/xml-sitemap/) for each post.
-These tags aren't visible on the front end but can be seen in the sitemap's source code:
+These tags are not visible on the front end but can be seen in the sitemap's source code:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,4 +87,4 @@ These tags aren't visible on the front end but can be seen in the sitemap's sour
 </urlset>
 ```
 
-Both approaches - outputting `hreflang` in HTML and in the XML sitemap - are [recommended by Google](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) for properly handling multilingual pages.
+Both approaches, outputting `hreflang` in HTML and in the XML sitemap, are [recommended by Google](https://developers.google.com/search/docs/specialty/international/localized-versions#sitemap) for properly handling multilingual pages.

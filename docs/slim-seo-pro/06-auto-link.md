@@ -2,11 +2,11 @@
 title: Auto Link
 ---
 
-**Auto Link** is a feature that automatically scans your post/page content and turns matching keywords into links. This helps you add consistent links across your site without manually inserting links every time.
+**Auto Link** automatically scans your post and page content, and turns matching keywords into links. It helps you add consistent links across your site without inserting links manually.
 
 ## Global keywords
 
-Global keywords are keywords that are used across your entire site. To add a global keyword, follow these steps:
+Global keywords are keywords that are used across your entire site. To add a global keyword:
 
 1. Go to **Settings → Slim SEO → Auto Link** tab.
 2. Open the **Keywords** tab.
@@ -30,7 +30,7 @@ Priority|Controls the order keywords are processed. Keywords with higher priorit
 :::info
 
 - Matching is case-insensitive. For example, `WordPress` and `wordpress` are treated the same.
-- A keyword must be unique. You can't register the same keyword twice with different URLs.
+- A keyword must be unique. You cannot register the same keyword twice with different URLs.
 
 :::
 
@@ -39,15 +39,15 @@ On this page, you can edit or delete keywords.
 - To edit a keyword, click the **Edit** (pencil) icon.
 - To delete a keyword, click the **Trash** icon.
 - To delete multiple keywords at once:
-  - Select keywords using the checkboxes
-  - Choose **Bulk actions → Delete**
-  - Click **Apply**
+  1. Select keywords using the checkboxes.
+  2. Choose **Bulk actions → Delete**.
+  3. Click **Apply**.
 
 ## Per-post keywords
 
-Per-post keywords are keywords that are used only for a specific post/page. It's useful when you want a keyword to link to the current post/page's permalink.
+Per-post keywords are keywords that are used only for a specific post or page. They are useful when you want a keyword to link to the current post or page's permalink.
 
-To add a per-post keyword, follow these steps:
+To add a per-post keyword:
 
 1. Go to **Posts/Pages → Edit Post/Page**.
 2. In the **Search Engine Optimization** meta box, open the **Auto link** tab.
@@ -55,7 +55,7 @@ To add a per-post keyword, follow these steps:
 
 ![Add a per-post keyword](img/auto-link-post-keyword.png)
 
-A popup will appear with similar options as the global keywords, except for the **URL** which will be the current post/page permalink.
+A popup will appear with similar options as the global keywords. The **URL** will be the current post or page permalink.
 
 ## Settings
 
@@ -77,21 +77,22 @@ Delete keywords table|If enabled, Auto Link keyword data will be removed when th
 :::caution
 
 - **Content only:** Auto Link runs only on the post/page content, not on other areas like excerpts or widget text.
-- **Unique keywords:** Because each keyword can only be registered once, you can't use the same keyword for multiple URLs.
+- **Unique keywords:** Because each keyword can only be registered once, you cannot use the same keyword for multiple URLs.
 
 :::
 
 ## Auto Link and Link Manager
 
 Auto Link and [Link Manager](/slim-seo-pro/link-manager/scanning-links/) are two different features:
-- Auto Link is used to **automatically** add links to your content.
-- Link Manager is used to **manage and monitor** your links, including internal links, external links, and broken links.
 
-You can use both features together to get the best of both worlds. For example, you can use Auto Link to automatically add links to your content, and then use Link Manager to get (manual) link suggestions and monitor those links.
+- Auto Link **automatically** adds links to your content.
+- Link Manager **manages and monitors** your links, including internal links, external links, and broken links.
+
+You can use both features together. For example, you can use Auto Link to add links automatically, and then use Link Manager to get link suggestions and monitor those links.
 
 :::caution
 
-Because links added by Auto Link are dynamically generated, they are not visible in the Link Manager's reports, you can't use Link Manager to monitor them.
+Because links added by Auto Link are dynamically generated, they are not visible in the Link Manager's reports. You cannot use Link Manager to monitor them.
 
 :::
 
@@ -102,6 +103,6 @@ Because links added by Auto Link are dynamically generated, they are not visible
 - Make sure the keyword is added in Auto Link and the URL is valid.
 - Check that the current content type is not excluded in **Ignore post types** (either globally or in the keyword's advanced options).
 
-### I can't add the same keyword twice
+### I cannot add the same keyword twice
 
 This is expected. Each keyword must be unique, so Auto Link always knows which URL to use.

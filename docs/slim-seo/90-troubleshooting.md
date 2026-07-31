@@ -6,9 +6,9 @@ This page lists some common issues that people often see and the corresponding s
 
 ## Shortcodes not working
 
-Sometimes, you have a shortcode in the post content or your page executes a special shortcode from a plugin like WooCommerce or EDD Invoices, and **you see a blank page** or **the shortcode doesn't work at all**.
+Sometimes, you have a shortcode in the post content or your page executes a special shortcode from a plugin like WooCommerce or EDD Invoices, and **you see a blank page** or **the shortcode does not work at all**.
 
-The root cause might be that Slim SEO already parses the shortcodes when it tries to auto generate [meta description](/slim-seo/meta-description-tag/). If the shortcode has something related to session, custom logic, etc., then it might not work as expected.
+The root cause might be that Slim SEO already parses the shortcodes when it tries to auto generate the [meta description](/slim-seo/meta-description-tag/). If the shortcode has something related to session, custom logic, etc., then it might not work as expected.
 
 To fix this problem, you need to tell Slim SEO to skip processing the shortcodes.
 
@@ -44,13 +44,13 @@ You can also use the *opposite* filter `slim_seo_allowed_shortcodes` to filter t
 ```php
 add_filter( 'slim_seo_allowed_shortcodes', function( $shortcodes ) {
     return array_filter( $shortcodes, function( $shortcode ) {
-        // Do not allow shortcodes start with "my_prefix"
+        // Do not allow shortcodes that start with "my_prefix"
         return ! str_starts_with( $shortcode, 'my_prefix_' );
     }, ARRAY_FILTER_USE_KEY );
 } );
 ```
 
-Note that the `slim_seo_allowed_shortcodes` accepts an associate array of shortcodes, where key is the shortcode name and value is the callback function.
+Note that the `slim_seo_allowed_shortcodes` accepts an associative array of shortcodes, where the key is the shortcode name and the value is the callback function.
 
 If you want to disable all shortcodes, use this snippet:
 
@@ -60,7 +60,7 @@ add_filter( 'slim_seo_allowed_shortcodes', '__return_empty_array' );
 
 ## Blocks not working
 
-Similar to shortcodes, some blocks might not working properly. To fix this problem, use the following snippet:
+Similar to shortcodes, some blocks might not work properly. To fix this problem, use the following snippet:
 
 ```php
 add_filter( 'slim_seo_skipped_blocks', function( $blocks ) {
@@ -78,7 +78,7 @@ You can also use the *opposite* filter `slim_seo_allowed_blocks` to filter the l
 ```php
 add_filter( 'slim_seo_allowed_blocks', function( $blocks ) {
     return array_filter( $blocks, function( $block ) {
-        // Do not allow blocks start with "my_prefix"
+        // Do not allow blocks that start with "my_prefix"
         return ! str_starts_with( $block, 'my_prefix_' );
     } );
 } );

@@ -7,7 +7,7 @@ Slim SEO Pro has a deep integration with [Advanced Custom Fields](https://www.ad
 
 ## Inserting ACF fields
 
-Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in ACF will display:
+Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/). All field groups registered in ACF will display:
 
 ![Inserting ACF fields](https://imgur.elightup.com/xJwUezN.png)
 
@@ -37,7 +37,7 @@ The format of dynamic variables for sub-fields is:
 
 You might wonder how the plugin works with repeater fields as they have multiple values. Slim SEO Pro automatically decides how to render multiple values in various scenarios like this (without your further actions):
 
-- If the property is **not repeatable**, the plugin will **take only the first value** from the field, e.g. the value of the first clone.
+- If the property is **not repeatable**, the plugin will **take only the first value** from the field, for example, the value of the first clone.
 - If the property is **repeatable** (like Image), the plugin will **take all values** from the field and merge them with manually entered values (if any).
 
 In case you have a **repeatable property that also has sub-properties** like Review:
@@ -52,7 +52,7 @@ For example, if you enter the value for Reviews for a post like this:
 
 Enter values for ACF fields for a post
 
-Then when parsing these fields for the Review schema, you'll have 3 reviews:
+Then when parsing these fields for the Review schema, you will have 3 reviews:
 
 - One manual: from the post author with value of 5
 - Two from ACF: Robert with value of 5 and Mandy with value of 4
@@ -74,7 +74,7 @@ The format of dynamic variables for sub-fields in flexible content is:
 
 ## Field values
 
-- The plugin don't parse values for 'google_map', 'message', 'accordion', 'tab', 'block' because their values are not suitable for a schema property.
+- The plugin does not parse values for `google_map`, `message`, `accordion`, `tab`, `block` because their values are not suitable for a schema property.
 - For choice fields (radio, select, checkbox, button group), the plugin uses the selected label, not value.
 - For image and file field types, the plugin uses the URL.
 - For post object, taxonomy the plugin uses the title.

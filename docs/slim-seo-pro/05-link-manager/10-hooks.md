@@ -43,11 +43,11 @@ add_filter( 'slim_seo_link_manager_post_custom_fields', function( $fields ) {
 } );
 ```
 
-After running this filter, the plugin will get the content of the custom field (in the example above, the meta key of the custom field is `my-text-field`) and analyze that content to find links and add to the reports.
+After running this filter, the plugin will get the content of the custom field (in the example above, the meta key of the custom field is `my-text-field`) and analyze that content to find links and add them to the reports.
 
 ### `slim_seo_link_manager_process_url`
 
-This filter allows you to bypass a URL, e.g. not including it in the reports. It's helpful if you want to keep the reports clean and don't want it to contain links like affiliate links.
+This filter allows you to bypass a URL, for example, not including it in the reports. It is helpful if you want to keep the reports clean and do not want them to contain links like affiliate links.
 
 ```php
 add_filter( 'slim_seo_link_manager_process_url', function( $process, $url ) {
@@ -60,7 +60,7 @@ add_filter( 'slim_seo_link_manager_process_url', function( $process, $url ) {
 
 ### `slim_seo_link_manager_text`
 
-This filter allows you to change the content to be analyzed for links. Normally it's the post content, but you can add anything you want (like custom static text, or content from a complex custom field group).
+This filter allows you to change the content to be analyzed for links. Normally it is the post content, but you can add anything you want (like custom static text, or content from a complex custom field group).
 
 ```php
 add_filter( 'slim_seo_link_manager_text', function( $text, $post_id ) {

@@ -2,33 +2,33 @@
 title: Post link reports
 ---
 
-Besides the [global reports](/slim-seo-pro/link-manager/reports/), you can also see links from/to a specific post when editing it.
+Besides the [global reports](/slim-seo-pro/link-manager/reports/), you can also see links from and to a specific post when editing it.
 
-When editing a post, you'll see a meta box **Link Manager** below the post content as follows:
+When editing a post, you will see a meta box **Link Manager** below the post content as follows:
 
 ![Link manager meta box on the post edit screen](https://imgur.elightup.com/KRhtKna.png)
 
 The **Link Manager** meta box shows 3 types of links in your post content (organized in the corresponding tabs):
 
-- **Internal Outbound**: Links from the current post to other posts on your website
-- **External Outbound**: Links from the current post to other websites
-- **Internal Inbound**: Links from other posts on your website to the current post
+- **Internal Outbound**: Links from the current post to other posts on your website.
+- **External Outbound**: Links from the current post to other websites.
+- **Internal Inbound**: Links from other posts on your website to the current post.
 
 Each link has the following details:
 
 Name|Description
 ---|---
-Source|The source post/page that has the link
-Target|The target post/page. When hovering the row, you'll see the **Edit** and **View** links for the post/page.
-Anchor text|The anchor text of the link. If it's an image, the image alt will be used.
+Source|The source post/page that has the link.
+Target|The target post/page. When hovering the row, you will see the **Edit** and **View** links for the post/page.
+Anchor text|The anchor text of the link. If it is an image, the image alt will be used.
 Follow|Whether the link is dofollow or nofollow.
 Status|The link HTTP status code.
 
-**All links in these reports are updated in real-time**. When you edit the post content, the content will be analyzed and parsed automatically to generate the links. The plugin also will check the HTTP status of links and show it in the reports immediately.
+**All links in these reports are updated in real-time**. When you edit the post content, the content will be analyzed and parsed automatically to generate the links. The plugin also checks the HTTP status of links and shows it in the reports immediately.
 
-## How to hide link manager settings meta box for non-admin users?
+## How to hide the link manager settings meta box for non-admin users?
 
-In some cases, where you want only admins can change the link manager settings for specific posts, then use this snippet to hide the schema settings meta box from other user roles:
+In some cases, where you want only admins to change the link manager settings for specific posts, use this snippet to hide the schema settings meta box from other user roles:
 
 ```php
 // Hide SEO settings meta box for posts.

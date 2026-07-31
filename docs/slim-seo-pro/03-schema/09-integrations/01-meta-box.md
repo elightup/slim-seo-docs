@@ -7,7 +7,7 @@ Slim SEO Pro has a deep integration with [Meta Box](https://metabox.io). The int
 
 ## Inserting Meta Box fields
 
-Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/), all field groups registered in Meta Box will display:
+Click the three-dots button for a property to insert [dynamic variables](/slim-seo-pro/schema/dynamic-variables/). All field groups registered in Meta Box will display:
 
 ![Inserting meta box fields](https://imgur.elightup.com/i6NepXU.png)
 
@@ -37,7 +37,7 @@ The format of dynamic variables for sub-fields is:
 
 You might wonder how the plugin works with cloneable fields as they have multiple values. Slim SEO Pro automatically decides how to render multiple values in various scenarios like this (without your further actions):
 
-- If the property is **not repeatable**, the plugin will **take only the first value** from the field, e.g. the value of the first clone.
+- If the property is **not repeatable**, the plugin will **take only the first value** from the field, for example, the value of the first clone.
 - If the property is **repeatable** (like Image), the plugin will **take all values** from the field and merge them with manually entered values (if any).
 
 In case you have a **repeatable property that also has sub-properties** like Review:
@@ -52,14 +52,14 @@ For example, if you enter the value for Reviews for a post like this:
 
 Enter values for Meta Box fields for a post
 
-Then when parsing these fields for the Review schema, you'll have 3 reviews:
+Then when parsing these fields for the Review schema, you will have 3 reviews:
 
 - One manual: from the post author with value of 5
 - Two from Meta Box: Robert with value of 5 and Mandy with value of 4
 
 ## Field values
 
-- The plugin don't parse values for 'background', 'fieldset_text', 'text_list', 'map', 'osm', 'sidebar' because their values are not suitable for a schema property.
+- The plugin does not parse values for `background`, `fieldset_text`, `text_list`, `map`, `osm`, `sidebar` because their values are not suitable for a schema property.
 - For choice fields (radio, select, button group), the plugin uses the selected label, not value.
 - For image and file field types, the plugin uses the URL.
 - For post, taxonomy, taxonomy advanced, the plugin uses the title.
