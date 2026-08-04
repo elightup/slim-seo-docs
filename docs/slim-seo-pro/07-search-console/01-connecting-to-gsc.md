@@ -19,11 +19,11 @@ Step 2: Click the link to connect to Google Search Console.
 
 The plugin redirects you to Google to authorize with your Google account:
 
-![Choose your Google account](img/choose-account.webp)
+![Choose your Google account](img/select-account.webp)
 
 Step 3: Grant the plugin permission to view your Search Console data:
 
-![Grant permission to view Search Console data](img/grant-permission.webp)
+![Grant permission to view Search Console data](img/authorize.webp)
 
 The plugin redirects you back to the Search Console tab. You can now view your reports:
 
