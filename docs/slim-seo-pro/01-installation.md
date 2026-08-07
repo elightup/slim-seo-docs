@@ -14,7 +14,7 @@ Slim SEO Pro is a WordPress plugin. You install it the same way you install any 
 **Slim SEO Pro is not an upgrade of Slim SEO Free.** They are two separate plugins, and each has its own set of features.
 
 - **Slim SEO Free** focuses on core SEO essentials. It covers meta tags, sitemaps, Open Graph, schema markup, and more. It is a complete SEO plugin on its own.
-- **Slim SEO Pro** focuses on advanced features. It covers the link manager, custom schemas, writing assistant, entities, and Search Console integration. It is also a complete plugin on its own.
+- **Slim SEO Pro** focuses on advanced features. It covers the link manager, custom schemas, writing assistant, entities, Search Console integration, and Markdown for AI. It is also a complete plugin on its own.
 
 Some features exist only in Free. Some exist only in Pro. A few overlap. For example, both Free and Pro can output schema markup. Pro lets you create custom schemas that Free does not.
 
