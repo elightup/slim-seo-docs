@@ -42,6 +42,34 @@ When you do not set a primary term, the plugin keeps the default behavior. It us
 
 :::
 
+## Getting the primary term in your theme
+
+The plugin saves the primary term as post meta. The meta key has the form `_slim_seo_primary_term_{taxonomy}`. For example, the meta key for the `category` taxonomy is `_slim_seo_primary_term_category`.
+
+To read the primary term in your theme, use the `SlimSEO\PrimaryTerm::get_primary_term_id()` method. It accepts the post ID and the taxonomy. It returns the term ID of the primary term, or `0` when the post has no primary term:
+
+```php
+$primary_id = SlimSEO\PrimaryTerm::get_primary_term_id( get_the_ID(), 'category' );
+```
+
+You can also read the post meta directly:
+
+```php
+$primary_id = (int) get_post_meta( get_the_ID(), '_slim_seo_primary_term_category', true );
+```
+
+With the term ID, you get the term object and output it anywhere in your theme. The example below shows the name of the primary term with a link to its archive page:
+
+```php
+$primary_id = SlimSEO\PrimaryTerm::get_primary_term_id( get_the_ID(), 'category' );
+if ( $primary_id ) {
+	$primary_term = get_term( $primary_id, 'category' );
+	if ( $primary_term ) {
+		echo '<a href="' . esc_url( get_term_link( $primary_term ) ) . '">' . esc_html( $primary_term->name ) . '</a>';
+	}
+}
+```
+
 ## How the primary term affects permalinks
 
 The primary term changes the post permalink **when the permalink structure contains a term placeholder**. A term placeholder has the form `%taxonomy_slug%`. It is the slug of the taxonomy wrapped in `%` characters.
