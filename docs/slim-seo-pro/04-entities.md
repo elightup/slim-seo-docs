@@ -87,9 +87,31 @@ Or you can use our [browser extensions](https://wpslimseo.com/introducing-seo-an
 
 ## How are entities attached to schema?
 
-Entities are automatically injected into your post's existing JSON-LD output. You do not need to configure anything extra. Once entities are assigned to a post, the plugin hooks into your active SEO plugin's schema filter and adds them.
+Slim SEO Pro injects entities into your JSON-LD output automatically. You do not add them to the schema properties by hand.
 
-The target schema type depends on which SEO plugin you use:
+### With the Schema feature
+
+With the Schema feature, you choose which schemas receive entities:
+
+1. Open a schema in **Slim SEO > Settings > Schema**.
+2. In the schema panel, open the **Entity** tab.
+3. Turn on **Enable entities**.
+
+You can also enable entities for a schema you add to a single post. Open the post's **Schema** tab and turn on the toggle under the schema properties. See [post schemas](/slim-seo-pro/schema/post-schemas/) for details.
+
+After you assign entities to a post, Slim SEO Pro adds them to every enabled schema. The role you set for each entity decides the property:
+
+- **Main Entity** becomes `mainEntity`.
+- **About** becomes `about`.
+- **Mentions** becomes `mentions`.
+
+Article is enabled by default. Your existing posts keep their entities without any change. To stop entities on Article, turn the Article toggle off.
+
+These schemas have no Entity tab: Custom JSON-LD, SearchAction, BreadcrumbList.
+
+### When you do not use the Schema feature
+
+Entities need schema output to attach to. If you do not use the Schema feature, the target schema depends on your SEO plugin:
 
 | SEO plugin | Schema type entities are attached to |
 |------------|--------------------------------------|
@@ -101,7 +123,7 @@ The target schema type depends on which SEO plugin you use:
 | The SEO Framework | Article |
 | Squirrly SEO | Article |
 
-In most cases, entities appear as `mainEntity`, `about`, or `mentions` properties inside the `Article` (or `BlogPosting`) schema. If no such schema exists on the page, entities will not be rendered. They require the article markup from your SEO plugin to attach to.
+Entities appear as `mainEntity`, `about`, or `mentions` inside the enabled schemas or the article schema of your SEO plugin. If neither exists on the page, entities do not render.
 
 ## Entities vs. Schema: when to use each?
 
@@ -140,6 +162,10 @@ The post will no longer include structured data for that entity. You can reassig
 **Can I use the same entity across multiple posts?**
 
 Yes, that is the whole point. Create an entity once and attach it to as many posts as you like.
+
+**Why do my entities not appear on a page?**
+
+Entities need a schema with **Enable entities** turned on, or the article schema from your SEO plugin. Check that the schema is active on the page. Article has the toggle on by default.
 
 **Which SEO plugins are supported?**
 
