@@ -4,14 +4,14 @@ title: Abilities
 
 The abilities from Slim SEO are built on the [WordPress Abilities API](https://developer.wordpress.org/apis/abilities-api/). They let AI agents - such as Claude or Cursor - get and update meta tags on your site.
 
-Slim SEO uses the official [MCP Adapter](https://github.com/WordPress/mcp-adapter) plugin to handle communication. The adapter translates WordPress abilities into the [Model Context Protocol (MCP)](https://modelcontextprotocol.io) that AI agents understand.
+Slim SEO uses the official [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) plugin to handle communication. The adapter translates WordPress abilities into the [Model Context Protocol (MCP)](https://modelcontextprotocol.io) that AI agents understand.
 
 With these abilities, an AI agent can read and change meta titles, meta descriptions, social images, canonical URLs, and noindex settings for posts, terms, the homepage, archives, and default templates. This saves time when you optimize many pages or keep SEO data in sync with content changes.
 
 ## Requirements
 
 1. Use WordPress 6.9 or later. The Abilities API is part of WordPress core from that version.
-1. Install and activate the [MCP Adapter](https://github.com/WordPress/mcp-adapter) plugin.
+1. Install and activate the [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) plugin.
 
 ## Connecting AI agents to WordPress
 
@@ -19,13 +19,13 @@ First, connect WordPress to an AI agent via the MCP Adapter plugin. It exposes W
 
 ### 1. Install MCP Adapter plugin
 
-1. Download the [latest release of MCP Adapter](https://github.com/WordPress/mcp-adapter/releases/latest) from GitHub.
-1. Go to **Plugins → Add New → Upload Plugin**, select the ZIP file, then install and activate the plugin.
+1. Go to **Plugins → Add New**.
+1. Search for **MCP Adapter**, then install and activate the plugin.
 
 You can also install it with WP-CLI:
 
 ```bash
-wp plugin install https://github.com/WordPress/mcp-adapter/releases/latest/download/mcp-adapter.zip --activate
+wp plugin install mcp-adapter --activate
 ```
 
 ### 2. Generate application password
@@ -72,7 +72,7 @@ Replace:
 - `WP_API_PASSWORD` with the Application Password from Step 2
 - `LOG_FILE` with the path where logs should be written
 
-For more details, follow the instructions in the [MCP Adapter GitHub repository](https://github.com/WordPress/mcp-adapter).
+For more details, see the [MCP Adapter plugin page](https://wordpress.org/plugins/mcp-adapter/).
 
 Slim SEO marks its meta tag abilities as public MCP tools. After setup, the agent discovers them and can call them.
 
