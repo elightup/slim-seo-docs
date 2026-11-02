@@ -3,21 +3,21 @@ title: URL Indexing Settings
 sidebar_label: Settings
 ---
 
-Go to **Settings > Slim SEO > URL Indexing tab**:
+Go to **Settings > Slim SEO > URL Indexing tab**.
 
-Setting|Description
+Setting|What it does
 ---|---
-Client ID, Client Secret|The credentials of your Google Cloud app. See [how to get them](/slim-seo-pro/url-indexing/connecting-to-gsc/). When you change them, the plugin connects to Google Search Console after you save. The connection status shows below **Client Secret**.
-Re-check interval for indexed URLs|How many days to wait before checking indexed URLs again. Default: 30.
-Re-check interval for noindex URLs|How many days to wait before checking noindex URLs again. Default: 7.
-Cron interval|How often (in hours) the plugin checks URLs. Default: 12 (twice a day).
-URLs per run|How many URLs the plugin checks each time. Default: 500.
-Delete indexing data|Delete all indexing data when you turn off the URL Indexing feature or deactivate Slim SEO Pro.
+Client ID, Client Secret|The Client ID and Client Secret from your Google app. See [how to get them](/slim-seo-pro/url-indexing/connecting-to-gsc/). When you change them and save, the plugin connects to Google. The connection status appears below **Client Secret**.
+Re-check interval for indexed URLs|How many days the plugin waits before it checks an indexed URL again. Default: 30.
+Re-check interval for noindex URLs|How many days the plugin waits before it checks a noindex URL again. Default: 7.
+Cron interval|How often the plugin runs its checks, in hours. Default: 12 (twice a day).
+URLs per run|How many URLs the plugin checks each time it runs. Default: 500.
+Delete indexing data|Deletes all indexing data when you turn off URL Indexing or deactivate Slim SEO Pro.
 
-:::caution Google quota
+:::caution Google's daily limit
 
-Google allows about **2,000 checks per day** for each site. Keep *URLs per run × runs per day* under 2,000.
+Google allows about **2,000 checks per day** for each site. Keep this rule: **URLs per run** × runs per day must stay under 2,000.
 
-For example, with the default settings, the plugin runs 2 times a day and checks 500 URLs each time. That is 1,000 checks per day.
+For example, the default settings run the plugin 2 times a day and check 500 URLs each time. That is 1,000 checks per day.
 
 :::
