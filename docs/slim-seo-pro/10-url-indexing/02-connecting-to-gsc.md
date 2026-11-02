@@ -133,11 +133,9 @@ You can use the same app for all your sites. Just add one more redirect URI for 
 
 ## Step 5: Connect in WordPress
 
-Go to **Settings > Slim SEO > URL Indexing tab > Settings**. Paste the **Client ID** and **Client Secret**, then click **Save Changes**.
+Go to **Settings > Slim SEO > URL Indexing tab**. Paste the **Client ID** and **Client Secret**, then click **Save Changes**.
 
-Go to the **Dashboard** tab and click **Connect to Google Search Console**.
-
-Google asks you to choose your account and allow the app to view your Search Console data. Choose the account that has access to your site in Google Search Console, and click **Continue**.
+The plugin takes you to Google right away to connect. Google asks you to choose your account and allow the app to view your Search Console data. Choose the account that has access to your site in Google Search Console, and click **Continue**.
 
 :::info
 
@@ -145,7 +143,21 @@ Google may show a warning "Google hasn't verified this app". This is normal beca
 
 :::
 
-After that, Google sends you back to WordPress. You will see a message that the connection is successful. The plugin starts checking your URLs in the background.
+After that, Google sends you back to WordPress. Under **Client Secret**, you will see the connection status:
+
+Status|What to do
+---|---
+Connected to Google Search Console.|Nothing. The plugin starts checking your URLs in the background. Click **Disconnect** if you want to disconnect.
+You denied access to Google Search Console.|You clicked **Cancel** on Google. Click **Reconnect** to try again.
+Not connected to Google Search Console.|The connection has expired or was removed. Click **Reconnect**.
+Could not connect to Google Search Console.|Check your **Client ID** and **Client Secret**, fix them, and click **Save Changes** again.
+Connected, but this site is not in your Google Search Console account.|Add the site to Google Search Console, or click **Disconnect** and connect with another account.
+
+:::info
+
+The plugin takes you to Google only when you change the **Client ID** or **Client Secret**. Saving other settings does not change the connection.
+
+:::
 
 Learn how to [view the indexing status](/slim-seo-pro/url-indexing/indexing-status/).
 
@@ -154,6 +166,5 @@ Learn how to [view the indexing status](/slim-seo-pro/url-indexing/indexing-stat
 Problem|Solution
 ---|---
 `redirect_uri_mismatch` error|The redirect URI in step 4 does not match your site. Check `https`, `www`, and the subfolder.
-"Current site domain is not matched with any domain in your account"|Your Google account does not have this site in Google Search Console. Add the site to Google Search Console, or connect with another account.
 Your site is disconnected after 7 days|The app is still in **Testing** mode. Publish it (step 3), then connect again.
 Many URLs show **N/A**|Google's daily quota has run out. Reduce **URLs per run** or increase **Cron interval** in the settings.

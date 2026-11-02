@@ -3,11 +3,11 @@ title: URL Indexing Settings
 sidebar_label: Settings
 ---
 
-Go to **Settings > Slim SEO > URL Indexing tab > Settings**:
+Go to **Settings > Slim SEO > URL Indexing tab**:
 
 Setting|Description
 ---|---
-Client ID, Client Secret|The credentials of your Google Cloud app. See [how to get them](/slim-seo-pro/url-indexing/connecting-to-gsc/).
+Client ID, Client Secret|The credentials of your Google Cloud app. See [how to get them](/slim-seo-pro/url-indexing/connecting-to-gsc/). When you change them, the plugin connects to Google Search Console after you save. The connection status shows below **Client Secret**.
 Re-check interval for indexed URLs|How many days to wait before checking indexed URLs again. Default: 30.
 Re-check interval for noindex URLs|How many days to wait before checking noindex URLs again. Default: 7.
 Cron interval|How often (in hours) the plugin checks URLs. Default: 12 (twice a day).
