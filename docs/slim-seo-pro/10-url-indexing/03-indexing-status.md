@@ -6,6 +6,8 @@ title: Indexing Status
 
 Go to the list of posts, pages, or terms. For example, go to **Posts > All Posts**. The status icon appears in the **Index** column.
 
+![The Index column in the list of posts, with a hovered status icon](img/index-column.webp)
+
 Hover over the icon to see the status and Google's explanation.
 
 If you use Slim SEO Free, the status appears in the **Index** column of Slim SEO Free.
