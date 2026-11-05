@@ -5,7 +5,7 @@ sidebar_label: Connecting to GSC
 
 URL Indexing needs permission to read your data from Google Search Console (GSC). To get this permission, you create a Google app with your own Google account. You do this once. It is free and takes about 10 minutes.
 
-Why do you need your own app? Google limits how many URLs one app can check each day. When you use your own app, the limit applies only to your site.
+Why do you need your own app? The connection stays between your site and Google, under your own Google account. No third-party service sits in the middle.
 
 ## Before you start
 
@@ -18,13 +18,14 @@ Not the owner? Ask the site owner to add your email. To check or add users, go t
 
 ![Users and permissions in Google Search Console](img/gsc-account.webp)
 
-There are 5 steps:
+There are 6 steps:
 
 1. Create a project
 2. Turn on the Google Search Console API
 3. Set up the consent screen
 4. Create the credentials
-5. Connect in WordPress
+5. Publish the app
+6. Connect in WordPress
 
 ## 1. Create a project
 
@@ -121,7 +122,7 @@ Click **Create**. A popup shows your **Client ID** and **Client Secret**:
 
 ![Client ID and Client Secret](img/oauth-info.webp)
 
-Copy both values and save them somewhere safe. You need them in step 5.
+Copy both values and save them somewhere safe. You need them in step 6.
 
 :::warning
 
@@ -135,7 +136,17 @@ You can use one app for all your sites. Add one redirect URI for each site. Use 
 
 :::
 
-## 5. Connect in WordPress
+## 5. Publish the app
+
+A new app starts in **Testing** mode. In this mode, Google ends the connection 7 days after you allow access, so you would have to reconnect every week. To keep the connection, publish the app.
+
+From the left menu, open [**Audience**](https://console.cloud.google.com/auth/audience). Under **Publishing status**, click **Publish app**, then click **Confirm**:
+
+![Publish the app](img/publish-app.webp)
+
+The status changes to **In production**. You do not need to send the app to Google for verification. Only you use it, for your own sites.
+
+## 6. Connect in WordPress
 
 Go to **Settings > Slim SEO > URL Indexing tab**. Paste the **Client ID** and **Client Secret**. Click **Save Changes**.
 
@@ -144,6 +155,12 @@ Go to **Settings > Slim SEO > URL Indexing tab**. Paste the **Client ID** and **
 Google opens right away. Choose the Google account that has access to your site in Search Console:
 
 ![Choose an account](img/choose-account.webp)
+
+:::info
+
+If Google shows **Google hasn't verified this app**, click **Advanced**, then click **Go to [your app name] (unsafe)**. This is the app you created, so it is safe to continue.
+
+:::
 
 Allow the app to read your Google Search Console data:
 
@@ -174,4 +191,5 @@ Next, learn how to [view the indexing status](/slim-seo-pro/url-indexing/indexin
 Problem|Solution
 ---|---
 `redirect_uri_mismatch` error|The redirect URI in step 4 does not match your site. Check `https`, `www`, and the subfolder.
+The connection stops after 7 days|The app is still in **Testing** mode. [Publish the app](#5-publish-the-app), then click **Reconnect**.
 Many URLs show **N/A**|Google's daily limit ran out. Lower **URLs per run** or raise **Cron interval** in the [settings](/slim-seo-pro/url-indexing/settings/).
