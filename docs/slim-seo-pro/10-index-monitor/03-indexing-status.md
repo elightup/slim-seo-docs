@@ -33,8 +33,8 @@ The plugin does not check every URL every day. It waits based on the last status
 
 Status|Checks again after
 ---|---
-Indexed|30 days. You can change this in the [settings](/slim-seo-pro/url-indexing/settings/).
-No Index|7 days. You can change this in the [settings](/slim-seo-pro/url-indexing/settings/).
+Indexed|30 days. You can change this in the [settings](/slim-seo-pro/index-monitor/settings/).
+No Index|7 days. You can change this in the [settings](/slim-seo-pro/index-monitor/settings/).
 Not Indexed, Attention|1 day
 N/A|The next run
 

@@ -3,7 +3,7 @@ title: Connecting to Google Search Console
 sidebar_label: Connecting to GSC
 ---
 
-URL Indexing needs permission to read your data from Google Search Console (GSC). To get this permission, you create a Google app with your own Google account. You do this once. It is free and takes about 10 minutes.
+Index Monitor needs permission to read your data from Google Search Console (GSC). To get this permission, you create a Google app with your own Google account. You do this once. It is free and takes about 10 minutes.
 
 Why do you need your own app? The connection stays between your site and Google, under your own Google account. No third-party service sits in the middle.
 
@@ -73,7 +73,7 @@ Click **Get started**:
 
 Under **App information**, enter:
 
-- **App name**: Any name. We suggest "Slim SEO URL Indexing".
+- **App name**: Any name. We suggest "Slim SEO Index Monitor".
 - **User support email**: Your email.
 
 Click **Next**:
@@ -148,7 +148,7 @@ The status changes to **In production**. You do not need to send the app to Goog
 
 ## 6. Connect in WordPress
 
-Go to **Settings > Slim SEO > URL Indexing tab**. Paste the **Client ID** and **Client Secret**. Click **Save Changes**.
+Go to **Settings > Slim SEO > Index Monitor tab**. Paste the **Client ID** and **Client Secret**. Click **Save Changes**.
 
 ![Enter the Client ID and Client Secret in Slim SEO](img/oauth-in-slim-seo.webp)
 
@@ -184,7 +184,7 @@ The plugin opens Google only when you change the Client ID or Client Secret. Sav
 
 :::
 
-Next, learn how to [view the indexing status](/slim-seo-pro/url-indexing/indexing-status/).
+Next, learn how to [view the indexing status](/slim-seo-pro/index-monitor/indexing-status/).
 
 ## Troubleshooting
 
@@ -192,4 +192,4 @@ Problem|Solution
 ---|---
 `redirect_uri_mismatch` error|The redirect URI in step 4 does not match your site. Check `https`, `www`, and the subfolder.
 The connection stops after 7 days|The app is still in **Testing** mode. [Publish the app](#5-publish-the-app), then click **Reconnect**.
-Many URLs show **N/A**|Google's daily limit ran out. Lower **URLs per run** or raise **Cron interval** in the [settings](/slim-seo-pro/url-indexing/settings/).
+Many URLs show **N/A**|Google's daily limit ran out. Lower **URLs per run** or raise **Cron interval** in the [settings](/slim-seo-pro/index-monitor/settings/).

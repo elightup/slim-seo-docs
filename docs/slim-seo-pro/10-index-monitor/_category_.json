@@ -1,10 +1,10 @@
 {
   "position": 5.5,
-  "label": "URL Indexing",
+  "label": "Index Monitor",
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "slug": "/slim-seo-pro/url-indexing"
+    "slug": "/slim-seo-pro/index-monitor"
   }
 }

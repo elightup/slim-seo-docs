@@ -33,3 +33,8 @@
 /slim-seo-pro/analytics/connecting-to-gsc/           /slim-seo-pro/search-console/connecting-to-gsc/
 /slim-seo-pro/analytics/reports/                     /slim-seo-pro/search-console/reports/
 /slim-seo-pro/schema/post-specific-schema/           /slim-seo-pro/schema/post-schemas/
+/slim-seo-pro/url-indexing/                    /slim-seo-pro/index-monitor/
+/slim-seo-pro/url-indexing/overview/           /slim-seo-pro/index-monitor/overview/
+/slim-seo-pro/url-indexing/connecting-to-gsc/  /slim-seo-pro/index-monitor/connecting-to-gsc/
+/slim-seo-pro/url-indexing/indexing-status/    /slim-seo-pro/index-monitor/indexing-status/
+/slim-seo-pro/url-indexing/settings/           /slim-seo-pro/index-monitor/settings/
